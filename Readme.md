@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Алексей Мастяев](https://up.htmlacademy.ru/adaptive/29/user/2259063).
-* Наставник: [Ольга Ветер] (https://htmlacademy.ru/profile/id73199).
+* Наставник: [Ольга Ветер](https://htmlacademy.ru/profile/id73199).
 
 ---
 
