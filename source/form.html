@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Кэт энерджи. Подбор программы.</title>
+</head>
+
+<body class="page__body">
+  <header class="main__header">
+    <nav class="main-nav">
+      <a class="main-nav__logo" href="#">
+        <img class="main-nav__logo-image" src="img/logo_header_mobile.svg" width="33" height="38"
+          alt="Питание для Котов - Кэт энерджи">
+        <img class="main-nav__logo-name" src="img/logo_name_header.svg" width="101" height="18"
+          alt="Питание для Котов - Кэт энерджи">
+      </a>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main-container">
+    <h1 class="visually-hidden">Подбор программы в магазине функционального питания для котов - "Кэт энерджи"</h1>
+    <section class="program">
+      <div class="program_wrapper">
+        <h2 class="program__title">Подбор программы</h2>
+        <p class="program__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <form class="program__form form" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="form__basic-characteristics basic-characteristics fieldset">
+          <legend class="visually-hidden fieldset__title">Основные характеристики</legend>
+          <label class="basic-characteristics__label" for="cat-name">Имя:*</label>
+          <input class="basic-characteristics__input" type="text" name="cat-name" id="cat-name" value="Барсик" required>
+          <label class="basic-characteristics__label" for="weight">Вес (кг):*</label>
+          <input class="basic-characteristics__input" type="text" name="weight" id="weight" value="7" required>
+          <label class="basic-characteristics__label" for="old">Возраст (лет):</label>
+          <input class="basic-characteristics__input" type="text" name="old" id="old" value="7">
+        </fieldset>
+        <fieldset class="form__program-type program-type fieldset">
+          <legend class="visually-hidden fieldset__title">Программа</legend>
+          <ul class="program-type__list">
+            <li class="program-type__item">
+              <label class="program-type__label" for="slim">похудение</label>
+                <input class="program-type__input" type="radio" value="похудение" id="slim" name="program-type">
+            </li>
+            <li class="program-type__item">
+              <label class="program-type__label" for="fat">Набор массы</label>
+                <input class="program-type__input" type="radio" value="Набор массы" id="fat" name="program-type">
+            </li>
+            <li class="program-type__item">
+              <label class="program-type__label" for="advice">Не знаю (Нужен ваш совет)</label>
+                <input class="program-type__input" type="radio" value="Нужен ваш совет" id="advice" name="program-type">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__contacts-owner contacts-owner fieldset">
+          <legend class="fieldset__title">Контактные данные (владельца кота)</legend>
+          <label for="contacts-owner__label" for="email">E-mail:*</label>
+          <input class="contacts-owner__input contacts-owner__input--email" type="email" name="email" id="email" value="kuklachev@gmail.com" required>
+          <label for="contacts-owner__label" for="phone">Телефон:*</label>
+          <input class="contacts-owner__input contacts-owner__input--phone" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value="8 (960) 900-60-90" required>
+        </fieldset>
+      </form>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+
+</html>
