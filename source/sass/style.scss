@@ -1,2 +1,10 @@
-// Начните писать стили здесь
-@use "blocks/main-header"
+@use "global/global.scss";
+@use "global/fonts.scss";
+@use "global/link.scss";
+@use "global/visually-hidden.scss";
+@use "global/description.scss";
+@use "global/fieldset.scss";
+@use "global/label.scss";
+@use "global/title.scss";
+@use "global/list.scss";
+@use "blocks/main-header";
