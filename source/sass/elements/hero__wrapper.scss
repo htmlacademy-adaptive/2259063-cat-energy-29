@@ -1,5 +1,21 @@
 .hero__wrapper {
   margin: 0 auto;
-  width: 320px;
   text-align: center;
+  background-image: url(../img/index_background_green_mobile.png);
+  width: 320px;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding: 0 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url(../img/background_green.png);
+    min-width: 320px;
+    min-height: 302px;
+    position: absolute;
+    background-position: center;
+    top: 0;
+    left: 0;
+  }
 }

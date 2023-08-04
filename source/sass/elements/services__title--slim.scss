@@ -1,0 +1,12 @@
+.services__title--slim {
+  &::before {
+    content: "";
+    background-image: url("../img/cat_slim.svg");
+    background-repeat: no-repeat;
+    min-width: 50px;
+    min-height: 53px;
+    display: block;
+    background-color: #68B738;
+    border-radius: 50%;
+  }
+}
