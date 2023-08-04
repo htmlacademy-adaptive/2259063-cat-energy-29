@@ -1,13 +1,11 @@
-@use "../global/variables.scss";
-
 .page__body {
   height: 100%;
-  font-family: "Inter", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: variables.$special-dark_grey;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
   margin: 0;
   min-width: 320px;
   display: flex;
