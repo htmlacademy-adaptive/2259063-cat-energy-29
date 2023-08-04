@@ -1,0 +1,16 @@
+@use "../global/variables.scss";
+
+.page__body {
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: variables.$special-dark_grey;
+  margin: 0;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
