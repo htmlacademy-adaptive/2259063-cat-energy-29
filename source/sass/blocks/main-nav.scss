@@ -1,5 +1,56 @@
+@use "../global/variables.scss";
+
 .main-nav {
-  font-family: "Oswald", "Tahoma", sans-serif;
-  font-size: 20px;
-  line-height: 20px;
+  font-family: variables.$font-oswald;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+}
+
+.main-nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav__list {
+  font-family: variables.$font-oswald;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  color: #000000;
+  text-transform: uppercase;
+  &--close {
+    // display:none;
+  }
+}
+
+.main-nav__item {
+  text-align: center;
+  border-top: 1px solid #E6E6E6;
+}
+
+.main-nav__link {
+  padding: 1.375rem;
+  display: inline-block;
+}
+
+.main-nav__toggle {
+  background-color: #FFFFFF;
+  border: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0;
+  cursor: pointer;
+
+  &--closed {
+    background-image: url("../img/navigation_menu_close.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--opened {
+    background-image: url("../img/navigation_menu_open.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }

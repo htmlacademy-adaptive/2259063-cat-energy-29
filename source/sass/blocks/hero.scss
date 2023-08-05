@@ -1,3 +1,70 @@
+@use "../global/variables.scss";
+
 .hero {
-  min-width: 320px;
+  min-width: 20rem;
+}
+
+.hero__wrapper {
+  margin: 0 auto;
+  text-align: center;
+  background-image: url(../img/index_background_green_mobile.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  padding: 0 1.25rem;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url(../img/background_green.png);
+    min-width: -webkit-fill-available;
+    min-height: 18.875rem;
+    position: absolute;
+    background-position: center;
+    top: 0;
+    left: 0;
+  }
+}
+
+
+.hero__container {
+  width: 20rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.hero__button {
+  min-width: 17.5rem;
+  padding: 9px 44px;
+  display: flex;
+  justify-content: center;
+  text-wrap: nowrap;
+}
+
+.hero__title {
+  font-family: variables.$font-oswald;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #FFFFFF;
+  padding-top: 27px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero__description {
+  font-family: variables.$font-oswald;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 25px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero__image {
+  margin-top: 29px;
+  position: relative;
+  z-index: 1;
 }

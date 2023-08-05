@@ -1,10 +1,17 @@
+@use "variables.scss";
+
 .button {
-  font-family: "Oswald", "Tahoma", sans-serif;
+  font-family: variables.$font-oswald;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
   color: #FFFFFF;
   text-transform: uppercase;
   text-wrap: nowrap;
   cursor: pointer;
+
+  &--primary {
+    border: none;
+    background-color: #68B738;
+  }
 }
