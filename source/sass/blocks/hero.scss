@@ -10,7 +10,6 @@
   background-image: url(../img/index_background_green_mobile.png);
   background-repeat: no-repeat;
   background-position: top;
-  padding: 0 1.25rem;
   position: relative;
 
   &::before {
@@ -58,13 +57,13 @@
   line-height: 14px;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin-top: 25px;
+  padding-top: 25px;
   position: relative;
   z-index: 1;
 }
 
 .hero__image {
-  margin-top: 29px;
+  padding-top: 29px;
   position: relative;
   z-index: 1;
 }

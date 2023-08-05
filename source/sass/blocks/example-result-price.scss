@@ -1,0 +1,11 @@
+@use "../global/variables.scss";
+
+.example-result-price {
+    padding-top: 34px;
+    font-family: variables.$font-oswald;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+}

@@ -1,0 +1,29 @@
+@use "../global/variables.scss";
+
+.example {
+  padding-top: 49px;
+}
+
+.example__wrapper {
+  width: 20rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  padding-top: 25px;
+  padding-bottom: 40px;
+  background-color: #EAEAEA;
+}
+
+.example__title {
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  color: #000000;
+  padding-bottom: 2.5rem;
+}
+
+.example__description {
+  font-family: variables.$font-lato;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  text-align: left;
+}

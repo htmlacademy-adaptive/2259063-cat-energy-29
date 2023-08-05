@@ -1,3 +1,4 @@
+// Глобальные
 @use "global/global.scss";
 @use "global/fonts.scss";
 @use "global/link.scss";
@@ -9,6 +10,8 @@
 @use "global/list.scss";
 @use "global/input.scss";
 @use "global/button.scss";
+@use "global/variables.scss";
+// Блоки
 @use "blocks/main-header";
 @use "blocks/additional.scss";
 @use "blocks/advantages.scss";
@@ -35,4 +38,6 @@
 @use "blocks/program.scss";
 @use "blocks/services.scss";
 @use "blocks/social.scss";
-@use "global/variables.scss";
+@use "blocks/result.scss";
+@use "blocks/example-result-price.scss";
+@use "blocks/example-slider.scss";

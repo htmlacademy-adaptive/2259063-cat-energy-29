@@ -1,0 +1,41 @@
+@use "../global/variables.scss";
+
+.result {
+  display: flex;
+  gap: 32px;
+  justify-content: space-around;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.result__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 124px;
+  height: 56px;
+  border: 1px solid #CDCDCD;
+  border-radius: 2px;
+}
+
+.result__value {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  padding: 14.5px 0;
+  text-transform: uppercase;
+
+}
+
+.result__description {
+  font-family: variables.$font-lato;
+  font-size: 0.75rem;
+  line-height: 100%;
+  margin: 0;
+  width: 77px;
+  position: absolute;
+  z-index: 1;
+  background-color: #EAEAEA;
+  text-align: center;
+  bottom: -13px;
+}
