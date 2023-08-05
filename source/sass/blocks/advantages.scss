@@ -30,8 +30,50 @@
   font-size: 0.875rem;
   line-height: 1.125rem;
   text-align: left;
+  display: flex;
+  gap: 20px;
 
-  &--useful {
+  &--useful::before {
+    content: "";
+    display: block;
+    background-image:  url("../img/advantages_useful.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 60px;
+    min-height: 60px;
+    background-color: #68B738;
+  }
 
+  &--powder::before {
+    content: "";
+    display: block;
+    background-image:  url("../img/advantages_powder.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 60px;
+    min-height: 60px;
+    background-color: #68B738;
+  }
+
+  &--meals::before {
+    content: "";
+    display: block;
+    background-image:  url("../img/advantages_meals.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 60px;
+    min-height: 60px;
+    background-color: #68B738;
+  }
+
+  &--result::before {
+    content: "";
+    display: block;
+    background-image:  url("../img/advantages_result.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 60px;
+    min-height: 60px;
+    background-color: #68B738;
   }
 }
