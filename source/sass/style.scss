@@ -48,8 +48,10 @@
 @use "modificator/main-nav__toggle--opened.scss";
 @use "modificator/button--primary.scss";
 @use "elements/services__wrapper.scss";
-@use "elements/services__title--slim.scss";
+@use "modificator/services__title--slim.scss";
 @use "elements/services__title.scss";
 @use "elements/services__description.scss";
 @use "elements/services__list.scss";
 @use "elements/services__item.scss";
+@use "modificator/services__title--fat.scss";
+@use "elements/hero__container.scss";
