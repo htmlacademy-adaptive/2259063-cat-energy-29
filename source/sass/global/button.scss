@@ -9,9 +9,10 @@
   text-transform: uppercase;
   text-wrap: nowrap;
   cursor: pointer;
+  border: none;
+  padding: 0;
 
   &--primary {
-    border: none;
     background-color: #68B738;
   }
 }

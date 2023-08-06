@@ -1,3 +1,37 @@
 .example-slider {
     display: flex;
+    position: relative;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.example-slider__line {
+    display: block;
+    width: 4px;
+    background-color: #666666;
+    border-radius: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 16rem;
+}
+
+.example-slider__button {
+    align-self: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #666666;
+}
+
+.example-slider__vector {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
