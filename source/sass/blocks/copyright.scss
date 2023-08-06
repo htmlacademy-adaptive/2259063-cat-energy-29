@@ -1,0 +1,14 @@
+@use "../global/variables.scss";
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.copyright__text {
+    font-family: variables.$font-lato;
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
