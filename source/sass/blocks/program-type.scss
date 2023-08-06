@@ -1,0 +1,34 @@
+.program-type__list {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.program-type__label {
+    position: relative;
+    &::before {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid #CDCDCD;
+    }
+
+    &::after {
+        content: "";
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background-color: #68B738;
+        position: absolute;
+        left: 8.5px;
+        display: none;
+    }
+}
+
+.program-type__label:has(.program-type-label__input[type="radio"]:checked) {
+    &::after {
+        display: block;
+    }
+}

@@ -1,0 +1,27 @@
+@use "variables.scss";
+
+.input {
+  margin: 0;
+  font-family: variables.$font-oswald;
+  padding: 14px 15px 13px 15px;
+  border: 1px solid #E7E7E7;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  flex-grow: 1;
+
+  &:hover {
+    border-color: #CDCDCD;
+  }
+
+  &:focus {
+    border-color: #444444;
+    outline: 1px solid #444444;
+  }
+
+  &:invalid {
+    border-color: #FF8282;
+    outline: 1px solid #FF8282;
+  }
+}

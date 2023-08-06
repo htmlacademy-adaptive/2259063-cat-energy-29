@@ -14,5 +14,21 @@
 
   &--primary {
     background-color: #68B738;
+
+    &:hover {
+      background-color:#5EAA2F;
+    }
+
+    &:focus {
+      outline: 2px solid #FDC305;
+    }
+
+    &:active {
+      outline: none;
+    }
+
+    &:active .button__description {
+      opacity: 0.3;
+    }
   }
 }
