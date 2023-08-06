@@ -1,4 +1,22 @@
+@use "../global/variables.scss";
+
 .form {
     padding-top: 39px;
+    padding-bottom: 32px;
 }
+
+.form__button {
+    padding: 7px 44px;
+    min-width: 280px;
+}
+
+.form__legend {
+    font-family: variables.$font-lato;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    justify-content: center;
+    padding-top: 21px;
+}
+
 

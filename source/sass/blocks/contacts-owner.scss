@@ -1,0 +1,15 @@
+.contacts-owner {
+    padding-top: 20px;
+    padding-bottom: 24px;
+    position: relative;
+}
+
+.contacts-owner__label-icon-email,
+.contacts-owner__label-icon-phone {
+    position: absolute;
+    right: 0;
+}
+
+.contacts-owner__label:not(:last-of-type) {
+    padding-bottom: 14px;
+}

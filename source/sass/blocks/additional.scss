@@ -1,0 +1,40 @@
+
+.additional__label {
+    position: relative;
+    &::before {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #CDCDCD;
+    }
+
+    &::after {
+        content: "";
+        background-image: url("../img/checkbox.svg");
+        width: 18px;
+        height: 14px;
+        border-radius: 50%;
+        position: absolute;
+        left: 8.5px;
+        display: none;
+    }
+}
+
+.additional__label:not(:last-of-type) {
+    padding-bottom: 13px;
+}
+
+.additional__label:last-of-type {
+    margin-bottom: 34px;
+}
+
+.additional__label:first-of-type {
+    padding-top: 34px;
+}
+
+.additional__label:has(.additional__input[type="checkbox"]:checked) {
+    &::after {
+        display: block;
+    }
+}
