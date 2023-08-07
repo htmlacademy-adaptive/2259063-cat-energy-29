@@ -15,16 +15,15 @@
   position: relative;
   width: 124px;
   height: 56px;
-  border: 1px solid #CDCDCD;
+  border: 1px solid #cdcdcd;
   border-radius: 2px;
 }
 
 .result__value {
-  font-size: 1.5rem;
-  line-height: 1.5rem;
+  font-size: 24px;
+  line-height: 24px;
   padding: 14.5px 0;
   text-transform: uppercase;
-
 }
 
 .result__description {
@@ -35,7 +34,7 @@
   width: 77px;
   position: absolute;
   z-index: 1;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   text-align: center;
   bottom: -13px;
 }

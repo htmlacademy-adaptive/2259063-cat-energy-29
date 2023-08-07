@@ -1,20 +1,20 @@
 @use "../global/variables.scss";
 
 .contacts__business-card {
-    display: flex;
-    padding: 26px 20px;
+  display: flex;
+  padding: 26px 20px;
 }
 
 .business-card__title {
-    font-family: variables.$font-oswald;
-    font-size: 1rem;
-    line-height: 1.25rem;
-    color: #111111;
-    text-transform: uppercase;
+  font-family: variables.$font-oswald;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
 }
 
 .business-card__description {
-    font-family: variables.$font-lato;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
+  font-family: variables.$font-lato;
+  font-size: 14px;
+  line-height: 20px;
 }

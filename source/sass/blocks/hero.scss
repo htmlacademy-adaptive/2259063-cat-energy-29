@@ -1,38 +1,26 @@
 @use "../global/variables.scss";
 
 .hero {
-  min-width: 20rem;
+  min-width: 320px;
 }
 
 .hero__wrapper {
   margin: 0 auto;
   text-align: center;
-  background-image: url(../img/index_background_green_mobile.png);
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index_background_green_mobile.png");
   background-repeat: no-repeat;
-  background-position: top;
-  position: relative;
-
-  &::before {
-    content: "";
-    background-image: url(../img/background_green.png);
-    min-width: -webkit-fill-available;
-    min-height: 18.875rem;
-    position: absolute;
-    background-position: center;
-    top: 0;
-    left: 0;
-  }
+  background-size: 320px 302px, 320px 302px;
 }
 
 
 .hero__container {
-  width: 20rem;
+  width: 320px;
   margin: 0 auto;
-  padding: 0 1.25rem;
+  padding: 0 20px;
 }
 
 .hero__button {
-  min-width: 17.5rem;
+  min-width: 280px;
   padding: 9px 44px;
   display: flex;
   justify-content: center;
@@ -44,7 +32,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  color: #FFFFFF;
+  color: #ffffff;
   padding-top: 27px;
   position: relative;
   z-index: 1;
@@ -56,7 +44,7 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   padding-top: 25px;
   position: relative;
   z-index: 1;

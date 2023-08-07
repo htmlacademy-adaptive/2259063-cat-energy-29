@@ -5,25 +5,25 @@
 }
 
 .example__wrapper {
-  width: 20rem;
+  width: 320px;
   margin: 0 auto;
-  padding: 0 1.25rem;
+  padding: 0 20px;
   padding-top: 25px;
   padding-bottom: 40px;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
 }
 
 .example__title {
   font-weight: 400;
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+  font-size: 36px;
+  line-height: 40px;
   color: #000000;
-  padding-bottom: 2.5rem;
+  padding-bottom: 40px;
 }
 
 .example__description {
   font-family: variables.$font-lato;
-  font-size: 0.875rem;
-  line-height: 1.125rem;
+  font-size: 14px;
+  line-height: 18px;
   text-align: left;
 }

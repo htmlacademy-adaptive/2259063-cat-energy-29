@@ -1,12 +1,23 @@
 .example-slider {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    padding-top: 20px;
+  display: flex;
+  position: relative;
+  justify-content: center;
 }
 
-.example-slider__line {
-    display: block;
+.example-slider__button {
+  align-self: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #666666;
+  z-index: 0;
+
+  &::before {
+    content: "";
     width: 4px;
     background-color: #666666;
     border-radius: 2px;
@@ -14,24 +25,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 16rem;
-}
-
-.example-slider__button {
-    align-self: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 2px solid #666666;
+    height: 256px;
+    z-index: -1;
+  }
 }
 
 .example-slider__vector {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

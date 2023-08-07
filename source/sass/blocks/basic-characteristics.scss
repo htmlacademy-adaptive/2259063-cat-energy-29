@@ -1,6 +1,10 @@
 .basic-characteristics {
-    padding-bottom: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
+  padding-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.basic-characteristics__label {
+  justify-content: space-between;
 }

@@ -1,27 +1,27 @@
 .program {
-    min-width: 20rem;
-    padding-top: 27px;
+  min-width: 320px;
+  padding-top: 27px;
 }
 
 .program__wrapper {
-    margin: 0 auto;
-    padding: 0 1.25rem;
-    width: 20rem;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 320px;
 }
 
 .program__title {
-    font-weight: 400;
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-    color: #000000;
-    padding-bottom: 37px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  padding-bottom: 37px;
 }
 
 .program__description {
-    font-weight: 400;
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-    color: #000000;
-    text-transform: uppercase;
-    width: 226px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+  width: 226px;
 }
