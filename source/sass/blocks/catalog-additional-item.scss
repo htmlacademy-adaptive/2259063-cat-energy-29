@@ -1,0 +1,21 @@
+@use "../global/variables.scss";
+
+.catalog-additional__item {
+  padding-top: 13px;
+  padding-bottom: 19px;
+}
+
+.catalog-additional-item__title {
+  font-family: variables.$font-oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.catalog-additional-item__button {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}

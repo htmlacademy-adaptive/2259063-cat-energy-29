@@ -1,0 +1,16 @@
+@use "../global/variables.scss";
+
+.description-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 13px;
+  padding-bottom: 15px;
+}
+
+.description-container__volume,
+.description-container__price {
+  font-family: variables.$font-lato;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+}

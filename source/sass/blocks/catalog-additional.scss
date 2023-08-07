@@ -1,0 +1,48 @@
+@use "../global/variables.scss";
+
+.catalog-additional {
+  min-width: 320px;
+}
+
+.catalog-additional__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 320px;
+}
+
+.catalog-additional__title {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  white-space: pre-line;
+  padding-top: 25px;
+  padding-bottom: 36px;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #68b738;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+}
+
+.catalog-additional-title__description {
+  font-family: variables.$font-oswald;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+  padding-right: 10px;
+  padding-left: 20px;
+}
+
+.catalog-additional__item {
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}

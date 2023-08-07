@@ -1,0 +1,28 @@
+@use "../global/variables.scss";
+
+.more__title {
+  font-family: variables.$font-oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+  text-align: center;
+  padding-top: 23px;
+}
+
+.more__descrition {
+  display: block;
+  font-family: variables.$font-lato;
+  font-size: 12px;
+  line-height: 16px;
+  padding-top: 8px;
+  text-align: center;
+  padding-bottom: 21px;
+}
+
+.more__button {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}

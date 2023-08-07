@@ -30,7 +30,7 @@
 @use "blocks/main-container.scss";
 @use "blocks/main-footer.scss";
 @use "blocks/main-nav.scss";
-@use "blocks/more-info.scss";
+@use "blocks/more.scss";
 @use "blocks/page.scss";
 @use "blocks/program-type.scss";
 @use "blocks/program.scss";
@@ -40,3 +40,7 @@
 @use "blocks/example-result-price.scss";
 @use "blocks/example-slider.scss";
 @use "blocks/legend.scss";
+@use "blocks/catalog-item.scss";
+@use "blocks/catalog-additional.scss";
+@use "blocks/catalog-additional-item.scss";
+@use "blocks/description-container.scss";
