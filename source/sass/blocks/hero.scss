@@ -2,20 +2,18 @@
 
 .hero {
   min-width: 320px;
-}
-
-.hero__wrapper {
-  margin: 0 auto;
-  text-align: center;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index_background_green_mobile.png");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url(../img/index_background_green_mobile.png);
   background-repeat: no-repeat;
-  background-size: 320px 302px, 320px 302px;
+  background-position: center;
+  background-position-y: inherit;
+  background-size: auto 302px;
 }
 
 .hero__container {
   width: 320px;
   margin: 0 auto;
   padding: 0 20px;
+  text-align: center;
 }
 
 .hero__button {

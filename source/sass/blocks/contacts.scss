@@ -1,5 +1,19 @@
 @use "../global/variables.scss";
 
+.contacts {
+  min-width: 320px;
+
+
+  &--grey {
+    background-color: #f2f2f2;
+  }
+}
+
+.contacts__wrapper {
+  margin: 0 auto;
+  width: 320px;
+}
+
 .contacts__business-card {
   display: flex;
   padding: 26px 20px;

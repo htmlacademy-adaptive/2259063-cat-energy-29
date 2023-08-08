@@ -2,18 +2,16 @@
 
 .gift {
   min-width: 320px;
-  padding: 35px 0;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog_gift.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: inherit;
+  background-size: auto 290px;
 }
 
 .gift__wrapper {
   position: relative;
   margin: 0 auto;
-  padding: 0 20px;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog_gift.png");
-  background-repeat: no-repeat;
-
-  background-position: center;
-  background-size: 280px 290px, 280px 290px;
   width: 320px;
   min-height: 290px;
 }
