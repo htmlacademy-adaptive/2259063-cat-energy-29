@@ -5,6 +5,11 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
+
+  @media (width >= variables.$screen-tablet) {
+    padding: 0;
+    gap: 23px;
+  }
 }
 
 .copyright__text {

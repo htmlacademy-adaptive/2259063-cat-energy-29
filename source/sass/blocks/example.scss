@@ -3,6 +3,11 @@
 .example {
   background-color: #eaeaea;
   min-width: 320px;
+
+  @media (width >= variables.$screen-tablet) {
+    background-color: #ffffff;
+    background-image: linear-gradient(#ffffff 462px, #eaeaea 462px);
+  }
 }
 
 .example__result {
@@ -15,6 +20,19 @@
   padding: 0 20px;
   padding-top: 49px;
   padding-bottom: 40px;
+  position: relative;
+
+  @media (width >= variables.$screen-tablet) {
+    width: 768px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    width: 1440px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }
 
 .example__title {
@@ -23,6 +41,11 @@
   line-height: 40px;
   color: #000000;
   padding-bottom: 40px;
+
+  @media (width >= variables.$screen-tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example__description {
@@ -30,4 +53,30 @@
   font-size: 14px;
   line-height: 18px;
   text-align: left;
+
+  @media (width >= variables.$screen-tablet) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.example__result-price {
+  padding-top: 34px;
+  padding-bottom: 20px;
+
+  @media (width >= variables.$screen-tablet) {
+    position: absolute;
+    right: 0;
+    top: 210px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 9px;
+  }
+}
+
+.example__slider {
+  @media (width >= variables.$screen-tablet) {
+    padding-top: 99px;
+  }
 }

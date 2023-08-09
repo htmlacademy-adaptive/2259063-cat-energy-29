@@ -5,12 +5,22 @@
   font-size: 20px;
   line-height: 20px;
 
-  @media (width >=variables.$screen-tablet) {
+  @media (width >= variables.$screen-tablet) {
     display: flex;
     justify-content: space-between;
-    gap: 109px;
+    gap: 94px;
     align-items: center;
-    min-width: 768px;
+    width: 768px;
+    padding: 0 30px;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    display: flex;
+    justify-content: space-between;
+    gap: 543px;
+    align-items: center;
+    min-width: 1440px;
+    padding: 0 110px;
   }
 }
 
@@ -21,6 +31,10 @@
   padding-top: 13px;
   padding-bottom: 15px;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (width >= variables.$screen-tablet) {
+    border: none;
+  }
 }
 
 .main-nav__list {
@@ -35,6 +49,17 @@
     display: flex;
     gap: 33px;
     flex-wrap: wrap;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    display: flex;
+    gap: 31.5px;
+    flex-wrap: wrap;
+    font-size: 20px;
+    line-height: auto;
+    color: #ffffff;
   }
 
   &--close {
@@ -45,6 +70,10 @@
 .main-nav__item {
   text-align: center;
   border-top: 1px solid #e6e6e6;
+
+  @media (width >= variables.$screen-tablet) {
+    border: none;
+  }
 }
 
 .main-nav__link {
@@ -63,6 +92,14 @@
       width: -webkit-fill-available;
       position: absolute;
       bottom: -10px;
+    }
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    padding: 0;
+
+    &--active::after {
+      background-color: #ffffff;
     }
   }
 }

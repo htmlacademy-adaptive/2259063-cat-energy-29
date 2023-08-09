@@ -13,6 +13,14 @@
 
   @media (width >= variables.$screen-tablet) {
     width: 768px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    width: 1440px;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 
@@ -40,6 +48,11 @@
     grid-row-gap: 37px;
   }
 
+  @media (width >= variables.$screen-desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 94px;
+  }
 }
 
 .advantages__item {
@@ -61,6 +74,13 @@
 
   &:not(:last-child) {
     padding-bottom: 20px;
+    @media (width >= variables.$screen-tablet) {
+      padding: 0;
+    }
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    width: 230px;
   }
 }
 
@@ -72,6 +92,12 @@
   display: flex;
   gap: 20px;
 
+  @media (width >= variables.$screen-tablet) {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   &--useful::before {
     content: "";
     display: block;
@@ -81,6 +107,13 @@
     min-width: 60px;
     min-height: 60px;
     background-color: #68b738;
+
+    @media (width >= variables.$screen-tablet) {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 31px;
+      margin-top: 40px;
+    }
   }
 
   &--powder::before {
@@ -92,6 +125,13 @@
     min-width: 60px;
     min-height: 60px;
     background-color: #68b738;
+
+    @media (width >= variables.$screen-tablet) {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 31px;
+      margin-top: 40px;
+    }
   }
 
   &--meals::before {
@@ -103,6 +143,13 @@
     min-width: 60px;
     min-height: 60px;
     background-color: #68b738;
+
+    @media (width >= variables.$screen-tablet) {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 31px;
+      margin-top: 40px;
+    }
   }
 
   &--result::before {
@@ -114,5 +161,12 @@
     min-width: 60px;
     min-height: 60px;
     background-color: #68b738;
+
+    @media (width >= variables.$screen-tablet) {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 31px;
+      margin-top: 40px;
+    }
   }
 }

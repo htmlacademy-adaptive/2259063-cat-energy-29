@@ -3,7 +3,6 @@
 .contacts {
   min-width: 320px;
 
-
   &--grey {
     background-color: #f2f2f2;
   }
@@ -12,11 +11,25 @@
 .contacts__wrapper {
   margin: 0 auto;
   width: 320px;
+
+  @media (width >= variables.$screen-tablet) {
+    width: 768px;
+    padding: 0 30px;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    width: 1440px;
+    padding: 0 110px;
+  }
 }
 
 .contacts__business-card {
   display: flex;
   padding: 26px 20px;
+
+  @media (width >= variables.$screen-tablet) {
+    justify-content: space-between;
+  }
 }
 
 .business-card__title {
@@ -25,10 +38,18 @@
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
+
+  @media (width >= variables.$screen-tablet) {
+    width: 163px;
+  }
 }
 
 .business-card__description {
   font-family: variables.$font-lato;
   font-size: 14px;
   line-height: 20px;
+
+  @media (width >= variables.$screen-tablet) {
+    width: 157px;
+  }
 }
