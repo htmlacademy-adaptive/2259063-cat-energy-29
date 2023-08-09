@@ -9,6 +9,10 @@
   padding: 0 20px;
   padding-top: 20px;
   width: 320px;
+
+  @media (width >=variables.$screen-tablet) {
+    width: 768px;
+  }
 }
 
 .services__title {
@@ -20,6 +24,12 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  position: relative;
+
+  @media (width >=variables.$screen-tablet) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 
   &--fat {
     &::after {
@@ -31,7 +41,7 @@
       display: block;
       position: absolute;
       z-index: 1;
-      left: 13px;
+      left: -9px;
     }
 
     &::before {
@@ -55,7 +65,14 @@
       display: block;
       position: absolute;
       z-index: 1;
-      left: 27px;
+      left: 9px;
+
+      @media (width >=variables.$screen-tablet) {
+        min-width: 200px;
+        min-height: 200px;
+        left: 500px;
+        top: 35px;
+      }
     }
 
     &::before {
@@ -66,6 +83,14 @@
       background-color: #68b738;
       border-radius: 50%;
       position: relative;
+
+      @media (width >=variables.$screen-tablet) {
+        min-width: 200px;
+        min-height: 200px;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
     }
   }
 }
@@ -77,7 +102,11 @@
   position: relative;
 
   &:not(:last-of-type) {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  @media (width >=variables.$screen-tablet) {
+    padding: 80px 63px 80px 52px;
   }
 }
 
@@ -89,6 +118,11 @@
   color: #000000;
   padding-top: 15px;
   display: inline-block;
+
+  @media (width >=variables.$screen-tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .services__description {
@@ -99,4 +133,13 @@
   padding-top: 22px;
   padding-bottom: 23px;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (width >=variables.$screen-tablet) {
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
+    width: 340px;
+    padding-top: 24px;
+    padding-bottom: 48px;
+  }
 }
