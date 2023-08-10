@@ -20,10 +20,10 @@
 
   @media (width >= variables.$screen-desktop) {
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      url(../img/index_background_green_mobile.png);
+      url("../img/index_background_green_mobile.png");
     background-repeat: no-repeat;
     background-position: right;
     background-position-y: top;
-    background-size: 720px 694px, 720px 694px;
+    background-size: 50% 694px;
   }
 }

@@ -28,8 +28,10 @@
 
   @media (width >= variables.$screen-desktop) {
     width: 1440px;
+    height: 694px;
     padding: 0 110px;
     text-align: left;
+    position: relative;
   }
 }
 
@@ -44,6 +46,11 @@
     display: block;
     min-width: 244px;
     padding: 14px 14px;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    display: block;
+    margin-top: 52px;
   }
 }
 
@@ -94,4 +101,11 @@
   padding-top: 29px;
   position: relative;
   z-index: 1;
+
+  @media (width >= variables.$screen-desktop) {
+    right: 370px;
+    top: 10px;
+    width: 552px;
+    position: absolute;
+  }
 }

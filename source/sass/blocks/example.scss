@@ -6,8 +6,14 @@
 
   @media (width >= variables.$screen-tablet) {
     background-color: #ffffff;
-    background-image: linear-gradient(#ffffff 462px, #eaeaea 462px);
+    background-color: #ffffff;
+    background-image: linear-gradient(#ffffff 597px, #eaeaea 597px);
   }
+
+  @media (width >= variables.$screen-desktop) {
+    background-image: linear-gradient(#ffffff 185px, #eaeaea 185px);
+  }
+
 }
 
 .example__result {
@@ -32,6 +38,7 @@
     width: 1440px;
     padding-left: 110px;
     padding-right: 110px;
+    position: relative;
   }
 }
 
@@ -46,6 +53,10 @@
     font-size: 60px;
     line-height: 60px;
   }
+
+  @media (width >= variables.$screen-desktop) {
+    padding-bottom: 146px;
+  }
 }
 
 .example__description {
@@ -57,6 +68,11 @@
   @media (width >= variables.$screen-tablet) {
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    width: 30.3vw;
+    padding-bottom: 69px;
   }
 }
 
@@ -73,10 +89,27 @@
     justify-content: flex-end;
     gap: 9px;
   }
+
+  @media (width >= variables.$screen-desktop) {
+    display: flex;
+    flex-wrap: nowrap;
+    position: static;
+    justify-content: space-between;
+  }
 }
 
 .example__slider {
+  display: flex;
+  position: relative;
+  justify-content: center;
+
   @media (width >= variables.$screen-tablet) {
     padding-top: 99px;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    position: absolute;
+    right: 0;
+    top: -40px;
   }
 }

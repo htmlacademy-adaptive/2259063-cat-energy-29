@@ -1,0 +1,38 @@
+@use "../global/variables.scss";
+
+.business-card {
+  min-height: 112px;
+
+  @media (width >= variables.$screen-tablet) {
+    min-height: 200px;
+  }
+}
+
+.business-card__title {
+  display: block;
+  width: 140px;
+
+  @media (width >= variables.$screen-tablet) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 163px;
+  }
+}
+
+.business-card__description {
+  font-size: 14px;
+  line-height: 20px;
+  display: block;
+  width: 140px;
+
+
+  @media (width >= variables.$screen-tablet) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    width: 157px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}

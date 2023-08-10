@@ -20,15 +20,25 @@
   @media (width >= variables.$screen-desktop) {
     width: 1440px;
     padding: 0 110px;
+    position: relative;
   }
 }
 
 .contacts__business-card {
   display: flex;
   padding: 26px 20px;
+  justify-content: space-between;
 
   @media (width >= variables.$screen-tablet) {
-    justify-content: space-between;
+    padding: 60px 40px;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    position: absolute;
+    width: 565px;
+    background-color: #ffffff;
+    padding: 60px 80px;
+    top: 95px;
   }
 }
 
@@ -51,5 +61,12 @@
 
   @media (width >= variables.$screen-tablet) {
     width: 157px;
+  }
+}
+
+.contacts__location {
+  @media (width >= variables.$screen-tablet) {
+   max-height: 400px;
+   object-fit: cover;
   }
 }

@@ -1,8 +1,4 @@
-.example-slider {
-  display: flex;
-  position: relative;
-  justify-content: center;
-}
+@use "../global/variables.scss";
 
 .example-slider__button {
   align-self: center;
@@ -35,4 +31,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.example-slider__image {
+  @media (width >= variables.$screen-desktop) {
+    width: 280px;
+  }
 }

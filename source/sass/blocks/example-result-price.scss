@@ -14,4 +14,13 @@
     line-height: 20px;
     width: 174px;
   }
+
+  @media (width >= variables.$screen-desktop) {
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+    width: 327px;
+    max-width: 500px;
+    white-space: nowrap;
+  }
 }

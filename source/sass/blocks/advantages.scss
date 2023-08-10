@@ -74,6 +74,7 @@
 
   &:not(:last-child) {
     padding-bottom: 20px;
+
     @media (width >= variables.$screen-tablet) {
       padding: 0;
     }

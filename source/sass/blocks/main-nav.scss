@@ -89,7 +89,7 @@
       display: block;
       background-color: #68b738;
       height: 2px;
-      width: -webkit-fill-available;
+      width: 100%;
       position: absolute;
       bottom: -10px;
     }
@@ -131,16 +131,14 @@
 
 .main-nav__logo-image--tablet {
   display: none;
+
+  @media (width >= variables.$screen-tablet) {
+    display: block;
+  }
 }
 
 .main-nav__logo-image--mobile {
   @media (width >= variables.$screen-tablet) {
     display: none;
-  }
-}
-
-.main-nav__logo-image--tablet {
-  @media (width >= variables.$screen-tablet) {
-    display: block;
   }
 }
