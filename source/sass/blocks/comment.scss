@@ -11,7 +11,7 @@
   line-height: 18px;
   color: #444444;
   resize: none;
-  min-width: 280px;
+  width: 100%;
   text-transform: uppercase;
 }
 
@@ -22,4 +22,9 @@
 .comment__label {
   padding-top: 38px;
   padding-bottom: 33px;
+
+  @media (width >= variables.$screen-tablet) {
+    padding-top: 87px;
+    padding-bottom: 0;
+  }
 }

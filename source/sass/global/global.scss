@@ -3,7 +3,7 @@ body {
 }
 
 img {
-  width: 100%;
+  max-block-size: 100%;
   height: auto;
   object-fit: contain;
   display: block;

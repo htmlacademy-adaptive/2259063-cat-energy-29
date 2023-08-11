@@ -6,14 +6,12 @@
 
   @media (width >= variables.$screen-tablet) {
     background-color: #ffffff;
-    background-color: #ffffff;
     background-image: linear-gradient(#ffffff 597px, #eaeaea 597px);
   }
 
   @media (width >= variables.$screen-desktop) {
     background-image: linear-gradient(#ffffff 185px, #eaeaea 185px);
   }
-
 }
 
 .example__result {

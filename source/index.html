@@ -6,9 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи. Главная.</title>
   <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
 </head>
 
-<body class="page__body">
+<body class="page__body page__body--index">
   <header class="main-header">
     <nav class="main-nav">
       <div class="main-nav__container">
@@ -22,8 +23,8 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
-      <ul class="main-nav__list list main-nav__list--close">
-        <li class="main-nav__item">
+      <ul class="main-nav__list main-nav__list--index list main-nav__list--close">
+        <li class="main-nav__iWtem">
           <a class="main-nav__link main-nav__link--active link" href="#">Главная</a>
         </li>
         <li class="main-nav__item">
@@ -148,11 +149,12 @@
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__business-card business-card">
-          <p class="business-card__title title">приглашаем к сотрудничеству дилеров!</p>
-          <p class="business-card__description description">ул. Большая Конюшенная, д. 19/8 <span class="business-card__description--br">Санкт-Петербург</span></p>
-        </div>
-        <img class="contacts__location" src="img/location.jpg" width="320" height="362" alt="Местоположение на карте">
+      <div class="contacts__business-card business-card">
+        <p class="business-card__title title">приглашаем к сотрудничеству дилеров!</p>
+        <p class="business-card__description description">ул. Большая Конюшенная, д. 19/8 <span
+            class="business-card__description--br">Санкт-Петербург</span></p>
+      </div>
+      <img class="contacts__location" src="img/location.jpg" width="320" height="362" alt="Местоположение на карте">
     </section>
   </main>
   <footer class="main-footer">
