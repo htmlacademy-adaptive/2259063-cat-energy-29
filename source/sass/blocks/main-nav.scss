@@ -148,17 +148,3 @@
     background-repeat: no-repeat;
   }
 }
-
-.main-nav__logo-image--tablet {
-  display: none;
-
-  @media (width >= variables.$screen-tablet) {
-    display: block;
-  }
-}
-
-.main-nav__logo-image--mobile {
-  @media (width >= variables.$screen-tablet) {
-    display: none;
-  }
-}

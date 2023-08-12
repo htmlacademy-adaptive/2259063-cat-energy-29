@@ -37,7 +37,6 @@
 
 .hero__button {
   min-width: 280px;
-  padding: 9px 9px;
   display: flex;
   justify-content: center;
   white-space: nowrap;
@@ -45,7 +44,6 @@
   @media (width >= variables.$screen-tablet) {
     display: block;
     min-width: 244px;
-    padding: 14px 14px;
   }
 
   @media (width >= variables.$screen-desktop) {

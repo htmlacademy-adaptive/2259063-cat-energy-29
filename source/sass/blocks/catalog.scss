@@ -44,9 +44,18 @@
 }
 
 .catalog__item {
+  padding-top: 19px;
+  padding-bottom: 25px;
+
   @media (width >= variables.$screen-tablet) {
     width: calc((100% - 60px) / 2);
     min-height: 511px;
     position: relative;
+    &:not(:last-of-type) {
+      background-image: linear-gradient(#ffffff 81px, #ebebeb 81px);
+    }
+    padding-bottom: 40px;
+    padding-left: 37px;
+    padding-right: 37px;
   }
 }

@@ -8,6 +8,20 @@
   margin: 0 auto;
   padding: 0 20px;
   width: 320px;
+
+  @media (width >= variables.$screen-tablet) {
+    padding: 0 30px;
+    width: 768px;
+  }
+}
+
+.catalog-additional__item {
+  padding-top: 13px;
+  padding-bottom: 19px;
+
+  @media (width >= variables.$screen-tablet) {
+    padding: 26px 38px 28px 38px;
+  }
 }
 
 .catalog-additional__title {
@@ -17,6 +31,10 @@
   white-space: pre-line;
   padding-top: 25px;
   padding-bottom: 36px;
+
+  @media (width >= variables.$screen-tablet) {
+    padding-left: 40px;
+  }
 
   &::after {
     content: "";
@@ -40,6 +58,11 @@
   background-color: #ffffff;
   padding-right: 10px;
   padding-left: 20px;
+
+  @media (width >= variables.$screen-tablet) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .catalog-additional__item {

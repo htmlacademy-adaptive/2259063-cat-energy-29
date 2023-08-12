@@ -1,8 +1,24 @@
 @use "../global/variables.scss";
 
-.catalog-additional__item {
+.catalog-additional-item__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (width >= variables.$screen-tablet) {
+    padding-bottom: 25px;
+  }
+}
+
+.catalog-additional-item__description-container {
   padding-top: 13px;
-  padding-bottom: 19px;
+  padding-bottom: 15px;
+
+  @media (width >= variables.$screen-tablet) {
+    padding: 0;
+    display: flex;
+    gap: 49px;
+  }
 }
 
 .catalog-additional-item__title {
@@ -12,10 +28,13 @@
   line-height: 20px;
   color: #222222;
   text-transform: uppercase;
+
+  @media (width >= variables.$screen-tablet) {
+    font-size: 20px;
+  }
 }
 
 .catalog-additional-item__button {
   display: flex;
   justify-content: center;
-  padding: 10px;
 }
