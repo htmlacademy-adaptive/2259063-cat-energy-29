@@ -18,11 +18,8 @@
 
     @media (width >= variables.$screen-desktop) {
       padding-top: 0;
+      width: calc(100%  / 2);
     }
-  }
-
-  @media (width >= variables.$screen-desktop) {
-    width: calc(100%  / 2);
   }
 }
 

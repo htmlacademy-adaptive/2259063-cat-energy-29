@@ -1,5 +1,14 @@
+@use "../global/variables.scss";
+
 .catalog-table__rows {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   min-width: 140px;
+
+  @media (width >= variables.$screen-tablet) {
+    min-width: 250px;
+    border-bottom: 1px solid #cdcdcd;
+    padding: 5px 0;
+  }
 }

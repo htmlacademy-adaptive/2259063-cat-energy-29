@@ -16,6 +16,16 @@
   padding-bottom: 14px;
   width: 76px;
   text-transform: uppercase;
+
+  @media (width >= variables.$screen-tablet) {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 auto;
+    padding-top: 22px;
+    padding-bottom: 20px;
+    min-width: 135px;
+    text-align: center;
+  }
 }
 
 .catalog-item__container {
@@ -26,21 +36,26 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-bottom: 13px;
-}
 
-// .catalog-item__image {
-//   align-self: center;
-//   margin: 0 auto;
-// }
+  @media (width >= variables.$screen-tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .catalog-item__button {
   display: flex;
   justify-content: center;
-  padding: 10px;
 }
 
 .catalog-item__table {
   font-family: variables.$font-lato;
   font-size: 12px;
   line-height: 16px;
+
+  @media (width >= variables.$screen-tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

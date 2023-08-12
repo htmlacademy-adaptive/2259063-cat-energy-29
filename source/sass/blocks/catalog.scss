@@ -1,3 +1,5 @@
+@use "../global/variables.scss";
+
 .catalog {
   min-width: 320px;
   position: relative;
@@ -6,6 +8,17 @@
 .catalog__wrapper {
   margin: 0 auto;
   width: 320px;
+
+  @media (width >= variables.$screen-tablet) {
+    width: 768px;
+    padding: 0 30px;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    width: 1440px;
+    padding: 0 110px;
+    position: relative;
+  }
 }
 
 .catalog__title {
@@ -15,4 +28,25 @@
   color: #000000;
   padding-bottom: 41px;
   padding-top: 27px;
+
+  @media (width >= variables.$screen-tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.catalog__list {
+  @media (width >= variables.$screen-tablet) {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+}
+
+.catalog__item {
+  @media (width >= variables.$screen-tablet) {
+    width: calc((100% - 60px) / 2);
+    min-height: 511px;
+    position: relative;
+  }
 }
