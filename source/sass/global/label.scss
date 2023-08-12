@@ -30,6 +30,11 @@
       height: 30px;
       border-radius: 50%;
       border: 1px solid #cdcdcd;
+
+      @media (width >= variables.$screen-tablet) {
+        width: 40px;
+        height: 40px;
+      }
     }
 
     &::after {
@@ -41,6 +46,12 @@
       position: absolute;
       left: 8.5px;
       display: none;
+
+      @media (width >= variables.$screen-tablet) {
+        width: 18px;
+        height: 18px;
+        left: 11px;
+      }
     }
   }
 
@@ -52,17 +63,30 @@
       width: 30px;
       height: 30px;
       border: 1px solid #cdcdcd;
+
+      @media (width >= variables.$screen-tablet) {
+        width: 40px;
+        height: 40px;
+      }
     }
 
     &::after {
       content: "";
       background-image: url("../img/checkbox.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
       width: 18px;
       height: 14px;
       border-radius: 50%;
       position: absolute;
       left: 8.5px;
       display: none;
+
+      @media (width >= variables.$screen-tablet) {
+        width: 26px;
+        height: 26px;
+        left: 8px;
+      }
     }
   }
 }

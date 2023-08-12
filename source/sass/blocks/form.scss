@@ -5,14 +5,26 @@
   padding-bottom: 32px;
 }
 
+.form__container {
+  @media (width >= variables.$screen-desktop) {
+    display: flex;
+    gap: 80px;
+  }
+}
+
 .form__button {
   padding: 7px 7px;
   min-width: 280px;
   text-align: center;
 
   @media (width >= variables.$screen-tablet) {
-    padding: 13px;
     font-size: 20px;
+    min-width: 282px;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    font-size: 20px;
+    min-width: 570px;
   }
 }
 
@@ -34,8 +46,13 @@
   padding-bottom: 24px;
 
   @media (width >= variables.$screen-tablet) {
-    padding-bottom: 0;
+    padding-bottom: 72px;
   }
+
+    @media (width >= variables.$screen-desktop) {
+      padding-bottom: 0;
+      width: calc(100% / 2);
+    }
 }
 
 .form__program-type {
@@ -43,5 +60,12 @@
 
   @media (width >= variables.$screen-tablet) {
     padding: 23px 27px 27px 27px;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    width: calc(100% / 2);
+    padding: 25px 28px;
+    display: flex;
+    align-items: center;
   }
 }

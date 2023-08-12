@@ -54,3 +54,12 @@
     }
   }
 }
+
+.button__description {
+  display: block;
+  padding: 7px 7px;
+
+  @media (width >= variables.$screen-tablet) {
+    padding: 13px;
+  }
+}

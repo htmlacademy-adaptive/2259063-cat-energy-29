@@ -7,10 +7,15 @@
   @media (width >= variables.$screen-tablet) {
     border: 1px solid #d9d9d9;
   }
+
 }
 
 .program-type__list {
   display: flex;
   flex-direction: column;
   gap: 13px;
+
+  @media (width >= variables.$screen-desktop) {
+    margin: 0;
+  }
 }

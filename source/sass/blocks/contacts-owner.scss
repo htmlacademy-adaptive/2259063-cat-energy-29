@@ -15,6 +15,14 @@
     @media (width >= variables.$screen-tablet) {
       padding-top: 65px;
     }
+
+    @media (width >= variables.$screen-desktop) {
+      padding-top: 0;
+    }
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    width: calc(100%  / 2);
   }
 }
 
@@ -29,5 +37,18 @@
 
   @media (width >= variables.$screen-tablet) {
     padding-bottom: 20px;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    padding-bottom: 0;
+  }
+}
+
+.contacts-owner__container {
+  @media (width >= variables.$screen-desktop) {
+    display: flex;
+    gap: 81px;
+    align-items: center;
+    padding-top: 76px;
   }
 }
