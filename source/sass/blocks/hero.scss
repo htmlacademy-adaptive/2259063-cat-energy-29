@@ -102,8 +102,10 @@
 
   @media (width >= variables.$screen-desktop) {
     right: 370px;
-    top: 10px;
+    top: -50px;
     width: 552px;
+    height: 100%;
     position: absolute;
+    padding: 0;
   }
 }
