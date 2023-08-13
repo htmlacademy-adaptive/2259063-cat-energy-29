@@ -2,11 +2,10 @@
 
 .gift {
   min-width: 320px;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog_gift.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position-y: inherit;
-  background-size: auto 290px;
+
+  @media (width >= variables.$screen-desktop) {
+    position: relative;
+  }
 }
 
 .gift__wrapper {
@@ -14,6 +13,44 @@
   margin: 0 auto;
   width: 320px;
   min-height: 290px;
+  padding: 0 20px;
+
+  @media (width >= variables.$screen-tablet) {
+    min-height: 200px;
+    width: 768px;
+    padding: 0 30px;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    position: absolute;
+    width: 245px;
+    height: 288px;
+    right: 106px;
+    top: -400px;
+    padding: 0;
+  }
+}
+
+.gift__container {
+  min-width: inherit;
+  min-height: inherit;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog_gift.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: inherit;
+  background-size: 100% 290px;
+
+  @media (width >= variables.$screen-tablet) {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center, -374px;
+    height: 200px;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    height: 288px;
+    background-position: center;
+  }
 }
 
 .gift__descrition {
@@ -32,6 +69,21 @@
   margin: 0 auto;
   text-align: center;
 
+  @media (width >= variables.$screen-tablet) {
+    flex-direction: row;
+    width: 505px;
+    text-align: left;
+    gap: 264px;
+    align-items: center;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    flex-direction: column;
+    width: 161px;
+    text-align: center;
+    gap: 48px;
+  }
+
   &::before {
     content: "";
     background-image: url("../img/icon_gift.svg");
@@ -39,5 +91,6 @@
     width: 78px;
     height: 80px;
     margin: 0 auto;
+    flex-shrink: 0;
   }
 }

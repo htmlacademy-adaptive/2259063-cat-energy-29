@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи. Каталог Продукции.</title>
   <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
 </head>
 
 <body class="page__body">
@@ -280,9 +281,10 @@
           </li>
         </ul>
         <section class="catalog__additional catalog-additional">
+          <div class="catalog-additional__wrapper"></div>
           <h2 class="catalog-additional__title catalog-additional-title title"><span
               class="catalog-additional-title__description">Дополнительные товары</span></h2>
-          <div class="catalog-additional__wrapper">
+
             <ul class="catalog-additional__list list">
               <li class="catalog-additional__item catalog-additional-item">
                 <div class="catalog-additional-item__container">
@@ -337,7 +339,9 @@
     <section class="gift">
       <div class="gift__wrapper">
         <h2 class="visually-hidden">Подарок!</h2>
-        <p class="gift__descrition description">Закажите все и получите чехол для кота в подарок!</p>
+        <div class="gift__container">
+          <p class="gift__descrition description">Закажите все и получите чехол для кота в подарок!</p>
+        </div>
       </div>
     </section>
     <section class="contacts contacts--grey">
@@ -348,7 +352,6 @@
             class="business-description__br">Санкт-Петербург</span></p>
       </div>
       <img class="contacts__location" src="img/location.jpg" width="320" height="362" alt="Местоположение на карте">
-      </div>
     </section>
   </main>
   <footer class="main-footer">

@@ -36,11 +36,3 @@
 
   }
 }
-
-.additional__container-bottom {
-  @media (width >= variables.$screen-tablet) {
-    display: flex;
-    align-items: center;
-    gap: 64px;
-  }
-}

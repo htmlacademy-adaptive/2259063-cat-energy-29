@@ -1,12 +1,13 @@
 @use "../global/variables.scss";
 
 .catalog-additional-item__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: block;
 
   @media (width >= variables.$screen-tablet) {
     padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -37,4 +38,5 @@
 .catalog-additional-item__button {
   display: flex;
   justify-content: center;
+  align-items: center;
 }

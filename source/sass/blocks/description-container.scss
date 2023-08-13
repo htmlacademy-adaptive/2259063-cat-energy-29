@@ -3,6 +3,10 @@
 .description-container {
   display: flex;
   justify-content: space-between;
+
+  @media (width >= variables.$screen-desktop) {
+    width: 285px;
+  }
 }
 
 .description-container__volume,
@@ -15,5 +19,9 @@
   @media (width >= variables.$screen-tablet) {
     font-size: 16px;
     line-height: 20px;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    min-width: 42px;
   }
 }

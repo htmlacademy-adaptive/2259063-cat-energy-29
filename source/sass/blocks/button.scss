@@ -57,10 +57,14 @@
 
 .button__description {
   display: block;
-  padding: 7px 7px;
+  padding: 7px;
   white-space: normal;
 
   @media (width >= variables.$screen-tablet) {
     padding: 13px;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    padding: 7px;
   }
 }

@@ -38,8 +38,13 @@
 .catalog__list {
   @media (width >= variables.$screen-tablet) {
     display: flex;
-    gap: 60px;
     flex-wrap: wrap;
+    gap: 60px;
+    margin-bottom: 70px;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    gap: 63px 73px;
   }
 }
 
@@ -57,5 +62,26 @@
     padding-bottom: 40px;
     padding-left: 37px;
     padding-right: 37px;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    width: calc((100% - 220px) / 4);
+
+    &:last-of-type {
+      max-height: 435px;
+      display: flex;
+      align-items: end;
+      align-self: self-end;
+    }
+  }
+}
+
+.catalog__additional {
+  @media (width >= variables.$screen-tablet) {
+    margin-bottom: 70px;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    margin-bottom: 87px;
   }
 }
