@@ -1,0 +1,31 @@
+@use "../global/variables.scss";
+
+.page {
+  height: 100%;
+}
+
+.page__body {
+  height: 100%;
+  font-family: variables.$font-oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin: 0;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.page__body--index {
+  @media (width >= variables.$screen-desktop) {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../img/index_background_green_mobile.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: top;
+    background-size: 50% 694px;
+  }
+}

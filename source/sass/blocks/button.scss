@@ -1,0 +1,70 @@
+@use "../global/variables.scss";
+
+.button {
+  font-family: variables.$font-oswald;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  text-align: center;
+
+  &--primary {
+    background-color: #68b738;
+
+    &:hover {
+      background-color: #5eaa2f;
+    }
+
+    &:focus {
+      outline: 2px solid #fdc305;
+    }
+
+    &:active {
+      outline: none;
+    }
+
+    &:active .button__description {
+      opacity: 0.3;
+    }
+  }
+
+  &--secondary {
+    background-color: #f2f2f2;
+    color: #444444;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:focus {
+      outline: 2px solid #444444;
+    }
+
+    &:active {
+      outline: none;
+    }
+
+    &:active .button__description {
+      opacity: 0.3;
+    }
+  }
+}
+
+.button__description {
+  display: block;
+  padding: 7px;
+  white-space: normal;
+
+  @media (width >= variables.$screen-tablet) {
+    padding: 13px;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    padding: 7px;
+  }
+}

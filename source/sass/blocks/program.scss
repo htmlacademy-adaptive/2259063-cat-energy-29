@@ -1,0 +1,76 @@
+@use "../global/variables.scss";
+
+.program {
+  min-width: 320px;
+}
+
+.program__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 27px;
+  width: 320px;
+
+  @media (width >= variables.$screen-tablet) {
+    width: 768px;
+    padding: 0 30px;
+    padding-top: 65px;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    width: 1440px;
+    padding: 0 110px;
+    padding-top: 74px;
+  }
+}
+
+.program__form {
+  @media (width >= variables.$screen-tablet) {
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+  }
+}
+
+.program__container {
+  @media (width >= variables.$screen-tablet) {
+    width: 628px;
+    margin: 0 auto;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    width: auto;
+    margin: auto;
+  }
+}
+
+.program__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  padding-bottom: 37px;
+
+  @media (width >= variables.$screen-tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    padding-top: 0;
+  }
+}
+
+.program__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+  width: 226px;
+
+  @media (width >= variables.$screen-tablet) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 323px;
+  }
+}

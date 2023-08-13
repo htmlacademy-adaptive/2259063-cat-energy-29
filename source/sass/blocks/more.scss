@@ -1,0 +1,49 @@
+@use "../global/variables.scss";
+
+.more {
+  @media (width >= variables.$screen-tablet) {
+    border: 2px solid #f2f2f2;
+  }
+}
+
+.more__container {
+  width: 170px;
+  margin: 0 auto;
+}
+
+.more__title {
+  font-family: variables.$font-oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+  text-align: center;
+  padding-top: 23px;
+
+  @media (width >= variables.$screen-tablet) {
+    padding: 0 18px 23px 18px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.more__descrition {
+  display: block;
+  font-family: variables.$font-lato;
+  font-size: 12px;
+  line-height: 16px;
+  padding-top: 8px;
+  text-align: center;
+  padding-bottom: 21px;
+
+  @media (width >= variables.$screen-tablet) {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+.more__button {
+  display: flex;
+  justify-content: center;
+}

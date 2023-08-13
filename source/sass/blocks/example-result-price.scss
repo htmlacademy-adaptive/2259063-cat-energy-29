@@ -1,0 +1,26 @@
+@use "../global/variables.scss";
+
+.example-result-price {
+  font-family: variables.$font-oswald;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (width >= variables.$screen-tablet) {
+    text-align: right;
+    font-size: 20px;
+    line-height: 20px;
+    width: 174px;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+    width: 327px;
+    max-width: 500px;
+    white-space: nowrap;
+  }
+}

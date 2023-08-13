@@ -1,0 +1,51 @@
+@use "../global/variables.scss";
+
+.contacts-owner {
+  padding-top: 20px;
+  padding-bottom: 24px;
+  position: relative;
+
+  @media (width >= variables.$screen-tablet) {
+    padding-bottom: 0;
+  }
+}
+
+.contacts-owner__label {
+  &:first-of-type {
+    @media (width >= variables.$screen-tablet) {
+      padding-top: 65px;
+    }
+
+    @media (width >= variables.$screen-desktop) {
+      padding-top: 0;
+      width: calc(100%  / 2);
+    }
+  }
+}
+
+.contacts-owner__label-icon-email,
+.contacts-owner__label-icon-phone {
+  position: absolute;
+  right: 0;
+}
+
+.contacts-owner__label:not(:last-of-type) {
+  padding-bottom: 14px;
+
+  @media (width >= variables.$screen-tablet) {
+    padding-bottom: 20px;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    padding-bottom: 0;
+  }
+}
+
+.contacts-owner__container {
+  @media (width >= variables.$screen-desktop) {
+    display: flex;
+    gap: 81px;
+    align-items: center;
+    padding-top: 76px;
+  }
+}

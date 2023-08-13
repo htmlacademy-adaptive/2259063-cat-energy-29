@@ -1,0 +1,42 @@
+@use "../global/variables.scss";
+
+.catalog-additional-item__container {
+  display: block;
+
+  @media (width >= variables.$screen-tablet) {
+    padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.catalog-additional-item__description-container {
+  padding-top: 13px;
+  padding-bottom: 15px;
+
+  @media (width >= variables.$screen-tablet) {
+    padding: 0;
+    display: flex;
+    gap: 49px;
+  }
+}
+
+.catalog-additional-item__title {
+  font-family: variables.$font-oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #222222;
+  text-transform: uppercase;
+
+  @media (width >= variables.$screen-tablet) {
+    font-size: 20px;
+  }
+}
+
+.catalog-additional-item__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

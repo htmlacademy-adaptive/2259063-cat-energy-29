@@ -1,0 +1,106 @@
+@use "../global/variables.scss";
+
+.label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  white-space: nowrap;
+  cursor: pointer;
+
+  @media (width >= variables.$screen-tablet) {
+    font-size: 20px;
+  }
+}
+
+.label__name {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  // Радиокнопки
+  &--radio {
+    &::before {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 1px solid #cdcdcd;
+
+      @media (width >= variables.$screen-tablet) {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    &::after {
+      content: "";
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background-color: #68b738;
+      position: absolute;
+      left: 8.5px;
+      display: none;
+
+      @media (width >= variables.$screen-tablet) {
+        width: 18px;
+        height: 18px;
+        left: 11px;
+      }
+    }
+  }
+
+  // Чекбоксы
+  &--checkbox {
+    &::before {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 30px;
+      border: 1px solid #cdcdcd;
+
+      @media (width >= variables.$screen-tablet) {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    &::after {
+      content: "";
+      background-image: url("../img/checkbox.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 18px;
+      height: 14px;
+      border-radius: 50%;
+      position: absolute;
+      left: 8.5px;
+      display: none;
+
+      @media (width >= variables.$screen-tablet) {
+        width: 26px;
+        height: 26px;
+        left: 8px;
+      }
+    }
+  }
+}
+
+// Задаёт взаимодействие с радиокнопками
+.program-type-label__input[type="radio"]:checked + .label__name {
+  &::after {
+    display: block;
+  }
+}
+
+// Задаёт взаимодействие с чекбоксами
+.additional__input[type="checkbox"]:checked + .label__name {
+  &::after {
+    display: block;
+  }
+}

@@ -1,0 +1,17 @@
+@use "../global/variables.scss";
+
+.fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fieldset__legend {
+  &--catowner {
+    padding-top: 26px;
+  }
+
+  @media (width >= variables.$screen-tablet) {
+    padding-top: 0;
+  }
+}

@@ -1,0 +1,113 @@
+@use "../global/variables.scss";
+
+.example {
+  background-color: #eaeaea;
+  min-width: 320px;
+
+  @media (width >= variables.$screen-tablet) {
+    background-color: #ffffff;
+    background-image: linear-gradient(#ffffff 597px, #eaeaea 597px);
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    background-image: linear-gradient(#ffffff 185px, #eaeaea 185px);
+  }
+}
+
+.example__result {
+  padding-top: 20px;
+}
+
+.example__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 49px;
+  padding-bottom: 40px;
+  position: relative;
+
+  @media (width >= variables.$screen-tablet) {
+    width: 768px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    width: 1440px;
+    padding-left: 110px;
+    padding-right: 110px;
+    position: relative;
+  }
+}
+
+.example__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  padding-bottom: 40px;
+
+  @media (width >= variables.$screen-tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    padding-bottom: 146px;
+  }
+}
+
+.example__description {
+  font-family: variables.$font-lato;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+
+  @media (width >= variables.$screen-tablet) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    width: 30.3vw;
+    padding-bottom: 69px;
+  }
+}
+
+.example__result-price {
+  padding-top: 34px;
+  padding-bottom: 20px;
+
+  @media (width >= variables.$screen-tablet) {
+    position: absolute;
+    right: 0;
+    top: 210px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 9px;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    display: flex;
+    flex-wrap: nowrap;
+    position: static;
+    justify-content: space-between;
+  }
+}
+
+.example__slider {
+  display: flex;
+  position: relative;
+  justify-content: center;
+
+  @media (width >= variables.$screen-tablet) {
+    padding-top: 99px;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    position: absolute;
+    right: 0;
+    top: -40px;
+  }
+}

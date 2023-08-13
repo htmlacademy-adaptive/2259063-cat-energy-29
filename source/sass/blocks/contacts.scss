@@ -1,0 +1,81 @@
+@use "../global/variables.scss";
+
+.contacts {
+  min-width: 320px;
+  position: relative;
+
+  &--grey {
+    background-color: #f2f2f2;
+  }
+}
+
+.contacts__wrapper {
+  margin: 0 auto;
+  width: 320px;
+
+  @media (width >= variables.$screen-tablet) {
+    width: 768px;
+    padding: 0 30px;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    width: 1440px;
+    padding: 0 110px;
+    position: relative;
+  }
+}
+
+.contacts__business-card {
+  display: flex;
+  padding: 26px 20px;
+  justify-content: space-between;
+
+  @media (width >= variables.$screen-tablet) {
+    padding: 60px 40px;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    position: absolute;
+    width: 565px;
+    background-color: #ffffff;
+    padding: 60px 80px;
+    top: 95px;
+    margin-left: 110px;
+  }
+}
+
+.business-card__title {
+  font-family: variables.$font-oswald;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+
+  @media (width >= variables.$screen-tablet) {
+    width: 163px;
+  }
+}
+
+.business-card__description {
+  font-family: variables.$font-lato;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (width >= variables.$screen-tablet) {
+    width: 157px;
+  }
+}
+
+.contacts__location {
+  @media (width >= variables.$screen-tablet) {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
+}

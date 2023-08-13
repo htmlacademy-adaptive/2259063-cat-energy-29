@@ -1,0 +1,69 @@
+@use "../global/variables.scss";
+
+.result {
+  display: flex;
+  gap: 32px;
+  justify-content: space-around;
+  margin: 0;
+
+  @media (width >= variables.$screen-tablet) {
+    justify-content: flex-start;
+    gap: 43px;
+  }
+}
+
+.result__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 124px;
+  height: 56px;
+  border: 1px solid #cdcdcd;
+  border-radius: 2px;
+
+  @media (width >= variables.$screen-tablet) {
+    width: 162px;
+    height: 77px;
+  }
+}
+
+.result__value {
+  font-size: 24px;
+  line-height: 24px;
+  padding: 14.5px 0;
+  text-transform: uppercase;
+
+  @media (width >= variables.$screen-tablet) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.result__description {
+  font-family: variables.$font-lato;
+  font-size: 12px;
+  line-height: 100%;
+  margin: 0;
+  width: 77px;
+  position: absolute;
+  z-index: 1;
+  background-color: #eaeaea;
+  text-align: center;
+  bottom: -13px;
+
+  @media (width >= variables.$screen-tablet) {
+    font-size: 14px;
+    line-height: 14px;
+    white-space: nowrap;
+    width: max-content;
+    bottom: -6px;
+    padding: 0 5px;
+    background-color: #ffffff;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+
+    background-color: #eaeaea;
+  }
+}

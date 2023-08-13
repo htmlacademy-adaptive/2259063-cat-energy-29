@@ -1,0 +1,11 @@
+@use "../global/variables.scss";
+
+.basic-characteristics {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  @media (width >= variables.$screen-desktop) {
+    gap: 20px;
+  }
+}
