@@ -46,7 +46,7 @@
   color: #000000;
   text-transform: uppercase;
 
-  @media (width <= variables.$screen-tablet) {
+  @media (width < variables.$screen-tablet) {
     position: absolute;
     background-color: #ffffff;
     width: 100%;
