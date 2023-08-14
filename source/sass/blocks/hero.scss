@@ -2,6 +2,7 @@
 
 .hero {
   min-width: 320px;
+  position: relative;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
     url("../img/index_background_green_mobile.png");
   background-repeat: no-repeat;
@@ -24,6 +25,8 @@
     width: 768px;
     padding: 0 30px;
     text-align: left;
+    padding-bottom: 528px;
+    padding-left: 120px;
   }
 
   @media (width >= variables.$screen-desktop) {
@@ -32,6 +35,14 @@
     padding: 0 110px;
     text-align: left;
     position: relative;
+  }
+}
+
+.hero__image-container {
+  @media (width >= variables.$screen-tablet) {
+    position: absolute;
+    top: 243px;
+    z-index: -1;
   }
 }
 
@@ -92,6 +103,7 @@
     color: #000000;
     width: 290px;
     padding-top: 40px;
+    padding-bottom: 50px;
   }
 }
 
@@ -99,6 +111,13 @@
   padding-top: 29px;
   position: relative;
   z-index: 1;
+
+  @media (width >= variables.$screen-tablet) {
+    width: 709px;
+    height: 609px;
+    display: flex;
+    align-items: flex-start;
+  }
 
   @media (width >= variables.$screen-desktop) {
     right: 370px;
