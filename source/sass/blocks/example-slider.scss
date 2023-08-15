@@ -1,7 +1,37 @@
 @use "../global/variables.scss";
 
+.example-slider__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-width: 140px;
+  min-height: 280px;
+
+
+  &:first-of-type {
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  &:last-of-type {
+    z-index: 2;
+    overflow: hidden;
+  }
+}
+
 .example-slider__button {
-  align-self: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 4px;
+  height: 100%;
+  background-color: #666666;
+  z-index: 3;
+}
+
+.example-slider__vector {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -10,31 +40,21 @@
   height: 40px;
   border-radius: 50%;
   border: 2px solid #666666;
-  z-index: 0;
-
-  &::before {
-    content: "";
-    width: 4px;
-    background-color: #666666;
-    border-radius: 2px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 256px;
-    z-index: -1;
-  }
-}
-
-.example-slider__vector {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  background-color: #ffffff;
 }
 
 .example-slider__image {
-  @media (width >= variables.$screen-desktop) {
-    width: 280px;
+  object-fit: cover;
+}
+
+.example-slider__picture {
+  position: absolute;
+
+  &--before {
+    right: -125px;
+  }
+
+  &--after {
+    left: -145px;
   }
 }
