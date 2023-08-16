@@ -2,13 +2,13 @@
 
 .services {
   min-width: 320px;
+  width: 100vw;
 }
 
 .services__wrapper {
   margin: 0 auto;
   padding: 0 20px;
   padding-top: 20px;
-  width: 100vw;
 
   @media (width >= variables.$screen-tablet) {
     width: 100vw;
