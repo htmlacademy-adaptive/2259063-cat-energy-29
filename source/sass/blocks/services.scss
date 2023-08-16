@@ -8,18 +8,15 @@
   margin: 0 auto;
   padding: 0 20px;
   padding-top: 20px;
-  // width: 320px;
   width: 100vw;
 
   @media (width >= variables.$screen-tablet) {
-    // width: 768px;
     width: 100vw;
     padding: 0 30px;
     padding-top: 20px;
   }
 
   @media (width >= variables.$screen-desktop) {
-    // width: 1440px;
     width: 100vw;
     padding: 0 110px;
     padding-top: 20px;
@@ -45,6 +42,7 @@
   align-items: center;
   gap: 20px;
   position: relative;
+  word-break: break-all;
 
   @media (width >= variables.$screen-tablet) {
     font-size: 36px;
@@ -56,6 +54,8 @@
     font-size: 36px;
     line-height: 36px;
     gap: 62px;
+    justify-content: flex-start;
+    padding-left: 25px;
   }
 
   // Набор массы (зеленый круг и декоративный кот)
@@ -76,8 +76,8 @@
       }
 
       @media (width >= variables.$screen-desktop) {
-        // left: 9px;
-        // transform: scale(2);
+        position: static;
+        transform: scale(2);
       }
     }
   }
@@ -100,8 +100,8 @@
       }
 
       @media (width >= variables.$screen-desktop) {
-        // left: 9px;
-        // // transform: scale(2);
+        position: static;
+        transform: scale(2);
       }
     }
   }
@@ -122,7 +122,7 @@
   }
 
   @media (width >= variables.$screen-desktop) {
-    width: 570px;
+    width: 39.5vw;
 
     &:not(:last-of-type) {
       margin: 0;
@@ -161,5 +161,14 @@
     width: 44.3vw;
     padding-top: 24px;
     padding-bottom: 48px;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
+    width: 31.7vw;
+    padding-top: 73px;
+    padding-bottom: 23px;
   }
 }

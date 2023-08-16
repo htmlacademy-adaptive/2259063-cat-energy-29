@@ -44,6 +44,12 @@
     top: 243px;
     z-index: -1;
   }
+
+  @media (width >= variables.$screen-desktop) {
+    top: 42%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .hero__button {
@@ -51,15 +57,19 @@
   display: flex;
   justify-content: center;
   white-space: nowrap;
+  font-size: 14px;
+  line-height: 18px;
 
   @media (width >= variables.$screen-tablet) {
     display: block;
     min-width: 244px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 14px;
   }
 
   @media (width >= variables.$screen-desktop) {
     display: block;
-    margin-top: 52px;
   }
 }
 
@@ -117,14 +127,5 @@
     height: 609px;
     display: flex;
     align-items: flex-start;
-  }
-
-  @media (width >= variables.$screen-desktop) {
-    right: 370px;
-    top: 10px;
-    width: 552px;
-    height: 78%;
-    position: absolute;
-    padding: 0;
   }
 }

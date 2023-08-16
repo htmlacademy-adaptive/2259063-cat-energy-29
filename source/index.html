@@ -53,7 +53,8 @@
         <h2 class="visually-hidden">Программы питания</h2>
         <ul class="services__list list">
           <li class="services__item services__item--slim">
-            <h3 class="services__title title services__title--slim">Похудение</h3>
+            <h3 class="services__title title services__title--slim services-title"><span
+                class="services-title__description">Похудение</span></h3>
             <p class="services__description services__description--slim description">Ваш кот весит больше собаки и почти
               утратил способность лазить
               по деревьям?
@@ -66,7 +67,8 @@
             </a>
           </li>
           <li class="services__item services__item--fat">
-            <h3 class="services__title title services__title--fat">Набор массы</h3>
+            <h3 class="services__title title services__title--fat services-title"><span
+                class="services-title__description">Набор массы</span></h3>
             <p class="services__description services__description--fat description">Заработать авторитет среди дворовых
               котов и даже собак? Серия
               Cat Energy
@@ -123,30 +125,33 @@
           Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
           по
           16 часов в день. </p>
-        <dl class="example__result result">
-          <div class="result__item">
-            <dt class="result__value">5 кг</dt>
-            <dd class="result__description">снижение веса</dd>
-          </div>
-          <div class="result__item">
-            <dt class="result__value">60 дней</dt>
-            <dd class="result__description">затрачено времени</dd>
-          </div>
-        </dl>
-        <p class="example__result-price example-result-price description">Затраты на питание: <span
-            class="example-result-price__info"></span> 15 000 РУБ.</p>
+        <div class="example__container">
+          <dl class="example__result result">
+            <div class="result__item">
+              <dt class="result__value">5 кг</dt>
+              <dd class="result__description">снижение веса</dd>
+            </div>
+            <div class="result__item">
+              <dt class="result__value">60 дней</dt>
+              <dd class="result__description">затрачено времени</dd>
+            </div>
+          </dl>
+          <p class="example__result-price example-result-price description">Затраты на питание: <span
+              class="example-result-price__info"></span> 15 000 РУБ.</p>
+        </div>
         <div class="example__slider example-slider">
           <div class="example-slider__container">
             <picture class="example-slider__picture example-slider__picture--before">
               <source media="(min-width: 768px)"
-                srcset="img/slider_cat_before_tablet.png 1x, img/slider_cat_before_tablet@2x.png 2x">
+                srcset="img/slider_cat_before_tablet.png 1x, img/slider_cat_before_tablet@2x.png 2x" width="560"
+                height="512">
               <img class="example-slider__image" src="img/slider_cat_before_mobile.png"
                 srcset="img/slider_cat_before_mobile@2x.png 2x" width="280" height="256" alt="результат 'ДО'">
             </picture>
           </div>
           <button class="example-slider__button button example-slider-button">
-            <svg class="example-slider__vector" aria-hidden="true" focusable="false" width="24" height="18" viewBox="0 0 24 18" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg class="example-slider__vector" aria-hidden="true" focusable="false" width="24" height="18"
+              viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 0L0 9L8 18V0Z" fill="#666666" />
               <path d="M24 9L16 0V18L24 9Z" fill="#666666" />
             </svg>
@@ -154,7 +159,8 @@
           <div class="example-slider__container">
             <picture class="example-slider__picture example-slider__picture--after">
               <source media="(min-width: 768px)"
-                srcset="img/slider_cat_after_tablet.png 1x, img/slider_cat_after_tablet@2x.png 2x">
+                srcset="img/slider_cat_after_tablet.png 1x, img/slider_cat_after_tablet@2x.png 2x" width="560"
+                height="512">
               <img class="example-slider__image" src="img/slider_cat_after_mobile.png"
                 srcset="img/slider_cat_after_mobile@2x.png 2x" width="280" height="256" alt="результат 'ПОСЛЕ'">
             </picture>

@@ -6,7 +6,7 @@
 
   @media (width >= variables.$screen-tablet) {
     background-color: #ffffff;
-    background-image: linear-gradient(#ffffff 597px, #eaeaea 597px);
+    background-image: linear-gradient(to bottom, #ffffff 555px, #eaeaea 555px);
   }
 
   @media (width >= variables.$screen-desktop) {
@@ -16,6 +16,10 @@
 
 .example__result {
   padding-top: 20px;
+
+  @media (width >= variables.$screen-desktop) {
+    padding-bottom: 55px;
+  }
 }
 
 .example__wrapper {
@@ -37,6 +41,17 @@
     padding-left: 110px;
     padding-right: 110px;
     position: relative;
+  }
+}
+
+.example__container {
+  @media (width >= variables.$screen-tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    display: block;
   }
 }
 
@@ -78,16 +93,6 @@
   padding-top: 34px;
   padding-bottom: 20px;
 
-  @media (width >= variables.$screen-tablet) {
-    position: absolute;
-    right: 0;
-    top: 210px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    gap: 9px;
-  }
-
   @media (width >= variables.$screen-desktop) {
     display: flex;
     flex-wrap: nowrap;
@@ -102,7 +107,7 @@
   justify-content: center;
 
   @media (width >= variables.$screen-tablet) {
-    padding-top: 99px;
+    margin-top: 99px;
   }
 
   @media (width >= variables.$screen-desktop) {

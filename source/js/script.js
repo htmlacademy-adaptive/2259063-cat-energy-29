@@ -7,5 +7,3 @@ button.onclick = function () {
   menu.classList.toggle('main-nav__list--close');
   button.classList.toggle('main-nav__toggle--opened');
 }
-
-
