@@ -18,7 +18,7 @@
 
     @media (width >= variables.$screen-desktop) {
       padding-top: 0;
-      width: calc(100%  / 2);
+      width: calc(100% / 2);
     }
   }
 }
@@ -44,6 +44,7 @@
 .contacts-owner__container {
   @media (width >= variables.$screen-desktop) {
     display: flex;
+    flex-wrap: wrap;
     gap: 81px;
     align-items: center;
     padding-top: 76px;

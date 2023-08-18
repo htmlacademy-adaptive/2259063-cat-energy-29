@@ -4,7 +4,7 @@
   min-width: 320px;
   position: relative;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-    url("../img/index_background_green_mobile.png"), linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
+    url("../img/index_background_green.png"), linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: inherit;
@@ -12,17 +12,20 @@
 
   @media (width >= variables.$screen-tablet) {
     background-image: none;
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+        url("../img/index_background_green@2x.png"), linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
+    }
   }
 }
 
 .hero__container {
-  width: 320px;
+  width: 100vw;
   margin: 0 auto;
   padding: 0 20px;
   text-align: center;
 
   @media (width >= variables.$screen-tablet) {
-    width: 768px;
     padding: 0 30px;
     text-align: left;
     padding-bottom: 528px;
@@ -30,7 +33,6 @@
   }
 
   @media (width >= variables.$screen-desktop) {
-    width: 1440px;
     height: 694px;
     padding: 0 110px;
     text-align: left;

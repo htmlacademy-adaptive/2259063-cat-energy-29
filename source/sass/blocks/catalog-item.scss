@@ -32,13 +32,13 @@
   }
 }
 
-.catalog-item__container {
-  padding: 0 20px;
+// .catalog-item__container {
+//   padding: 0 20px;
 
-  @media (width >= variables.$screen-tablet) {
-    padding: 0;
-  }
-}
+//   @media (width >= variables.$screen-tablet) {
+//     padding: 0;
+//   }
+// }
 
 .catalog-item__container-card {
   display: grid;

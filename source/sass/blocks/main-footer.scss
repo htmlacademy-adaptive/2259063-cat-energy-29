@@ -5,20 +5,17 @@
 }
 
 .main-footer__wrapper {
-  // width: 320px;
   width: 100vw;
   margin: 0 auto;
   padding: 40px 20px;
 
   @media (width >= variables.$screen-tablet) {
-    width: 768px;
     display: flex;
     align-items: center;
     padding: 40px 30px;
   }
 
   @media (width >= variables.$screen-desktop) {
-    width: 1440px;
     display: flex;
     align-items: center;
     padding: 40px 110px;

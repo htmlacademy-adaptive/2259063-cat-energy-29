@@ -1,0 +1,12 @@
+@use "../global/variables.scss";
+
+.catalog-container {
+  margin: 0 auto;
+
+  @media (width >= variables.$screen-desktop) {
+    display: flex;
+    padding: 0 110px;
+    width: 100vw;
+    gap: 80px;
+  }
+}

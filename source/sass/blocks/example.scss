@@ -48,6 +48,7 @@
   @media (width >= variables.$screen-tablet) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 99px;
   }
 
   @media (width >= variables.$screen-desktop) {
@@ -107,7 +108,7 @@
   justify-content: center;
 
   @media (width >= variables.$screen-tablet) {
-    margin-top: 99px;
+    // margin-top: 99px;
   }
 
   @media (width >= variables.$screen-desktop) {

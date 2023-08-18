@@ -9,6 +9,10 @@
     align-items: center;
     justify-content: space-between;
   }
+
+  @media (width >= variables.$screen-desktop) {
+    min-width: 42.4vw
+  }
 }
 
 .catalog-additional-item__description-container {
@@ -39,4 +43,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (width >= variables.$screen-desktop) {
+    width: 651px;
+
+  }
 }

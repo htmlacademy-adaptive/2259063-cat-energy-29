@@ -2,22 +2,23 @@
 
 .program {
   min-width: 320px;
+  width: 100vw;
 }
 
 .program__wrapper {
   margin: 0 auto;
   padding: 0 20px;
   padding-top: 27px;
-  width: 320px;
+  width: 100vw;
 
   @media (width >= variables.$screen-tablet) {
-    width: 768px;
+    width: 100vw;
     padding: 0 30px;
     padding-top: 65px;
   }
 
   @media (width >= variables.$screen-desktop) {
-    width: 1440px;
+    width: 100vw;
     padding: 0 110px;
     padding-top: 74px;
   }
