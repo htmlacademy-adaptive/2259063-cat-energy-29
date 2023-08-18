@@ -64,6 +64,7 @@
     flex-wrap: wrap;
     font-size: 18px;
     line-height: 24px;
+    margin: 0;
   }
 
   @media (width >= variables.$screen-desktop) {
@@ -102,6 +103,10 @@
   padding: 22px;
   display: block;
   position: relative;
+
+  &:hover {
+    opacity: .6;
+  }
 
   @media (width >= variables.$screen-tablet) {
     padding: 0;

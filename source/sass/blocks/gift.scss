@@ -1,30 +1,27 @@
 @use "../global/variables.scss";
 
 .gift {
-  min-width: 320px;
-  width: 100vw;
 
   @media (width >= variables.$screen-desktop) {
-    min-width: none;
-    width: 245px;
-    padding-top: 98px;
+
   }
 }
 
 .gift__wrapper {
   position: relative;
   margin: 0 auto;
-  width: 100vw;
+  // width: 100vw;
   min-height: 290px;
-  padding: 0 20px;
+  // padding: 0 20px;
 
   @media (width >= variables.$screen-tablet) {
     min-height: 200px;
     padding: 0 30px;
+    width: 94vw;
   }
 
   @media (width >= variables.$screen-desktop) {
-    width: 17vw;
+    width: 15.5vw;
     max-width: 320px;
     padding: 0;
   }
@@ -51,7 +48,7 @@
   }
 }
 
-.gift__descrition {
+.gift__description {
   display: flex;
   flex-direction: column;
   gap: 48px;

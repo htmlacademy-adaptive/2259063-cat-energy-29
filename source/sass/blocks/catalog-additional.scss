@@ -13,6 +13,7 @@
   margin: 0 auto;
   padding: 0 20px;
   width: 100vw;
+  min-width: 320px;
 
   @media (width >= variables.$screen-tablet) {
     padding: 0 30px;
@@ -20,12 +21,24 @@
 
   @media (width >= variables.$screen-desktop) {
     padding: 0 110px;
+    padding-bottom: 87px;
   }
 }
 
-// .catalog-additional__list {
-//   width: 62.22vw;
-// }
+.catalog-additional__container {
+  @media (width >= variables.$screen-desktop) {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+  }
+}
+
+.catalog-additional__list {
+  @media (width >= variables.$screen-desktop) {
+    width: 62.2vw;
+    margin: 0;
+  }
+}
 
 .catalog-additional__item {
   padding-top: 13px;
@@ -39,10 +52,6 @@
   }
 
   @media (width >= variables.$screen-desktop) {
-    // display: grid;
-    // grid-template-columns: 610px 244px;
-    // grid-template-rows: auto;
-    // column-gap: 40px;
     padding-left: 0;
     padding-right: 0;
     padding-top: 15px;
@@ -67,6 +76,7 @@
 
   @media (width >= variables.$screen-desktop) {
     padding-left: 0;
+    margin-bottom: 44px;
   }
 
   &::after {
@@ -94,7 +104,6 @@
   color: #000000;
   background-color: #ffffff;
   padding-right: 10px;
-  padding-left: 20px;
 
   @media (width >= variables.$screen-tablet) {
     font-size: 36px;

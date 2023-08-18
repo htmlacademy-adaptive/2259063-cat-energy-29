@@ -22,10 +22,15 @@
 .page__body--index {
   @media (width >= variables.$screen-desktop) {
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      url("../img/index_background_green.png"), linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
+      url("../img/index_background_desktop.png"), linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
     background-repeat: no-repeat;
     background-position: right;
     background-position-y: top;
     background-size: 51% 694px, auto 694px, 51% 694px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+        url("../img/index_background_desktop@2x.png"), linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
+    }
   }
 }
