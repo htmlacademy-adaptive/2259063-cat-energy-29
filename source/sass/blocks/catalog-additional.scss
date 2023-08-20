@@ -3,10 +3,6 @@
 .catalog-additional {
   min-width: 320px;
   width: 100vw;
-
-  @media (width >= variables.$screen-desktop) {
-    // width: fit-content;
-  }
 }
 
 .catalog-additional__wrapper {

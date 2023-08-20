@@ -11,6 +11,7 @@
   padding-bottom: 49px;
   padding-top: 20px;
   width: 100vw;
+  min-width: 320px;
 
   @media (width >= variables.$screen-tablet) {
     padding-left: 30px;

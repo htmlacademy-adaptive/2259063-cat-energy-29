@@ -1,29 +1,5 @@
 @use "../global/variables.scss";
 
-.example-slider__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  min-width: 140px; //Убрать потом!!!! Пересмотреть полностью слайдер!
-  min-height: 280px;
-
-  @media (width >= variables.$screen-tablet) {
-    min-width: 280px;
-    min-height: 512px;
-  }
-
-  &:first-of-type {
-    z-index: 1;
-    overflow: hidden;
-  }
-
-  &:last-of-type {
-    z-index: 2;
-    overflow: hidden;
-  }
-}
-
 .example-slider__button {
   position: absolute;
   top: 50%;
@@ -54,33 +30,16 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  // width: 40px;
-  // height: 40px;
-  // background-color: #ffffff;
-  // border-radius: 50%;
-  // border: 2px solid #666666;
 }
 
 .example-slider__image {
   object-fit: cover;
-}
-
-.example-slider__picture {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   &--before {
-    right: -125px;
-
-    @media (width >= variables.$screen-tablet) {
-      right: -270px;
-    }
-  }
-
-  &--after {
-    left: -145px;
-
-    @media (width >= variables.$screen-tablet) {
-      left: -280px;
-    }
+    width: 50%;
   }
 }

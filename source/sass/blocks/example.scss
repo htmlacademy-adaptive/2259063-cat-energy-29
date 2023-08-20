@@ -105,17 +105,18 @@
 }
 
 .example__slider {
-  display: flex;
   position: relative;
-  justify-content: center;
+  min-width: 280px;
+  min-height: 256px;
 
   @media (width >= variables.$screen-tablet) {
-    // margin-top: 99px;
+    min-height: 512px;
   }
 
   @media (width >= variables.$screen-desktop) {
     position: absolute;
     right: 0;
     top: 53px;
+    min-width: 560px;
   }
 }

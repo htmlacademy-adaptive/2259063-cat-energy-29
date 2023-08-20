@@ -10,6 +10,7 @@
   padding: 0 20px;
   padding-top: 20px;
   width: 100vw;
+  min-width: 320px;
 
   @media (width >= variables.$screen-tablet) {
     padding: 0 30px;
