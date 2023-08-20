@@ -32,6 +32,7 @@
   @media (width >= variables.$screen-tablet) {
     font-size: 60px;
     line-height: 60px;
+    padding-bottom: 84px;
   }
 }
 
@@ -57,7 +58,18 @@
     min-height: 511px;
     position: relative;
     &:not(:last-of-type) {
-      background-image: linear-gradient(#ffffff 81px, #ebebeb 81px);
+      &::before {
+        content: "";
+        background-color: #f2f2f2;
+        width: 100%;
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top: 81px;
+        bottom: 0;
+        left: 0;
+      }
+      // background-image: linear-gradient(#ffffff 81px, #ebebeb 81px);
     }
     padding-bottom: 40px;
     padding-left: 37px;
@@ -68,10 +80,8 @@
     width: calc((100% - 220px) / 4);
 
     &:last-of-type {
-      max-height: 435px;
       display: flex;
       align-items: end;
-      align-self: self-end;
     }
   }
 }
@@ -85,3 +95,5 @@
     margin-bottom: 87px;
   }
 }
+
+

@@ -29,14 +29,19 @@
   @media (width >= variables.$screen-desktop) {
     display: flex;
     gap: 80px;
-    align-items: center;
+    align-items: flex-start;
   }
 }
 
 .catalog-additional__list {
+  @media (width >= variables.$screen-tablet) {
+    padding-bottom: 70px;
+  }
+
   @media (width >= variables.$screen-desktop) {
     width: 62.2vw;
     margin: 0;
+    padding: 0;
   }
 }
 
@@ -47,18 +52,15 @@
   border-bottom: 1px solid #ebebeb;
 
   @media (width >= variables.$screen-tablet) {
-    padding-left: 38px;
-    padding-right: 38px;
+    padding: 28px 38px;
   }
 
   @media (width >= variables.$screen-desktop) {
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 17px 1px;
     display: flex;
     gap: 40px;
     justify-content: space-between;
+    align-items: center;
   }
 }
 
