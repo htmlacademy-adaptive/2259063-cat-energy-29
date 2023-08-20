@@ -11,7 +11,7 @@
     justify-content: space-between;
     gap: 94px;
     align-items: center;
-    width: 768px;
+    width: 100vw;
     padding: 0 30px;
   }
 
@@ -20,7 +20,7 @@
     justify-content: space-between;
     gap: 543px;
     align-items: center;
-    min-width: 1440px;
+    width: 100vw;
     padding: 0 110px;
   }
 }
@@ -46,7 +46,7 @@
   color: #000000;
   text-transform: uppercase;
 
-  @media (width <= variables.$screen-tablet) {
+  @media (width < variables.$screen-tablet) {
     position: absolute;
     background-color: #ffffff;
     width: 100%;
@@ -63,6 +63,7 @@
     flex-wrap: wrap;
     font-size: 18px;
     line-height: 24px;
+    margin: 0;
   }
 
   @media (width >= variables.$screen-desktop) {
@@ -81,7 +82,6 @@
       }
     }
   }
-
 }
 
 .main-nav__item {
@@ -91,9 +91,17 @@
     border-top: 1px solid #e6e6e6;
   }
 
+  &:last-child {
+    border-bottom: 1px solid #e6e6e6;
+  }
+
   @media (width >= variables.$screen-tablet) {
     &:not(:first-child) {
       border-top: none;
+    }
+
+    &:last-child {
+      border-bottom: none;
     }
   }
 }
@@ -102,6 +110,14 @@
   padding: 22px;
   display: block;
   position: relative;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (width >= variables.$screen-tablet) {
     padding: 0;
@@ -121,8 +137,6 @@
     padding: 0;
   }
 }
-
-
 
 .main-nav__toggle {
   background-color: #ffffff;

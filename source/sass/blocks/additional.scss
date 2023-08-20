@@ -2,6 +2,7 @@
 
 .additional__label:not(:last-of-type) {
   padding-bottom: 13px;
+
   @media (width >= variables.$screen-tablet) {
     padding-bottom: 0;
   }
@@ -9,6 +10,7 @@
 
 .additional__label:last-of-type {
   margin-bottom: 34px;
+
   @media (width >= variables.$screen-tablet) {
     margin-bottom: 0;
   }
@@ -16,6 +18,7 @@
 
 .additional__label:first-of-type {
   padding-top: 34px;
+
   @media (width >= variables.$screen-tablet) {
     padding-top: 0;
   }
@@ -32,7 +35,6 @@
   }
 
   @media (width >= variables.$screen-desktop) {
-    display: flex;
-
+    grid-template-columns: auto auto auto auto;
   }
 }

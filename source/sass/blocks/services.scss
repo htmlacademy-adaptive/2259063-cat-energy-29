@@ -2,22 +2,22 @@
 
 .services {
   min-width: 320px;
+  width: 100vw;
 }
 
 .services__wrapper {
   margin: 0 auto;
   padding: 0 20px;
   padding-top: 20px;
-  width: 320px;
+  width: 100vw;
+  min-width: 320px;
 
   @media (width >= variables.$screen-tablet) {
-    width: 768px;
     padding: 0 30px;
     padding-top: 20px;
   }
 
   @media (width >= variables.$screen-desktop) {
-    width: 1440px;
     padding: 0 110px;
     padding-top: 20px;
   }
@@ -42,114 +42,66 @@
   align-items: center;
   gap: 20px;
   position: relative;
+  word-break: break-all;
 
   @media (width >= variables.$screen-tablet) {
     font-size: 36px;
     line-height: 36px;
+    justify-content: space-between;
   }
 
   @media (width >= variables.$screen-desktop) {
     font-size: 36px;
     line-height: 36px;
     gap: 62px;
+    justify-content: flex-start;
+    padding-left: 25px;
   }
 
   // Набор массы (зеленый круг и декоративный кот)
   &--fat {
-    &::after {
+    &::before {
       content: "";
       background-image: url("../img/cat_weight.svg");
       background-repeat: no-repeat;
       min-width: 67px;
-      min-height: 28px;
-      display: block;
-      position: absolute;
-      z-index: 1;
-      left: -9px;
-
-      @media (width >= variables.$screen-tablet) {
-        left: 481px;
-        top: 62px;
-        transform: scale(4);
-      }
-
-      @media (width >= variables.$screen-desktop) {
-        left: 9px;
-        transform: scale(2);
-      }
-    }
-
-    &::before {
-      content: "";
-      min-width: 50px;
       min-height: 50px;
       display: block;
-      background-color: #68b738;
-      border-radius: 50%;
-      position: relative;
 
       @media (width >= variables.$screen-tablet) {
-        min-width: 200px;
-        min-height: 200px;
         position: absolute;
-        right: 0;
-        top: 0;
+        transform: scale(4);
+        right: 10%;
+        top: 80px;
       }
 
       @media (width >= variables.$screen-desktop) {
-        min-width: 100px;
-        min-height: 100px;
-        position: relative;
+        position: static;
+        transform: scale(2);
       }
     }
   }
 
   // Похудение (зеленый круг и декоративный кот)
   &--slim {
-    &::after {
+    &::before {
       content: "";
       background-image: url("../img/cat_slim.svg");
       background-repeat: no-repeat;
       min-width: 50px;
-      min-height: 50px;
+      min-height: 53px;
       display: block;
-      position: absolute;
-      z-index: 1;
-      left: 9px;
 
       @media (width >= variables.$screen-tablet) {
-        left: 521px;
-        top: 62px;
-        transform: scale(4);
-      }
-
-      @media (width >= variables.$screen-desktop) {
-        left: 9px;
-        transform: scale(2);
-      }
-    }
-
-    &::before {
-      content: "";
-      min-width: 50px;
-      min-height: 50px;
-      display: block;
-      background-color: #68b738;
-      border-radius: 50%;
-      position: relative;
-
-      @media (width >= variables.$screen-tablet) {
-        min-width: 200px;
-        min-height: 200px;
         position: absolute;
-        right: 0;
-        top: 0;
+        transform: scale(4);
+        right: 10%;
+        top: 80px;
       }
 
       @media (width >= variables.$screen-desktop) {
-        min-width: 100px;
-        min-height: 100px;
-        position: relative;
+        position: static;
+        transform: scale(2);
       }
     }
   }
@@ -170,7 +122,7 @@
   }
 
   @media (width >= variables.$screen-desktop) {
-    width: 570px;
+    width: 39.5vw;
 
     &:not(:last-of-type) {
       margin: 0;
@@ -206,8 +158,17 @@
     font-size: 16px;
     line-height: 24px;
     border-bottom: none;
-    width: 340px;
+    width: 44.3vw;
     padding-top: 24px;
     padding-bottom: 48px;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
+    width: 31.7vw;
+    padding-top: 73px;
+    padding-bottom: 23px;
   }
 }

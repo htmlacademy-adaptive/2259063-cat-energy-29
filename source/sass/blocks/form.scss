@@ -20,6 +20,7 @@
   @media (width >= variables.$screen-tablet) {
     font-size: 20px;
     min-width: 282px;
+    padding: 14px;
   }
 
   @media (width >= variables.$screen-desktop) {

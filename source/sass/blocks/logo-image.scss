@@ -1,15 +1,11 @@
 @use "../global/variables.scss";
 
-.logo-image__tablet {
-  display: none;
-
-  @media (width >= variables.$screen-tablet) {
-    display: block;
-  }
-}
-
 .logo-image__mobile {
-  @media (width >= variables.$screen-tablet) {
-    display: none;
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }

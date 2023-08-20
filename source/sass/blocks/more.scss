@@ -1,13 +1,26 @@
 @use "../global/variables.scss";
 
 .more {
-  @media (width >= variables.$screen-tablet) {
-    border: 2px solid #f2f2f2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  &::before {
+    @media (width >= variables.$screen-tablet) {
+      content: "";
+      width: 100%;
+      display: block;
+      position: absolute;
+      z-index: -1;
+      top: 81px;
+      bottom: 0;
+      left: 0;
+      border: 2px solid #f2f2f2;
+    }
   }
 }
 
 .more__container {
-  width: 170px;
   margin: 0 auto;
 }
 
@@ -46,4 +59,5 @@
 .more__button {
   display: flex;
   justify-content: center;
+  padding: 3px;
 }

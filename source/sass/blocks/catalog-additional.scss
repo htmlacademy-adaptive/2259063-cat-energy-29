@@ -2,27 +2,43 @@
 
 .catalog-additional {
   min-width: 320px;
+  width: 100vw;
 }
 
 .catalog-additional__wrapper {
   margin: 0 auto;
   padding: 0 20px;
-  width: 320px;
+  width: 100vw;
+  min-width: 320px;
 
   @media (width >= variables.$screen-tablet) {
     padding: 0 30px;
-    width: 768px;
   }
 
   @media (width >= variables.$screen-desktop) {
     padding: 0 110px;
-    width: 1440px;
+    padding-bottom: 87px;
+  }
+}
+
+.catalog-additional__container {
+  @media (width >= variables.$screen-desktop) {
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
   }
 }
 
 .catalog-additional__list {
-  max-width: 896px;
-  margin-left: 0;
+  @media (width >= variables.$screen-tablet) {
+    padding-bottom: 70px;
+  }
+
+  @media (width >= variables.$screen-desktop) {
+    width: 62.2vw;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .catalog-additional__item {
@@ -32,19 +48,15 @@
   border-bottom: 1px solid #ebebeb;
 
   @media (width >= variables.$screen-tablet) {
-    padding-left: 38px;
-    padding-right: 38px;
+    padding: 28px 38px;
   }
 
   @media (width >= variables.$screen-desktop) {
-    display: grid;
-    grid-template-columns: 610px 244px;
-    grid-template-rows: auto;
-    column-gap: 40px;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 17px 1px;
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -62,6 +74,7 @@
 
   @media (width >= variables.$screen-desktop) {
     padding-left: 0;
+    margin-bottom: 44px;
   }
 
   &::after {
@@ -74,6 +87,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
+
+    @media (width >= variables.$screen-tablet) {
+      width: 100vw;
+    }
   }
 }
 
@@ -85,14 +102,12 @@
   color: #000000;
   background-color: #ffffff;
   padding-right: 10px;
-  padding-left: 20px;
 
   @media (width >= variables.$screen-tablet) {
     font-size: 36px;
     line-height: 36px;
-  }
-
-  @media (width >= variables.$screen-desktop) {
-    padding-left: 0;
+    padding: 0 40px;
+    position: relative;
+    left: -40px;
   }
 }
