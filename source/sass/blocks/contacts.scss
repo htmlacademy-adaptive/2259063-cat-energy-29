@@ -11,15 +11,10 @@
 }
 
 .contacts__wrapper {
-  margin: 0 auto;
-  width: 100vw;
-
-  @media (width >= variables.$screen-tablet) {
-  padding: 0 30px;
-  }
-
   @media (width >= variables.$screen-desktop) {
     padding: 0 110px;
+    max-width: 1440px;
+    margin: 0 auto;
     position: relative;
   }
 }
@@ -39,7 +34,6 @@
     background-color: #ffffff;
     padding: 60px 80px;
     top: 95px;
-    margin-left: 110px;
   }
 }
 

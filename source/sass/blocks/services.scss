@@ -11,6 +11,7 @@
   padding-top: 20px;
   width: 100vw;
   min-width: 320px;
+  max-width: 1440px;
 
   @media (width >= variables.$screen-tablet) {
     padding: 0 30px;
@@ -122,7 +123,7 @@
   }
 
   @media (width >= variables.$screen-desktop) {
-    width: 39.5vw;
+    max-width: 570px;
 
     &:not(:last-of-type) {
       margin: 0;
@@ -167,7 +168,7 @@
     font-size: 16px;
     line-height: 24px;
     border-bottom: none;
-    width: 31.7vw;
+    width: auto;
     padding-top: 73px;
     padding-bottom: 23px;
   }

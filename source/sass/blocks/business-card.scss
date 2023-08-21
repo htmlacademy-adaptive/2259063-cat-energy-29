@@ -2,6 +2,7 @@
 
 .business-card {
   min-height: 112px;
+  max-width: 1440px;
 
   @media (width >= variables.$screen-tablet) {
     min-height: 200px;

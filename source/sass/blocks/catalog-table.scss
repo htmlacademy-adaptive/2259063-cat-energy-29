@@ -14,6 +14,7 @@
 
   @media (width >= variables.$screen-desktop) {
     width: 11.73vw;
+    max-width: 169px;
     border-bottom: 1px solid #cdcdcd;
     padding: 5px 0;
   }

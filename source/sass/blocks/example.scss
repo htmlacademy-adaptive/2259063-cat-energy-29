@@ -28,6 +28,7 @@
   padding: 0 20px;
   padding-top: 49px;
   min-width: 320px;
+  max-width: 1440px;
   width: 100vw;
   padding-bottom: 40px;
   position: relative;
@@ -38,7 +39,6 @@
   }
 
   @media (width >= variables.$screen-desktop) {
-    width: 1440px;
     padding-left: 110px;
     padding-right: 110px;
     position: relative;
@@ -87,7 +87,7 @@
   }
 
   @media (width >= variables.$screen-desktop) {
-    width: 30.3vw;
+    width: 436px;
     padding-bottom: 69px;
   }
 }
@@ -106,17 +106,19 @@
 
 .example__slider {
   position: relative;
-  min-width: 280px;
-  min-height: 256px;
+  display: flex;
+  width: 280px;
+  height: 256px;
+  margin: 0 auto;
 
   @media (width >= variables.$screen-tablet) {
-    min-height: 512px;
+    width: 560px;
+    height: 512px;
   }
 
   @media (width >= variables.$screen-desktop) {
     position: absolute;
     right: 0;
     top: 53px;
-    min-width: 560px;
   }
 }

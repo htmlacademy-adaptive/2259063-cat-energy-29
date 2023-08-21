@@ -5,6 +5,8 @@
   font-size: 20px;
   line-height: 20px;
   position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
 
   @media (width >= variables.$screen-tablet) {
     display: flex;

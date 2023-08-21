@@ -11,7 +11,7 @@
   }
 
   @media (width >= variables.$screen-desktop) {
-    min-width: 42.4vw;
+    width: 610px;
     padding: 0;
   }
 }
@@ -47,7 +47,6 @@
   padding: 3px;
 
   @media (width >= variables.$screen-desktop) {
-    width: 651px;
-
+    width: 244px;
   }
 }

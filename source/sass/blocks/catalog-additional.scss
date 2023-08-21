@@ -9,6 +9,7 @@
   margin: 0 auto;
   padding: 0 20px;
   width: 100vw;
+  max-width: 1440px;
   min-width: 320px;
 
   @media (width >= variables.$screen-tablet) {
@@ -35,7 +36,7 @@
   }
 
   @media (width >= variables.$screen-desktop) {
-    width: 62.2vw;
+    width: 896px;
     margin: 0;
     padding: 0;
   }
