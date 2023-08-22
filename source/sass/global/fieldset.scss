@@ -11,7 +11,7 @@
     padding-top: 26px;
   }
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     padding-top: 0;
   }
 }

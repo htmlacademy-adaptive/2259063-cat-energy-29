@@ -11,7 +11,7 @@
 }
 
 .contacts__wrapper {
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     padding: 0 110px;
     max-width: 1440px;
     margin: 0 auto;
@@ -24,11 +24,11 @@
   padding: 26px 20px;
   justify-content: space-between;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     padding: 60px 40px;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     position: absolute;
     width: 565px;
     background-color: #ffffff;
@@ -44,7 +44,7 @@
   color: #111111;
   text-transform: uppercase;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     width: 163px;
   }
 }
@@ -54,7 +54,7 @@
   font-size: 14px;
   line-height: 20px;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     width: 157px;
   }
 }
@@ -65,13 +65,13 @@
   object-fit: cover;
   display: block;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     height: 400px;
     width: 100%;
     object-fit: cover;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     height: 400px;
     width: 100%;
     object-fit: cover;

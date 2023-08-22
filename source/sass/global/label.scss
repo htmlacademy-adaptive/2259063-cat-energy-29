@@ -10,7 +10,7 @@
   white-space: nowrap;
   cursor: pointer;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     font-size: 20px;
   }
 }
@@ -31,7 +31,7 @@
       border-radius: 50%;
       border: 1px solid #cdcdcd;
 
-      @media (width >= variables.$screen-tablet) {
+      @media (min-width: variables.$screen-tablet) {
         width: 40px;
         height: 40px;
       }
@@ -47,7 +47,7 @@
       left: 8.5px;
       display: none;
 
-      @media (width >= variables.$screen-tablet) {
+      @media (min-width: variables.$screen-tablet) {
         width: 18px;
         height: 18px;
         left: 11px;
@@ -64,7 +64,7 @@
       height: 30px;
       border: 1px solid #cdcdcd;
 
-      @media (width >= variables.$screen-tablet) {
+      @media (min-width: variables.$screen-tablet) {
         width: 40px;
         height: 40px;
       }
@@ -82,7 +82,7 @@
       left: 8.5px;
       display: none;
 
-      @media (width >= variables.$screen-tablet) {
+      @media (min-width: variables.$screen-tablet) {
         width: 26px;
         height: 26px;
         left: 8px;

@@ -11,14 +11,15 @@
   padding-top: 27px;
   width: 100vw;
   max-width: 1440px;
+  min-width: 320px;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     width: 100vw;
     padding: 0 30px;
     padding-top: 65px;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     width: 100vw;
     padding: 0 110px;
     padding-top: 74px;
@@ -26,25 +27,25 @@
 }
 
 .program__form {
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     display: flex;
     flex-direction: column;
     gap: 65px;
     padding-bottom: 60px;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     padding-bottom: 80px;
   }
 }
 
 .program__container {
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     width: 628px;
     margin: 0 auto;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     width: auto;
     margin: auto;
   }
@@ -57,12 +58,12 @@
   color: #000000;
   padding-bottom: 37px;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     font-size: 60px;
     line-height: 60px;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     padding-top: 0;
   }
 }
@@ -75,7 +76,7 @@
   text-transform: uppercase;
   width: 226px;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     font-size: 20px;
     line-height: 30px;
     width: 323px;

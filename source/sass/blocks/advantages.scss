@@ -14,12 +14,12 @@
   min-width: 320px;
   max-width: 1440px;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     padding-left: 30px;
     padding-right: 30px;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     padding-left: 110px;
     padding-right: 110px;
     margin-bottom: 20px;
@@ -33,7 +33,7 @@
   color: #000000;
   padding-bottom: 36px;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     font-size: 60px;
     line-height: 60px;
   }
@@ -42,7 +42,7 @@
 .advantages__list {
   counter-reset: section 0;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     display: grid;
     grid-template-columns: repeat(2, 30vw);
     grid-template-rows: repeat(2, 280px);
@@ -50,7 +50,7 @@
     grid-row-gap: 37px;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     display: flex;
     flex-wrap: wrap;
     gap: 94px;
@@ -60,7 +60,7 @@
 .advantages__item {
   position: relative;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     &::before {
       counter-increment: section 1;
       content: counter(section);
@@ -79,12 +79,12 @@
   &:not(:last-child) {
     padding-bottom: 20px;
 
-    @media (width >= variables.$screen-tablet) {
+    @media (min-width: variables.$screen-tablet) {
       padding: 0;
     }
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     width: 230px;
   }
 }
@@ -97,7 +97,7 @@
   display: flex;
   gap: 20px;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     display: block;
     font-size: 16px;
     line-height: 24px;
@@ -113,7 +113,7 @@
     min-height: 60px;
     background-color: #68b738;
 
-    @media (width >= variables.$screen-tablet) {
+    @media (min-width: variables.$screen-tablet) {
       width: 80px;
       height: 80px;
       margin-bottom: 31px;
@@ -131,7 +131,7 @@
     min-height: 60px;
     background-color: #68b738;
 
-    @media (width >= variables.$screen-tablet) {
+    @media (min-width: variables.$screen-tablet) {
       width: 80px;
       height: 80px;
       margin-bottom: 31px;
@@ -149,7 +149,7 @@
     min-height: 60px;
     background-color: #68b738;
 
-    @media (width >= variables.$screen-tablet) {
+    @media (min-width: variables.$screen-tablet) {
       width: 80px;
       height: 80px;
       margin-bottom: 31px;
@@ -167,7 +167,7 @@
     min-height: 60px;
     background-color: #68b738;
 
-    @media (width >= variables.$screen-tablet) {
+    @media (min-width: variables.$screen-tablet) {
       width: 80px;
       height: 80px;
       margin-bottom: 31px;

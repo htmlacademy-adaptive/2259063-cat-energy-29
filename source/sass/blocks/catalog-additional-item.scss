@@ -3,14 +3,14 @@
 .catalog-additional-item__container {
   display: block;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     padding-bottom: 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     width: 610px;
     padding: 0;
   }
@@ -20,7 +20,7 @@
   padding-top: 13px;
   padding-bottom: 15px;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     padding: 0;
     display: flex;
     gap: 49px;
@@ -35,7 +35,7 @@
   color: #222222;
   text-transform: uppercase;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     font-size: 20px;
   }
 }
@@ -46,7 +46,7 @@
   align-items: center;
   padding: 3px;
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     width: 244px;
   }
 }

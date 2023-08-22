@@ -13,19 +13,19 @@
   min-width: 320px;
   max-width: 1440px;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     padding: 0 30px;
     padding-top: 20px;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     padding: 0 110px;
     padding-top: 20px;
   }
 }
 
 .services__list {
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     display: flex;
     gap: 80px;
     flex-wrap: wrap;
@@ -45,13 +45,13 @@
   position: relative;
   word-break: break-all;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     font-size: 36px;
     line-height: 36px;
     justify-content: space-between;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     font-size: 36px;
     line-height: 36px;
     gap: 62px;
@@ -68,15 +68,16 @@
       min-width: 67px;
       min-height: 50px;
       display: block;
+      background-size: contain;
 
-      @media (width >= variables.$screen-tablet) {
+      @media (min-width: variables.$screen-tablet) {
         position: absolute;
         transform: scale(4);
         right: 10%;
         top: 80px;
       }
 
-      @media (width >= variables.$screen-desktop) {
+      @media (min-width: variables.$screen-desktop) {
         position: static;
         transform: scale(2);
       }
@@ -93,14 +94,14 @@
       min-height: 53px;
       display: block;
 
-      @media (width >= variables.$screen-tablet) {
+      @media (min-width: variables.$screen-tablet) {
         position: absolute;
         transform: scale(4);
         right: 10%;
         top: 80px;
       }
 
-      @media (width >= variables.$screen-desktop) {
+      @media (min-width: variables.$screen-desktop) {
         position: static;
         transform: scale(2);
       }
@@ -118,11 +119,11 @@
     margin-bottom: 20px;
   }
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     padding: 80px 63px 80px 52px;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     max-width: 570px;
 
     &:not(:last-of-type) {
@@ -138,11 +139,14 @@
   text-transform: uppercase;
   color: #000000;
   padding-top: 15px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     font-size: 20px;
     line-height: 20px;
+    gap: 25px;
   }
 }
 
@@ -155,7 +159,7 @@
   padding-bottom: 23px;
   border-bottom: 1px solid #d9d9d9;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     font-size: 16px;
     line-height: 24px;
     border-bottom: none;
@@ -164,7 +168,7 @@
     padding-bottom: 48px;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     font-size: 16px;
     line-height: 24px;
     border-bottom: none;

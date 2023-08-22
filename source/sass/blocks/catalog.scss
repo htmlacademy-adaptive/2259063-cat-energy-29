@@ -12,11 +12,11 @@
   max-width: 1440px;
   padding: 0 20px;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     padding: 0 30px;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     padding: 0 110px;
     position: relative;
   }
@@ -30,7 +30,7 @@
   padding-bottom: 41px;
   padding-top: 27px;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     font-size: 60px;
     line-height: 60px;
     padding-bottom: 84px;
@@ -38,14 +38,14 @@
 }
 
 .catalog__list {
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     display: flex;
     flex-wrap: wrap;
     gap: 60px;
     margin-bottom: 70px;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     gap: 63px 80px;
   }
 }
@@ -54,10 +54,11 @@
   padding-top: 19px;
   padding-bottom: 25px;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     width: calc((100% - 60px) / 2);
     min-height: 511px;
     position: relative;
+
     &:not(:last-of-type) {
       &::before {
         content: "";
@@ -76,7 +77,7 @@
     padding-right: 37px;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     width: calc((100% - 220px) / 4);
     max-width: 245px;
 
@@ -88,11 +89,11 @@
 }
 
 .catalog__additional {
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     margin-bottom: 70px;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     margin-bottom: 87px;
   }
 }

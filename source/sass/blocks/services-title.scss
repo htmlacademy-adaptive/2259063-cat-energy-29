@@ -3,7 +3,7 @@
 .services-title__description {
   word-break: break-all;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     width: 50vw;
   }
 }

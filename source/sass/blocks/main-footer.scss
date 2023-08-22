@@ -10,13 +10,13 @@
   margin: 0 auto;
   padding: 40px 20px;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     display: flex;
     align-items: center;
     padding: 40px 30px;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     display: flex;
     align-items: center;
     padding: 40px 110px;
@@ -42,7 +42,7 @@
     fill: #6b6b6b;
   }
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     border: none;
     padding: 0;
   }
