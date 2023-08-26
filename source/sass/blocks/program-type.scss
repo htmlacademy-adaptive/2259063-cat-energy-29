@@ -20,12 +20,11 @@
 }
 
 .program-type__label:hover .label__name {
- &::before {
-  border-color: #bababa;
- }
+  &::before {
+    border-color: #bababa;
+  }
 }
 
 .program-type-label__input:not(:disabled) + .label__name:active {
-  opacity: .3;
+  opacity: 0.3;
 }
-

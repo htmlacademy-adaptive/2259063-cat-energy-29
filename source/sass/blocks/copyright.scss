@@ -5,14 +5,13 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
-  pointer-events:painted;
 
   @media (min-width: variables.$screen-tablet) {
     padding: 0;
     gap: 23px;
   }
 
-  &:after {
+  &::after {
     content: "";
     display: block;
     mask-image: url("../img/sprite.svg#academy_footer_logo");
@@ -23,13 +22,13 @@
 }
 
 .copyright:hover {
-  &:after {
+  &::after {
     background-color: #68b738;
   }
 }
 
 .copyright:active {
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .copyright__text {

@@ -5,9 +5,3 @@ let invalid = function () {
     document.getElementsByClassName('contacts-owner__label')[0].style.backgroundColor = "#ff8282"
   }
 }
-
-
-
-
-
-
