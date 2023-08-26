@@ -6,6 +6,11 @@
 
   @media (min-width: variables.$screen-tablet) {
     min-height: 200px;
+    padding: 60px 69px;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    padding: 60px 80px;
   }
 }
 
@@ -34,7 +39,7 @@
     width: 157px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 18px;
   }
 
   @media (min-width: variables.$screen-desktop) {

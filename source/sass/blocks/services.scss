@@ -15,12 +15,10 @@
 
   @media (min-width: variables.$screen-tablet) {
     padding: 0 30px;
-    padding-top: 20px;
   }
 
   @media (min-width: variables.$screen-desktop) {
     padding: 0 110px;
-    padding-top: 20px;
   }
 }
 
@@ -31,6 +29,10 @@
     flex-wrap: wrap;
     padding-bottom: 71px;
   }
+}
+
+.services__item:nth-of-type(2) .services__link {
+  padding-left: 19px;
 }
 
 .services__title {
@@ -56,19 +58,23 @@
     line-height: 36px;
     gap: 62px;
     justify-content: flex-start;
-    padding-left: 25px;
   }
 
   // Набор массы (зеленый круг и декоративный кот)
   &--fat {
     gap: 4px;
 
+    @media (min-width: variables.$screen-desktop) { //Выравнивает рассотяние от кота до заголовка по ПП
+      gap: 47px;
+    }
+
+
     &::before {
       content: "";
       background-image: url("../img/sprite.svg#cat_weight");
       background-repeat: no-repeat;
-      min-width: 67px;
-      min-height: 50px;
+      width: 67px;
+      height: 50px;
       display: block;
       background-size: contain;
       position: relative;
@@ -76,14 +82,17 @@
 
       @media (min-width: variables.$screen-tablet) {
         position: absolute;
-        transform: scale(4);
-        right: 10%;
-        top: 80px;
+        width: 268px;
+        height: 200px;
+        left: 61%;
+        top: 17px;
       }
 
       @media (min-width: variables.$screen-desktop) {
         position: static;
-        transform: scale(2);
+        width: 134px;
+        height: 100px;
+        flex-shrink: 0;
       }
     }
   }
@@ -94,20 +103,27 @@
       content: "";
       background-image: url("../img/sprite.svg#cat_slim");
       background-repeat: no-repeat;
-      min-width: 50px;
-      min-height: 53px;
+      width: 50px;
+      height: 53px;
       display: block;
+      display: block;
+      background-size: contain;
+      position: relative;
+      left: -8px;
 
       @media (min-width: variables.$screen-tablet) {
         position: absolute;
-        transform: scale(4);
-        right: 10%;
-        top: 80px;
+        width: 200px;
+        height: 211px;
+        left: 66%;
+        top: 0;
       }
 
       @media (min-width: variables.$screen-desktop) {
         position: static;
-        transform: scale(2);
+        width: 100px;
+        height: 106px;
+        flex-shrink: 0;
       }
     }
   }
@@ -121,19 +137,24 @@
   position: relative;
 
   &:not(:last-of-type) {
-    margin-bottom: 20px;
+    margin-bottom: 31px;
   }
 
-  &--fat {
-    padding-top: 26px;
+  &:nth-child(2) {
+
+    @media (min-width: variables.$screen-desktop) {
+      padding-top: 43px;
+      padding-left: 33px;
+    }
   }
 
   @media (min-width: variables.$screen-tablet) {
-    padding: 80px 63px 80px 52px;
+    padding: 76px 63px 59px 52px;
   }
 
   @media (min-width: variables.$screen-desktop) {
     max-width: 570px;
+   padding-top: 38px;
 
     &:not(:last-of-type) {
       margin: 0;
@@ -156,6 +177,10 @@
     font-size: 20px;
     line-height: 20px;
     gap: 25px;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    padding-top: 10px;
   }
 
   &::after {
@@ -192,7 +217,7 @@
     border-bottom: none;
     width: 44.3vw;
     padding-top: 24px;
-    padding-bottom: 48px;
+    padding-bottom: 42px;
   }
 
   @media (min-width: variables.$screen-desktop) {
@@ -200,7 +225,13 @@
     line-height: 24px;
     border-bottom: none;
     width: auto;
-    padding-top: 73px;
+    padding-top: 40px;
     padding-bottom: 23px;
+  }
+
+  &--fat {
+    @media (min-width: variables.$screen-desktop) {
+      padding-left: 19px;
+    }
   }
 }

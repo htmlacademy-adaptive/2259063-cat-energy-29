@@ -11,19 +11,19 @@
   @media (min-width: variables.$screen-tablet) {
     display: flex;
     justify-content: space-between;
-    gap: 94px;
+    gap: 90px;
     align-items: center;
-    // width: 100vw;
     padding: 0 30px;
+    padding-top: 12px;
   }
 
   @media (min-width: variables.$screen-desktop) {
     display: flex;
     justify-content: space-between;
-    gap: 543px;
+    // gap: 538px;
     align-items: center;
-    // width: 100vw;
     padding: 0 110px;
+    padding-top: 42px;
   }
 }
 
@@ -48,7 +48,7 @@
   color: #000000;
   text-transform: uppercase;
 
-  @media (max-width: variables.$screen-tablet) {
+  @media (max-width: 767px) {
     position: absolute;
     background-color: #ffffff;
     width: 100%;
@@ -61,7 +61,7 @@
 
   @media (min-width: variables.$screen-tablet) {
     display: flex;
-    gap: 33px;
+    gap: 36px;
     flex-wrap: wrap;
     font-size: 18px;
     line-height: 24px;
@@ -70,12 +70,13 @@
 
   @media (min-width: variables.$screen-desktop) {
     display: flex;
-    gap: 31.5px;
+    gap: 34.5px;
     flex-wrap: wrap;
     font-size: 20px;
 
     &--index {
       color: #ffffff;
+      max-width: 480px;
     }
 
     &--index .main-nav__link {

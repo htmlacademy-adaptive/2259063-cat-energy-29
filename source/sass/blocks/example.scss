@@ -11,7 +11,7 @@
   }
 
   @media (min-width: variables.$screen-desktop) {
-    background-image: linear-gradient(#ffffff 185px, #eaeaea 185px);
+    background-image: linear-gradient(#ffffff 191px, #eaeaea 191px);
   }
 }
 
@@ -19,7 +19,7 @@
   padding-top: 20px;
 
   @media (min-width: variables.$screen-desktop) {
-    padding-bottom: 55px;
+    padding-bottom: 24px;
   }
 }
 
@@ -34,14 +34,15 @@
   position: relative;
 
   @media (min-width: variables.$screen-tablet) {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 39px 30px 99px 30px;
   }
 
   @media (min-width: variables.$screen-desktop) {
     padding-left: 110px;
     padding-right: 110px;
     position: relative;
+    padding-top: 56px;
+    padding-bottom: 55px;
   }
 }
 
@@ -54,6 +55,7 @@
 
   @media (min-width: variables.$screen-desktop) {
     display: block;
+    margin-bottom: 0;
   }
 }
 
@@ -67,6 +69,7 @@
   @media (min-width: variables.$screen-tablet) {
     font-size: 60px;
     line-height: 60px;
+    padding-bottom: 63px;
   }
 
   @media (min-width: variables.$screen-desktop) {
@@ -83,12 +86,12 @@
   @media (min-width: variables.$screen-tablet) {
     font-size: 16px;
     line-height: 24px;
-    padding-bottom: 55px;
+    padding-bottom: 33px;
   }
 
   @media (min-width: variables.$screen-desktop) {
     width: 436px;
-    padding-bottom: 69px;
+    padding-bottom: 46px;
   }
 }
 
@@ -118,7 +121,7 @@
 
   @media (min-width: variables.$screen-desktop) {
     position: absolute;
-    right: 0;
-    top: 53px;
+    right: 109px;
+    top: 56px;
   }
 }
