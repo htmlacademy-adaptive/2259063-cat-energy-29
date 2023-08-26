@@ -2,13 +2,13 @@
 
 .catalog-additional {
   min-width: 320px;
-  width: 100vw;
+  // width: 100vw;
 }
 
 .catalog-additional__wrapper {
   margin: 0 auto;
   padding: 0 20px;
-  width: 100vw;
+  // width: 100vw;
   max-width: 1440px;
   min-width: 320px;
 
@@ -85,7 +85,7 @@
 
   &::after {
     content: "";
-    width: 100%;
+    width: 100vw;
     height: 2px;
     background-color: #68b738;
     position: absolute;
@@ -95,7 +95,7 @@
     z-index: -1;
 
     @media (min-width: variables.$screen-tablet) {
-      width: 100vw;
+      // width: 100vw;
     }
   }
 }
@@ -113,8 +113,8 @@
     font-size: 36px;
     line-height: 36px;
     padding: 0 40px;
-    position: relative;
-    left: -40px;
+    // position: relative;
+    // left: -40px;
   }
 }
 

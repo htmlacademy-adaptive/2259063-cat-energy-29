@@ -2,14 +2,14 @@
 
 .advantages {
   min-width: 320px;
-  width: 100vw;
+  // width: 100vw;
 }
 
 .advantages__wrapper {
   margin: 0 auto;
   padding: 0 20px;
   padding-bottom: 49px;
-  padding-top: 20px;
+  padding-top: 25px;
   width: 100vw;
   min-width: 320px;
   max-width: 1440px;
@@ -31,7 +31,7 @@
   font-size: 36px;
   line-height: 36px;
   color: #000000;
-  padding-bottom: 36px;
+  padding-bottom: 41px;
 
   @media (min-width: variables.$screen-tablet) {
     font-size: 60px;
@@ -92,7 +92,7 @@
 .advantages__desctription {
   font-family: variables.$font-lato;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 19.7px;
   text-align: left;
   display: flex;
   gap: 20px;
@@ -106,9 +106,10 @@
   &--useful::before {
     content: "";
     display: block;
-    background-image: url("../img/advantages_useful.svg");
+    background-image: url("../img/sprite.svg#advantages_useful");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 30px 32px;
     min-width: 60px;
     min-height: 60px;
     background-color: #68b738;
@@ -124,9 +125,10 @@
   &--powder::before {
     content: "";
     display: block;
-    background-image: url("../img/advantages_powder.svg");
+    background-image: url("../img/sprite.svg#advantages_powder");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 27px 29px;
     min-width: 60px;
     min-height: 60px;
     background-color: #68b738;
@@ -142,9 +144,10 @@
   &--meals::before {
     content: "";
     display: block;
-    background-image: url("../img/advantages_meals.svg");
+    background-image: url("../img/sprite.svg#advantages_meals");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 25px 30px;
     min-width: 60px;
     min-height: 60px;
     background-color: #68b738;
@@ -160,9 +163,10 @@
   &--result::before {
     content: "";
     display: block;
-    background-image: url("../img/advantages_result.svg");
+    background-image: url("../img/sprite.svg#advantages_result");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 26px 31px;
     min-width: 60px;
     min-height: 60px;
     background-color: #68b738;

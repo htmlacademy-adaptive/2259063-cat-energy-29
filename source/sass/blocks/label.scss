@@ -72,14 +72,14 @@
 
     &::after {
       content: "";
-      background-image: url("../img/checkbox.svg");
+      background-image: url("../img/sprite.svg#checkbox");
       background-repeat: no-repeat;
       background-size: contain;
       width: 18px;
       height: 14px;
       border-radius: 50%;
       position: absolute;
-      left: 8.5px;
+      left: 8px;
       display: none;
 
       @media (min-width: variables.$screen-tablet) {
@@ -91,16 +91,4 @@
   }
 }
 
-// Задаёт взаимодействие с радиокнопками
-.program-type-label__input[type="radio"]:checked + .label__name {
-  &::after {
-    display: block;
-  }
-}
 
-// Задаёт взаимодействие с чекбоксами
-.additional__input[type="checkbox"]:checked + .label__name {
-  &::after {
-    display: block;
-  }
-}

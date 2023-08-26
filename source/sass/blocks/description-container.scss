@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     width: 285px;
   }
 }
@@ -16,12 +16,12 @@
   line-height: 14px;
   color: #444444;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     font-size: 16px;
     line-height: 20px;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     min-width: 42px;
   }
 }

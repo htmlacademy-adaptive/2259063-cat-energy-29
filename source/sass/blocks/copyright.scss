@@ -5,11 +5,31 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
+  pointer-events:painted;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     padding: 0;
     gap: 23px;
   }
+
+  &:after {
+    content: "";
+    display: block;
+    mask-image: url("../img/sprite.svg#academy_footer_logo");
+    background-color: #666666;
+    width: 27px;
+    height: 34px;
+  }
+}
+
+.copyright:hover {
+  &:after {
+    background-color: #68b738;
+  }
+}
+
+.copyright:active {
+  opacity: .3;
 }
 
 .copyright__text {

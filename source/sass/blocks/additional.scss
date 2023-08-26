@@ -38,3 +38,25 @@
     grid-template-columns: auto auto auto auto;
   }
 }
+
+// Задаёт взаимодействие с чекбоксами
+.additional__input[type="checkbox"]:checked + .label__name {
+  &::after {
+    display: block;
+  }
+}
+
+.additional__label:hover .label__name {
+  &::before {
+   border-color: #bababa;
+  }
+ }
+
+ .additional__input:not(:disabled) + .label__name:active {
+  opacity: .3;
+ }
+
+ .additional__input:disabled + .label__name {
+  opacity: .15;
+ }
+

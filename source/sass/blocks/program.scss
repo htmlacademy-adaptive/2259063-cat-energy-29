@@ -2,25 +2,25 @@
 
 .program {
   min-width: 320px;
-  width: 100vw;
+  // width: 100vw;
 }
 
 .program__wrapper {
   margin: 0 auto;
   padding: 0 20px;
   padding-top: 27px;
-  width: 100vw;
+  // width: 100vw;
   max-width: 1440px;
   min-width: 320px;
 
   @media (min-width: variables.$screen-tablet) {
-    width: 100vw;
+    // width: 100vw;
     padding: 0 30px;
     padding-top: 65px;
   }
 
   @media (min-width: variables.$screen-desktop) {
-    width: 100vw;
+    // width: 100vw;
     padding: 0 110px;
     padding-top: 74px;
   }
@@ -41,13 +41,13 @@
 
 .program__container {
   @media (min-width: variables.$screen-tablet) {
-    width: 628px;
+    // width: 628px;
     margin: 0 auto;
   }
 
   @media (min-width: variables.$screen-desktop) {
-    width: auto;
-    margin: auto;
+    // width: auto;
+    // margin: auto;
   }
 }
 

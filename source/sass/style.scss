@@ -5,12 +5,12 @@
 @use "global/visually-hidden.scss";
 @use "global/description.scss";
 @use "global/fieldset.scss";
-@use "global/label.scss";
 @use "global/title.scss";
 @use "global/list.scss";
 @use "global/input.scss";
 @use "global/variables.scss";
 // Блоки
+@use "blocks/label.scss";
 @use "blocks/button.scss";
 @use "blocks/main-header";
 @use "blocks/additional.scss";
@@ -48,3 +48,4 @@
 @use "blocks/services-title.scss";
 @use "blocks/catalog-container.scss";
 @use "blocks/logo-image.scss";
+@use "blocks/program-type-label.scss";
