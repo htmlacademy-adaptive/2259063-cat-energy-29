@@ -6,7 +6,7 @@
   justify-content: center;
 
   &::before {
-    @media (width >= variables.$screen-tablet) {
+    @media (min-width: variables.$screen-tablet) {
       content: "";
       width: 100%;
       display: block;
@@ -22,6 +22,17 @@
 
 .more__container {
   margin: 0 auto;
+
+  &::before {
+    content: "";
+    background-image: url("../img/sprite.svg#catalog_plus");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .more__title {
@@ -34,7 +45,7 @@
   text-align: center;
   padding-top: 23px;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     padding: 0 18px 23px 18px;
     font-size: 20px;
     line-height: 24px;
@@ -50,7 +61,7 @@
   text-align: center;
   padding-bottom: 21px;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     font-size: 16px;
     line-height: 18px;
   }

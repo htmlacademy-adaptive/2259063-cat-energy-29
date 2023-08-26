@@ -5,22 +5,24 @@
   font-size: 20px;
   line-height: 20px;
   position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     display: flex;
     justify-content: space-between;
     gap: 94px;
     align-items: center;
-    width: 100vw;
+    // width: 100vw;
     padding: 0 30px;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     display: flex;
     justify-content: space-between;
     gap: 543px;
     align-items: center;
-    width: 100vw;
+    // width: 100vw;
     padding: 0 110px;
   }
 }
@@ -32,7 +34,7 @@
   padding: 13px 20px 15px 20px;
   border-bottom: 1px solid #d9d9d9;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     border: none;
     padding: 13px 0 15px 0;
   }
@@ -46,7 +48,7 @@
   color: #000000;
   text-transform: uppercase;
 
-  @media (width < variables.$screen-tablet) {
+  @media (max-width: variables.$screen-tablet) {
     position: absolute;
     background-color: #ffffff;
     width: 100%;
@@ -57,7 +59,7 @@
     }
   }
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     display: flex;
     gap: 33px;
     flex-wrap: wrap;
@@ -66,7 +68,7 @@
     margin: 0;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     display: flex;
     gap: 31.5px;
     flex-wrap: wrap;
@@ -95,7 +97,7 @@
     border-bottom: 1px solid #e6e6e6;
   }
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     &:not(:first-child) {
       border-top: none;
     }
@@ -119,7 +121,7 @@
     opacity: 0.3;
   }
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     padding: 0;
 
     &--active::after {
@@ -133,7 +135,7 @@
     }
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     padding: 0;
   }
 }
@@ -146,18 +148,22 @@
   padding: 0;
   cursor: pointer;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     display: none;
   }
 
   &--closed {
-    background-image: url("../img/navigation_menu_close.svg");
+    background-image: url("../img/sprite.svg#navigation_menu_close");
+    width: 20px;
+    height: 20px;
     background-position: center;
     background-repeat: no-repeat;
   }
 
   &--opened {
-    background-image: url("../img/navigation_menu_open.svg");
+    background-image: url("../img/sprite.svg#navigation_menu_open");
+    width: 24px;
+    height: 24px;
     background-position: center;
     background-repeat: no-repeat;
   }

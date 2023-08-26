@@ -3,14 +3,14 @@
 .example {
   background-color: #eaeaea;
   min-width: 320px;
-  width: 100vw;
+  // width: 100vw;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     background-color: #ffffff;
     background-image: linear-gradient(to bottom, #ffffff 618px, #eaeaea 618px);
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     background-image: linear-gradient(#ffffff 185px, #eaeaea 185px);
   }
 }
@@ -18,7 +18,7 @@
 .example__result {
   padding-top: 20px;
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     padding-bottom: 55px;
   }
 }
@@ -26,19 +26,19 @@
 .example__wrapper {
   margin: 0 auto;
   padding: 0 20px;
-  padding-top: 49px;
+  padding-top: 26px;
   min-width: 320px;
+  max-width: 1440px;
   width: 100vw;
   padding-bottom: 40px;
   position: relative;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     padding-left: 30px;
     padding-right: 30px;
   }
 
-  @media (width >= variables.$screen-desktop) {
-    width: 1440px;
+  @media (min-width: variables.$screen-desktop) {
     padding-left: 110px;
     padding-right: 110px;
     position: relative;
@@ -46,13 +46,13 @@
 }
 
 .example__container {
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     display: flex;
     justify-content: space-between;
     margin-bottom: 99px;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     display: block;
   }
 }
@@ -64,12 +64,12 @@
   color: #000000;
   padding-bottom: 40px;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     font-size: 60px;
     line-height: 60px;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     padding-bottom: 146px;
   }
 }
@@ -80,14 +80,14 @@
   line-height: 18px;
   text-align: left;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     font-size: 16px;
     line-height: 24px;
     padding-bottom: 55px;
   }
 
-  @media (width >= variables.$screen-desktop) {
-    width: 30.3vw;
+  @media (min-width: variables.$screen-desktop) {
+    width: 436px;
     padding-bottom: 69px;
   }
 }
@@ -96,7 +96,7 @@
   padding-top: 34px;
   padding-bottom: 20px;
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     display: flex;
     flex-wrap: nowrap;
     position: static;
@@ -106,17 +106,19 @@
 
 .example__slider {
   position: relative;
-  min-width: 280px;
-  min-height: 256px;
+  display: flex;
+  width: 280px;
+  height: 256px;
+  margin: 0 auto;
 
-  @media (width >= variables.$screen-tablet) {
-    min-height: 512px;
+  @media (min-width: variables.$screen-tablet) {
+    width: 560px;
+    height: 512px;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     position: absolute;
     right: 0;
     top: 53px;
-    min-width: 560px;
   }
 }

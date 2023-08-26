@@ -4,7 +4,7 @@
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     border: 1px solid #d9d9d9;
   }
 }
@@ -14,7 +14,17 @@
   flex-direction: column;
   gap: 13px;
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     margin: 0;
   }
+}
+
+.program-type__label:hover .label__name {
+  &::before {
+    border-color: #bababa;
+  }
+}
+
+.program-type-label__input:not(:disabled) + .label__name:active {
+  opacity: 0.3;
 }

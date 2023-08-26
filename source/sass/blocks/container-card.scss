@@ -3,22 +3,25 @@
 .container-card__link {
   display: flex;
   justify-content: center;
-  align-self: center;
+  align-items: center;
   margin: 0 auto;
 
-  @media (width >= variables.$screen-tablet) {
+
+  @media (min-width: variables.$screen-tablet) {
     width: 200px;
     height: 210px;
+    align-items: flex-end;
+    padding-bottom: 22px;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     width: 169px;
   }
 }
 
 .container-card__image {
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     width: 100%;
-    height: 100%;
+    height: auto;
   }
 }

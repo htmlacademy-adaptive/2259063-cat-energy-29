@@ -5,17 +5,18 @@
 }
 
 .main-footer__wrapper {
-  width: 100vw;
+  // width: 100vw;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 40px 20px;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     display: flex;
     align-items: center;
     padding: 40px 30px;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     display: flex;
     align-items: center;
     padding: 40px 110px;
@@ -32,7 +33,16 @@
   padding-bottom: 20px;
   border-bottom: 1px solid #d9d9d9;
 
-  @media (width >= variables.$screen-tablet) {
+  &:hover .main-footer__logo-name path,
+  &:focus .main-footer__logo-name path {
+    fill: #3e3e3e;
+  }
+
+  &:active .main-footer__logo-name path {
+    fill: #6b6b6b;
+  }
+
+  @media (min-width: variables.$screen-tablet) {
     border: none;
     padding: 0;
   }

@@ -3,7 +3,7 @@
 .catalog-container {
   margin: 0 auto;
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     display: flex;
     padding: 0 110px;
     width: 100vw;

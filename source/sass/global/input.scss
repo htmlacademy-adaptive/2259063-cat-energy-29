@@ -11,7 +11,7 @@
   color: #444444;
   flex-grow: 1;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     font-size: 20px;
     line-height: auto;
   }

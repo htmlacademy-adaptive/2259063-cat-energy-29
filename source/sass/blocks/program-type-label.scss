@@ -1,0 +1,17 @@
+.program-type-label__input:focus + .label__name {
+  &::before {
+    outline: 2px solid #444444;
+    outline-offset: 2px;
+  }
+}
+
+// Задаёт взаимодействие с радиокнопками
+.program-type-label__input[type="radio"]:checked + .label__name {
+  &::after {
+    display: block;
+  }
+}
+
+.program-type-label__input:disabled + .label__name {
+  opacity: 0.15;
+}

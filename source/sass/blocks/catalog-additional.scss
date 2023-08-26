@@ -2,27 +2,28 @@
 
 .catalog-additional {
   min-width: 320px;
-  width: 100vw;
+  // width: 100vw;
 }
 
 .catalog-additional__wrapper {
   margin: 0 auto;
   padding: 0 20px;
-  width: 100vw;
+  // width: 100vw;
+  max-width: 1440px;
   min-width: 320px;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     padding: 0 30px;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     padding: 0 110px;
     padding-bottom: 87px;
   }
 }
 
 .catalog-additional__container {
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     display: flex;
     gap: 80px;
     align-items: flex-start;
@@ -30,12 +31,14 @@
 }
 
 .catalog-additional__list {
-  @media (width >= variables.$screen-tablet) {
+  padding-bottom: 35px;
+
+  @media (min-width: variables.$screen-tablet) {
     padding-bottom: 70px;
   }
 
-  @media (width >= variables.$screen-desktop) {
-    width: 62.2vw;
+  @media (min-width: variables.$screen-desktop) {
+    width: 896px;
     margin: 0;
     padding: 0;
   }
@@ -45,13 +48,16 @@
   padding-top: 13px;
   padding-bottom: 19px;
   border-top: 1px solid #ebebeb;
-  border-bottom: 1px solid #ebebeb;
 
-  @media (width >= variables.$screen-tablet) {
+  &:last-child {
+    border-bottom: 1px solid #ebebeb;
+  }
+
+  @media (min-width: variables.$screen-tablet) {
     padding: 28px 38px;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     padding: 17px 1px;
     display: flex;
     gap: 40px;
@@ -68,18 +74,18 @@
   padding-top: 25px;
   padding-bottom: 36px;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     padding-left: 40px;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     padding-left: 0;
     margin-bottom: 44px;
   }
 
   &::after {
     content: "";
-    width: 100%;
+    width: 100vw;
     height: 2px;
     background-color: #68b738;
     position: absolute;
@@ -88,8 +94,8 @@
     transform: translate(-50%, -50%);
     z-index: -1;
 
-    @media (width >= variables.$screen-tablet) {
-      width: 100vw;
+    @media (min-width: variables.$screen-tablet) {
+      // width: 100vw;
     }
   }
 }
@@ -103,11 +109,15 @@
   background-color: #ffffff;
   padding-right: 10px;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     font-size: 36px;
     line-height: 36px;
     padding: 0 40px;
-    position: relative;
-    left: -40px;
+    // position: relative;
+    // left: -40px;
   }
+}
+
+.catalog-additional__gift {
+  padding-bottom: 35px;
 }

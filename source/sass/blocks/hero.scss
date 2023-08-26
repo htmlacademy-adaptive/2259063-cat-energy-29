@@ -4,7 +4,8 @@
   min-width: 320px;
   position: relative;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-    url("../img/index_background_mobile.png"), linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
+    url("../img/index_background_mobile.png"),
+    linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: inherit;
@@ -12,23 +13,26 @@
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      url("../img/index_background_mobile@2x.png"), linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
+      url("../img/index_background_mobile@2x.png"),
+      linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
   }
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     background-image: none;
   }
 }
+
 .hero__container {
-  width: 100vw;
+  // width: 100vw;
   min-width: 320px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
   text-align: center;
   display: flex;
   flex-direction: column;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     padding: 0 30px;
     text-align: left;
     padding-bottom: 528px;
@@ -36,25 +40,26 @@
     display: block;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     height: 694px;
     padding: 0 110px;
+    padding-left: 190px;
     text-align: left;
     position: relative;
   }
 }
 
 .hero__image-container {
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     position: absolute;
     top: 243px;
     z-index: -1;
   }
 
-  @media (width >= variables.$screen-desktop) {
-    top: 42%;
-    left: 56%;
+  @media (min-width: variables.$screen-desktop) {
     transform: translate(-50%, -50%);
+    top: 34%;
+    right: 5.5%;
   }
 }
 
@@ -66,7 +71,7 @@
   font-size: 14px;
   line-height: 18px;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     display: block;
     min-width: 244px;
     font-size: 20px;
@@ -74,7 +79,7 @@
     padding: 14px;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     display: block;
   }
 }
@@ -89,7 +94,7 @@
   position: relative;
   z-index: 1;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     font-size: 60px;
     line-height: 60px;
     color: #000000;
@@ -97,7 +102,7 @@
     padding-top: 65px;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     padding-top: 110px;
   }
 }
@@ -110,10 +115,11 @@
   text-transform: uppercase;
   color: #ffffff;
   padding-top: 25px;
+  padding-bottom: 29px;
   position: relative;
   z-index: 1;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     font-size: 20px;
     line-height: 20px;
     color: #000000;
@@ -124,14 +130,20 @@
 }
 
 .hero__image {
-  padding-top: 29px;
   position: relative;
   z-index: 1;
   margin: 0 auto;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     width: 709px;
     height: 609px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    width: 552px;
+    height: 499px;
     display: flex;
     align-items: flex-start;
   }

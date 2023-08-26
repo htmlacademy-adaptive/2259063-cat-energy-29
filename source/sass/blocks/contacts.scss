@@ -2,7 +2,6 @@
 
 .contacts {
   min-width: 320px;
-  width: 100vw;
   position: relative;
 
   &--grey {
@@ -11,15 +10,10 @@
 }
 
 .contacts__wrapper {
-  margin: 0 auto;
-  width: 100vw;
-
-  @media (width >= variables.$screen-tablet) {
-  padding: 0 30px;
-  }
-
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     padding: 0 110px;
+    max-width: 1440px;
+    margin: 0 auto;
     position: relative;
   }
 }
@@ -29,17 +23,16 @@
   padding: 26px 20px;
   justify-content: space-between;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     padding: 60px 40px;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     position: absolute;
     width: 565px;
     background-color: #ffffff;
     padding: 60px 80px;
     top: 95px;
-    margin-left: 110px;
   }
 }
 
@@ -50,7 +43,7 @@
   color: #111111;
   text-transform: uppercase;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     width: 163px;
   }
 }
@@ -60,7 +53,7 @@
   font-size: 14px;
   line-height: 20px;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     width: 157px;
   }
 }
@@ -71,15 +64,8 @@
   object-fit: cover;
   display: block;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     height: 400px;
-    width: 100%;
-    object-fit: cover;
-  }
-
-  @media (width >= variables.$screen-desktop) {
-    height: 400px;
-    width: 100%;
     object-fit: cover;
   }
 }

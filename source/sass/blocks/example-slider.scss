@@ -9,6 +9,7 @@
   height: 100%;
   background-color: #666666;
   z-index: 3;
+  border-radius: 2px;
 
   &::before {
     content: "";
@@ -23,6 +24,43 @@
     background-color: #ffffff;
     border: 2px solid #666666;
   }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mask-image: url("../img/sprite.svg#slider_button_vector");
+    background-color: #666666;
+    width: 24px;
+    height: 18px;
+  }
+}
+
+.example-slider__button:hover {
+  background-color: #68b738;
+
+  &::before {
+    border-color: #68b738;
+  }
+
+  &::after {
+    background-color: #68b738;
+  }
+}
+
+.example-slider__button:active {
+  background-color: rgba(94, 170, 47, 0.6);
+
+  &::before {
+    border-color: rgba(94, 170, 47, 0.6);
+  }
+
+  &::after {
+    background-color: rgba(94, 170, 47, 0.6);
+  }
 }
 
 .example-slider__vector {
@@ -34,12 +72,16 @@
 
 .example-slider__image {
   object-fit: cover;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
 
   &--before {
-    width: 50%;
+    object-position: left;
+  }
+
+  &--after {
+    object-position: right;
   }
 }

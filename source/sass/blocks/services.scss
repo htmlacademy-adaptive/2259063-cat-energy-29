@@ -2,7 +2,7 @@
 
 .services {
   min-width: 320px;
-  width: 100vw;
+  // width: 100vw;
 }
 
 .services__wrapper {
@@ -11,20 +11,21 @@
   padding-top: 20px;
   width: 100vw;
   min-width: 320px;
+  max-width: 1440px;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     padding: 0 30px;
     padding-top: 20px;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     padding: 0 110px;
     padding-top: 20px;
   }
 }
 
 .services__list {
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     display: flex;
     gap: 80px;
     flex-wrap: wrap;
@@ -44,13 +45,13 @@
   position: relative;
   word-break: break-all;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     font-size: 36px;
     line-height: 36px;
     justify-content: space-between;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     font-size: 36px;
     line-height: 36px;
     gap: 62px;
@@ -60,22 +61,27 @@
 
   // Набор массы (зеленый круг и декоративный кот)
   &--fat {
+    gap: 4px;
+
     &::before {
       content: "";
-      background-image: url("../img/cat_weight.svg");
+      background-image: url("../img/sprite.svg#cat_weight");
       background-repeat: no-repeat;
       min-width: 67px;
       min-height: 50px;
       display: block;
+      background-size: contain;
+      position: relative;
+      left: -8px;
 
-      @media (width >= variables.$screen-tablet) {
+      @media (min-width: variables.$screen-tablet) {
         position: absolute;
         transform: scale(4);
         right: 10%;
         top: 80px;
       }
 
-      @media (width >= variables.$screen-desktop) {
+      @media (min-width: variables.$screen-desktop) {
         position: static;
         transform: scale(2);
       }
@@ -86,20 +92,20 @@
   &--slim {
     &::before {
       content: "";
-      background-image: url("../img/cat_slim.svg");
+      background-image: url("../img/sprite.svg#cat_slim");
       background-repeat: no-repeat;
       min-width: 50px;
       min-height: 53px;
       display: block;
 
-      @media (width >= variables.$screen-tablet) {
+      @media (min-width: variables.$screen-tablet) {
         position: absolute;
         transform: scale(4);
         right: 10%;
         top: 80px;
       }
 
-      @media (width >= variables.$screen-desktop) {
+      @media (min-width: variables.$screen-desktop) {
         position: static;
         transform: scale(2);
       }
@@ -111,18 +117,23 @@
   background-color: #f2f2f2;
   padding: 20px;
   padding-right: 33px;
+  padding-top: 22px;
   position: relative;
 
   &:not(:last-of-type) {
     margin-bottom: 20px;
   }
 
-  @media (width >= variables.$screen-tablet) {
+  &--fat {
+    padding-top: 26px;
+  }
+
+  @media (min-width: variables.$screen-tablet) {
     padding: 80px 63px 80px 52px;
   }
 
-  @media (width >= variables.$screen-desktop) {
-    width: 39.5vw;
+  @media (min-width: variables.$screen-desktop) {
+    max-width: 570px;
 
     &:not(:last-of-type) {
       margin: 0;
@@ -137,24 +148,45 @@
   text-transform: uppercase;
   color: #000000;
   padding-top: 15px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     font-size: 20px;
     line-height: 20px;
+    gap: 25px;
+  }
+
+  &::after {
+    content: "";
+    background-image: url("../img/sprite.svg#icon_arrow_small");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 24px;
+    height: 12px;
+  }
+
+  &:hover {
+    &::after {
+      background-image: url("../img/sprite.svg#icon_arrow_large");
+      width: 32px;
+      height: 12px;
+    }
   }
 }
 
 .services__description {
   font-family: variables.$font-lato;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 18px;
   text-align: left;
   padding-top: 22px;
-  padding-bottom: 23px;
+  padding-bottom: 26px;
   border-bottom: 1px solid #d9d9d9;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     font-size: 16px;
     line-height: 24px;
     border-bottom: none;
@@ -163,11 +195,11 @@
     padding-bottom: 48px;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     font-size: 16px;
     line-height: 24px;
     border-bottom: none;
-    width: 31.7vw;
+    width: auto;
     padding-top: 73px;
     padding-bottom: 23px;
   }

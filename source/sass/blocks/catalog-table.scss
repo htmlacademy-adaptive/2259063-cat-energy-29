@@ -6,14 +6,15 @@
   align-items: center;
   min-width: 140px;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     width: 32.55vw;
     border-bottom: 1px solid #cdcdcd;
     padding: 5px 0;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     width: 11.73vw;
+    max-width: 169px;
     border-bottom: 1px solid #cdcdcd;
     padding: 5px 0;
   }

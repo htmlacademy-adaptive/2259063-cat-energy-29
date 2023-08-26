@@ -5,7 +5,7 @@
   flex-direction: column;
   gap: 14px;
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     gap: 20px;
   }
 }

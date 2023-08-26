@@ -8,14 +8,14 @@
   text-transform: uppercase;
   text-align: center;
 
-  @media (width >= variables.$screen-tablet) {
+  @media (min-width: variables.$screen-tablet) {
     text-align: right;
     font-size: 20px;
     line-height: 20px;
     width: 174px;
   }
 
-  @media (width >= variables.$screen-desktop) {
+  @media (min-width: variables.$screen-desktop) {
     text-align: left;
     font-size: 20px;
     line-height: 20px;
