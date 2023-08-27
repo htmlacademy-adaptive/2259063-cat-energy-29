@@ -1,11 +1,10 @@
 @use "../global/variables.scss";
 
-.form {
-  padding-top: 39px;
-  padding-bottom: 32px;
-}
-
 .form__container {
+  @media (min-width: variables.$screen-tablet) {
+    padding: 0 40px;
+  }
+
   @media (min-width: variables.$screen-desktop) {
     display: flex;
     gap: 80px;
@@ -13,7 +12,6 @@
 }
 
 .form__button {
-  padding: 7px 7px;
   min-width: 280px;
   text-align: center;
 

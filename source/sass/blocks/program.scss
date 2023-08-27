@@ -2,36 +2,36 @@
 
 .program {
   min-width: 320px;
-  // width: 100vw;
 }
 
 .program__wrapper {
   margin: 0 auto;
   padding: 0 20px;
-  padding-top: 27px;
-  // width: 100vw;
+  padding-top: 24px;
   max-width: 1440px;
   min-width: 320px;
 
   @media (min-width: variables.$screen-tablet) {
-    // width: 100vw;
     padding: 0 30px;
-    padding-top: 65px;
+    padding-top: 50px;
   }
 
   @media (min-width: variables.$screen-desktop) {
-    // width: 100vw;
     padding: 0 110px;
     padding-top: 74px;
   }
 }
 
 .program__form {
+  padding-top: 39px;
+  padding-bottom: 32px;
+
   @media (min-width: variables.$screen-tablet) {
     display: flex;
     flex-direction: column;
     gap: 65px;
     padding-bottom: 60px;
+    padding-top: 65px;
   }
 
   @media (min-width: variables.$screen-desktop) {
@@ -41,13 +41,7 @@
 
 .program__container {
   @media (min-width: variables.$screen-tablet) {
-    // width: 628px;
     margin: 0 auto;
-  }
-
-  @media (min-width: variables.$screen-desktop) {
-    // width: auto;
-    // margin: auto;
   }
 }
 
@@ -56,11 +50,13 @@
   font-size: 36px;
   line-height: 40px;
   color: #000000;
-  padding-bottom: 37px;
+  padding-bottom: 35px;
 
   @media (min-width: variables.$screen-tablet) {
     font-size: 60px;
     line-height: 60px;
+    padding-left: 39px;
+    padding-bottom: 54px;
   }
 
   @media (min-width: variables.$screen-desktop) {
@@ -79,6 +75,7 @@
   @media (min-width: variables.$screen-tablet) {
     font-size: 20px;
     line-height: 30px;
-    width: 323px;
+    padding-left: 40px;
+    width: 360px;
   }
 }

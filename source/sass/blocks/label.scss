@@ -21,6 +21,10 @@
   align-items: center;
   gap: 15px;
 
+  @media (min-width: variables.$screen-tablet) {
+    gap: 19px;
+  }
+
   // Радиокнопки
   &--radio {
     &::before {

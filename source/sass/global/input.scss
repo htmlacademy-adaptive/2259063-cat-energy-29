@@ -13,7 +13,8 @@
 
   @media (min-width: variables.$screen-tablet) {
     font-size: 20px;
-    line-height: auto;
+    padding: 12px;
+    padding-left: 19px;
   }
 
   &:hover {
