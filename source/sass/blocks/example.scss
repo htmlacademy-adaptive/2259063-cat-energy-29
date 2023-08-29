@@ -3,7 +3,6 @@
 .example {
   background-color: #eaeaea;
   min-width: 320px;
-  // width: 100vw;
 
   @media (min-width: variables.$screen-tablet) {
     background-color: #ffffff;
@@ -16,17 +15,16 @@
 }
 
 .example__result {
-  padding-top: 20px;
 
   @media (min-width: variables.$screen-desktop) {
-    padding-bottom: 24px;
+    padding-bottom: 50px;
   }
 }
 
 .example__wrapper {
   margin: 0 auto;
   padding: 0 20px;
-  padding-top: 26px;
+  padding-top: 25px;
   min-width: 320px;
   max-width: 1440px;
   width: 100vw;
@@ -34,7 +32,7 @@
   position: relative;
 
   @media (min-width: variables.$screen-tablet) {
-    padding: 39px 30px 99px 30px;
+    padding: 42px 30px 101px 30px;
   }
 
   @media (min-width: variables.$screen-desktop) {
@@ -42,7 +40,7 @@
     padding-right: 110px;
     position: relative;
     padding-top: 56px;
-    padding-bottom: 55px;
+    padding-bottom: 76px;
   }
 }
 
@@ -50,7 +48,7 @@
   @media (min-width: variables.$screen-tablet) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 99px;
+    margin-bottom: 103px;
   }
 
   @media (min-width: variables.$screen-desktop) {
@@ -69,7 +67,7 @@
   @media (min-width: variables.$screen-tablet) {
     font-size: 60px;
     line-height: 60px;
-    padding-bottom: 63px;
+    padding-bottom: 60px;
   }
 
   @media (min-width: variables.$screen-desktop) {
@@ -82,22 +80,27 @@
   font-size: 14px;
   line-height: 18px;
   text-align: left;
+  padding-bottom: 20px;
 
   @media (min-width: variables.$screen-tablet) {
     font-size: 16px;
     line-height: 24px;
-    padding-bottom: 33px;
+    padding-bottom: 55px;
   }
 
   @media (min-width: variables.$screen-desktop) {
     width: 436px;
-    padding-bottom: 46px;
+    padding-bottom: 68px;
   }
 }
 
 .example__result-price {
   padding-top: 34px;
   padding-bottom: 20px;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding: 0;
+  }
 
   @media (min-width: variables.$screen-desktop) {
     display: flex;

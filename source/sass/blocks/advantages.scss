@@ -2,14 +2,13 @@
 
 .advantages {
   min-width: 320px;
-  // width: 100vw;
 }
 
 .advantages__wrapper {
   margin: 0 auto;
   padding: 0 20px;
   padding-bottom: 49px;
-  padding-top: 25px;
+  padding-top: 24px;
   width: 100vw;
   min-width: 320px;
   max-width: 1440px;
@@ -17,13 +16,13 @@
   @media (min-width: variables.$screen-tablet) {
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 49px;
+    padding-top: 48px;
   }
 
   @media (min-width: variables.$screen-desktop) {
     padding-left: 110px;
     padding-right: 110px;
-    margin-bottom: 20px;
+    padding-bottom: 70px;
     padding-top: 4px;
   }
 }
@@ -33,12 +32,16 @@
   font-size: 36px;
   line-height: 36px;
   color: #000000;
-  padding-bottom: 41px;
+  padding-bottom: 44px;
 
   @media (min-width: variables.$screen-tablet) {
     font-size: 60px;
     line-height: 60px;
-    padding-bottom: 33px;
+    padding-bottom: 32px;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    padding-bottom: 31px;
   }
 }
 
@@ -101,7 +104,7 @@
 .advantages__desctription {
   font-family: variables.$font-lato;
   font-size: 14px;
-  line-height: 19.7px;
+  line-height: 19px;
   text-align: left;
   display: flex;
   gap: 20px;
