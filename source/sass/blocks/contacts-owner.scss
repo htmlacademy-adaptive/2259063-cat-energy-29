@@ -62,6 +62,12 @@
   }
 }
 
+.contacts-owner__label:has(input:invalid) {
+  &::before {
+    background-color: #ff8282;
+  }
+}
+
 .contacts-owner__label:not(:last-of-type) {
   padding-bottom: 14px;
 

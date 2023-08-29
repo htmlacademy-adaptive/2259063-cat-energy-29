@@ -48,6 +48,10 @@
   text-transform: uppercase;
 
   @media (max-width: 767px) {
+    &--noscript {
+      position: static; //В случае отключения скриптов перенести свойство в низ селектора
+    }
+
     position: absolute;
     background-color: #ffffff;
     width: 100%;
@@ -165,6 +169,14 @@
     background-image: url("../img/sprite.svg#navigation_menu_open");
     width: 24px;
     height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--noscript { //В случае отключения скрипта задействовать эти свойства
+    background-image: url("../img/sprite.svg#navigation_menu_close");
+    width: 20px;
+    height: 20px;
     background-position: center;
     background-repeat: no-repeat;
   }
