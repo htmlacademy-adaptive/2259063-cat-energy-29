@@ -69,3 +69,9 @@
     object-fit: cover;
   }
 }
+
+.contacts__location-nojs {
+  @media (min-width: variables.$screen-desktop) {
+    display: none;
+  }
+}
