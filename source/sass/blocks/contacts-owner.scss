@@ -2,7 +2,7 @@
 
 .contacts-owner {
   padding-top: 20px;
-  padding-bottom: 24px;
+  padding-bottom: 25px;
   position: relative;
 
   @media (min-width: variables.$screen-tablet) {
@@ -20,7 +20,12 @@
 
     @media (min-width: variables.$screen-desktop) {
       padding-top: 0;
-      width: calc(100% / 2);
+    }
+  }
+
+  &:last-of-type {
+    @media (min-width: variables.$screen-desktop) {
+      padding-top: 0;
     }
   }
 
@@ -62,6 +67,20 @@
   }
 }
 
+.contacts-owner__input {
+  &--email {
+    @media (min-width: variables.$screen-desktop) {
+      width: 494px;
+    }
+  }
+
+  &--phone {
+    @media (min-width: variables.$screen-desktop) {
+      width: 472px;
+    }
+  }
+}
+
 .contacts-owner__label:has(input:invalid) {
   &::before {
     background-color: #ff8282;
@@ -69,7 +88,7 @@
 }
 
 .contacts-owner__label:not(:last-of-type) {
-  padding-bottom: 14px;
+  padding-bottom: 13px;
 
   @media (min-width: variables.$screen-tablet) {
     padding-bottom: 18px;
@@ -81,7 +100,7 @@
 }
 
 .contacts-owner__container {
-  padding-top: 12px;
+  padding-top: 14px;
 
   @media (min-width: variables.$screen-tablet) {
     padding: 0 40px;
@@ -90,8 +109,9 @@
   @media (min-width: variables.$screen-desktop) {
     display: flex;
     flex-wrap: wrap;
-    gap: 81px;
+    gap: 45px 80px;
     align-items: center;
-    padding-top: 76px;
+    padding: 0;
+    padding-top: 53px;
   }
 }

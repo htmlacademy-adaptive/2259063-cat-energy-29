@@ -7,7 +7,7 @@
 .program__wrapper {
   margin: 0 auto;
   padding: 0 20px;
-  padding-top: 24px;
+  padding-top: 25px;
   max-width: 1440px;
   min-width: 320px;
 
@@ -18,7 +18,7 @@
 
   @media (min-width: variables.$screen-desktop) {
     padding: 0 110px;
-    padding-top: 74px;
+    padding-top: 59px;
   }
 }
 
@@ -36,6 +36,7 @@
 
   @media (min-width: variables.$screen-desktop) {
     padding-bottom: 80px;
+    gap: 70px;
   }
 }
 
@@ -61,6 +62,7 @@
 
   @media (min-width: variables.$screen-desktop) {
     padding-top: 0;
+    padding-left: 0;
   }
 }
 
@@ -77,5 +79,9 @@
     line-height: 30px;
     padding-left: 40px;
     width: 360px;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    padding-left: 0;
   }
 }

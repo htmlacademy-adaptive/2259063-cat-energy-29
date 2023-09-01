@@ -80,11 +80,13 @@
       background-repeat: no-repeat;
       background-size: contain;
       width: 18px;
-      height: 14px;
+      height: 17px;
       border-radius: 50%;
       position: absolute;
-      left: 8px;
+      top: 7px;
+      left: 7.5px;
       display: none;
+
 
       @media (min-width: variables.$screen-tablet) {
         width: 26px;

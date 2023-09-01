@@ -20,7 +20,7 @@
     height: 2px;
     background-color: #68b738;
     position: absolute;
-    top: 58%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
@@ -39,5 +39,10 @@
     white-space: normal;
     padding: 0 40px;
     left: 0;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    position: relative;
+    left: -40px;
   }
 }

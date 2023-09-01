@@ -3,7 +3,7 @@
 .social {
   display: flex;
   justify-content: center;
-  gap: 18px;
+  gap: 21px;
   border-bottom: 1px solid #d9d9d9;
   flex-wrap: wrap;
 
@@ -17,6 +17,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:nth-child(2) {
+    margin-left: -6px;
+  }
 }
 
 .social__link {

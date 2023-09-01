@@ -3,7 +3,7 @@
 .basic-characteristics {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 13px;
 
   @media (min-width: variables.$screen-tablet) {
     gap: 16px;
