@@ -110,7 +110,6 @@
       width: 50px;
       height: 53px;
       display: block;
-      display: block;
       background-size: contain;
       position: relative;
 
@@ -185,6 +184,7 @@
   @media (min-width: variables.$screen-desktop) {
     width: 100%;
     padding-top: 10px;
+
     &--fat {
       padding-left: 20px;
     }
@@ -220,6 +220,10 @@
   &--fat {
     padding-top: 23px;
     padding-bottom: 22px;
+
+    @media (min-width: variables.$screen-desktop) {
+      padding-left: 19px;
+    }
   }
 
   @media (min-width: variables.$screen-tablet) {
@@ -238,11 +242,5 @@
     width: auto;
     padding-top: 39px;
     padding-bottom: 23px;
-  }
-
-  &--fat {
-    @media (min-width: variables.$screen-desktop) {
-      padding-left: 19px;
-    }
   }
 }
