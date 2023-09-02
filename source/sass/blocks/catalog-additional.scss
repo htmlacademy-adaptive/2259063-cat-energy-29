@@ -45,8 +45,8 @@
 }
 
 .catalog-additional__item {
-  padding-top: 13px;
-  padding-bottom: 19px;
+  padding-top: 11px;
+  padding-bottom: 18px;
   border-top: 1px solid #ebebeb;
 
   &:last-child {
@@ -107,7 +107,7 @@
   font-weight: 400;
   color: #000000;
   background-color: #ffffff;
-  padding-right: 10px;
+  padding-right: 20px;
 
   @media (min-width: variables.$screen-tablet) {
     font-size: 36px;

@@ -15,7 +15,8 @@
   font-size: 16px;
   line-height: 20px;
   color: #222222;
-  padding-bottom: 14px;
+  padding-bottom: 12px;
+  padding-top: 3px;
   width: 76px;
   text-transform: uppercase;
 
@@ -30,10 +31,14 @@
   }
 }
 
+.catalog-item__container {
+  width: 100%;
+}
+
 .catalog-item__container-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-bottom: 13px;
+  padding-bottom: 19px;
 
   @media (min-width: variables.$screen-tablet) {
     display: flex;
@@ -46,7 +51,6 @@
 .catalog-item__button {
   display: flex;
   justify-content: center;
-  padding: 3px;
 }
 
 .catalog-item__table {

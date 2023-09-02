@@ -59,7 +59,7 @@
   line-height: 16px;
   padding-top: 8px;
   text-align: center;
-  padding-bottom: 21px;
+  padding-bottom: 20px;
 
   @media (min-width: variables.$screen-tablet) {
     font-size: 16px;
@@ -70,5 +70,4 @@
 .more__button {
   display: flex;
   justify-content: center;
-  padding: 3px;
 }

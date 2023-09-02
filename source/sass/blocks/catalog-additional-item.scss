@@ -17,7 +17,7 @@
 }
 
 .catalog-additional-item__description-container {
-  padding-top: 13px;
+  padding-top: 11px;
   padding-bottom: 15px;
 
   @media (min-width: variables.$screen-tablet) {
@@ -44,7 +44,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3px;
 
   @media (min-width: variables.$screen-desktop) {
     width: 244px;
