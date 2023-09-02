@@ -39,6 +39,8 @@
 }
 
 .additional__container {
+  padding-bottom: 28px;
+
   @media (min-width: variables.$screen-tablet) {
     display: inline-grid;
     grid-template-columns: auto auto;
@@ -47,6 +49,7 @@
     row-gap: 32px;
     padding-top: 56px;
     padding-left: 40px;
+    padding-bottom: 0;
     margin-bottom: -14px;
   }
 

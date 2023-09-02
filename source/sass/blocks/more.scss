@@ -20,6 +20,22 @@
   }
 }
 
+.more .catalog-item__container {
+  @media (min-width: variables.$screen-tablet) {
+    position: relative;
+    bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+    max-height: 339px;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    gap: 91px;
+  }
+}
+
 .more__container {
   margin: 0 auto;
 
@@ -32,6 +48,16 @@
     margin: 0 auto;
     width: 30px;
     height: 30px;
+
+    @media (min-width: variables.$screen-tablet) {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: variables.$screen-desktop) {
+      margin-bottom: 40px;
+    }
   }
 }
 
@@ -46,13 +72,17 @@
   padding-top: 23px;
 
   @media (min-width: variables.$screen-tablet) {
-    padding: 0 18px 23px 18px;
+    padding: 0 40px 23px 40px;
     font-size: 20px;
     line-height: 24px;
   }
+
+  @media (min-width: variables.$screen-desktop) {
+    padding: 0 15px 26px 15px;
+  }
 }
 
-.more__descrition {
+.more__description {
   display: block;
   font-family: variables.$font-lato;
   font-size: 12px;
@@ -64,10 +94,22 @@
   @media (min-width: variables.$screen-tablet) {
     font-size: 16px;
     line-height: 18px;
+    padding: 0 40px 29px 40px;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 0;
   }
 }
 
 .more__button {
   display: flex;
   justify-content: center;
+
+  // @media (min-width: variables.$screen-tablet) {
+  //   position: relative;
+  //   top: 53px;
+  // }
 }

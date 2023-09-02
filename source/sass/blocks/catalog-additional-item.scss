@@ -4,7 +4,7 @@
   display: block;
 
   @media (min-width: variables.$screen-tablet) {
-    padding-bottom: 25px;
+    padding-bottom: 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,7 +23,8 @@
   @media (min-width: variables.$screen-tablet) {
     padding: 0;
     display: flex;
-    gap: 49px;
+    gap: 54px;
+    padding-top: 2px;
   }
 }
 

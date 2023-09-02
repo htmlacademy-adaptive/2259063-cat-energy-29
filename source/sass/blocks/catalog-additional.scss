@@ -8,7 +8,6 @@
 .catalog-additional__wrapper {
   margin: 0 auto;
   padding: 0 20px;
-  // width: 100vw;
   max-width: 1440px;
   min-width: 320px;
 
@@ -18,11 +17,15 @@
 
   @media (min-width: variables.$screen-desktop) {
     padding: 0 110px;
-    padding-bottom: 87px;
+    padding-bottom: 14px;
   }
 }
 
 .catalog-additional__container {
+  @media (min-width: variables.$screen-tablet) {
+    padding-top: 43px;
+  }
+
   @media (min-width: variables.$screen-desktop) {
     display: flex;
     gap: 80px;
@@ -34,7 +37,7 @@
   padding-bottom: 35px;
 
   @media (min-width: variables.$screen-tablet) {
-    padding-bottom: 70px;
+    padding-bottom: 71px;
   }
 
   @media (min-width: variables.$screen-desktop) {
@@ -54,11 +57,13 @@
   }
 
   @media (min-width: variables.$screen-tablet) {
-    padding: 28px 38px;
+    padding: 26px 38px;
+    border-left: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
   }
 
   @media (min-width: variables.$screen-desktop) {
-    padding: 17px 1px;
+    padding: 15.5px 1px;
     display: flex;
     gap: 40px;
     justify-content: space-between;
@@ -74,14 +79,14 @@
   padding-top: 25px;
   padding-bottom: 36px;
 
-  @media (min-width: variables.$screen-tablet) {
-    padding-left: 40px;
-  }
+  // @media (min-width: variables.$screen-tablet) {
+  //   // padding-left: 40px;
+  // }
 
-  @media (min-width: variables.$screen-desktop) {
-    padding-left: 0;
-    margin-bottom: 44px;
-  }
+  // @media (min-width: variables.$screen-desktop) {
+  //   padding-left: 0;
+  //   margin-bottom: 44px;
+  // }
 
   &::after {
     content: "";
@@ -100,24 +105,10 @@
   }
 }
 
-.catalog-additional-title__description {
-  font-family: variables.$font-oswald;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #000000;
-  background-color: #ffffff;
-  padding-right: 20px;
-
-  @media (min-width: variables.$screen-tablet) {
-    font-size: 36px;
-    line-height: 36px;
-    padding: 0 40px;
-    // position: relative;
-    // left: -40px;
-  }
-}
-
 .catalog-additional__gift {
   padding-bottom: 35px;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding-bottom: 75px;
+  }
 }

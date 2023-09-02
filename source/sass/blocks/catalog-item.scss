@@ -24,10 +24,15 @@
     font-size: 20px;
     line-height: 24px;
     margin: 0 auto;
-    padding-top: 22px;
-    padding-bottom: 20px;
+    padding-top: 13.5px;
+    padding-bottom: 15px;
     min-width: 135px;
     text-align: center;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+   padding-top: 4.5px;
+   padding-bottom: 16px;
   }
 }
 
@@ -46,6 +51,10 @@
     align-items: center;
     padding-bottom: 32px;
   }
+
+  // @media (min-width: variables.$screen-desktop) {
+  //   padding-bottom: 33px;
+  // }
 }
 
 .catalog-item__button {
@@ -61,5 +70,8 @@
   @media (min-width: variables.$screen-tablet) {
     font-size: 16px;
     line-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

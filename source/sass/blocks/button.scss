@@ -62,6 +62,8 @@
   font-size: 16px;
 
   @media (min-width: variables.$screen-tablet) {
-    font-size: 20px;
+    &-form {
+      font-size: 20px;
+    }
   }
 }

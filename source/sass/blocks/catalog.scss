@@ -32,6 +32,10 @@
     padding-left: 0;
     padding-top: 50px;
   }
+
+  @media (min-width: variables.$screen-desktop) {
+    padding-top: 58px;
+  }
 }
 
 .catalog__list {
@@ -39,11 +43,12 @@
     display: flex;
     flex-wrap: wrap;
     gap: 60px;
-    margin-bottom: 70px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: variables.$screen-desktop) {
     gap: 63px 80px;
+    margin-bottom: 50px;
   }
 }
 
@@ -82,10 +87,10 @@
     width: calc((100% - 220px) / 4);
     max-width: 245px;
 
-    &:last-of-type {
-      display: flex;
-      align-items: flex-end;
-    }
+    // &:last-of-type {
+    //   display: flex;
+    //   align-items: flex-end;
+    // }
   }
 }
 
