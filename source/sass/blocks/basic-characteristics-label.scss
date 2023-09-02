@@ -1,0 +1,11 @@
+@use "../global/variables.scss";
+
+.basic-characteristics-label__input {
+  &--old {
+    max-width: 174px;
+
+    @media (min-width: variables.$screen-tablet) {
+      max-width: none;
+    }
+  }
+}

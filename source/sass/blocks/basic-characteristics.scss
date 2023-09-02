@@ -13,3 +13,13 @@
     gap: 20px;
   }
 }
+
+.basic-characteristics__label {
+  max-width: 280px;
+  max-height: 45.6px;
+
+  @media (min-width: variables.$screen-tablet) {
+    max-width: none;
+    max-height: none;
+  }
+}

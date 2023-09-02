@@ -83,6 +83,7 @@
       background-size: contain;
       position: relative;
       left: -8px;
+      flex-shrink: 0;
 
       @media (min-width: variables.$screen-tablet) {
         position: absolute;
@@ -112,6 +113,7 @@
       display: block;
       background-size: contain;
       position: relative;
+      flex-shrink: 0;
 
       @media (min-width: variables.$screen-tablet) {
         position: absolute;

@@ -10,11 +10,13 @@
   text-transform: uppercase;
   color: #444444;
   flex-grow: 1;
+  max-height: 45.6px;
 
   @media (min-width: variables.$screen-tablet) {
     font-size: 20px;
     padding: 12px;
     padding-left: 19px;
+    max-height: none;
   }
 
   &:hover {

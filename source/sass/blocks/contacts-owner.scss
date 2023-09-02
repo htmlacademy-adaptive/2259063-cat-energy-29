@@ -12,6 +12,11 @@
 
 .contacts-owner__label {
   position: relative;
+  max-width: 280px;
+
+  @media (min-width: variables.$screen-tablet) {
+    max-width: none;
+  }
 
   &:first-of-type {
     @media (min-width: variables.$screen-tablet) {
@@ -68,6 +73,12 @@
 }
 
 .contacts-owner__input {
+  max-height: 45.6px;
+
+  @media (min-width: variables.$screen-tablet) {
+    max-height: none;
+  }
+
   &--email {
     @media (min-width: variables.$screen-desktop) {
       width: 494px;
