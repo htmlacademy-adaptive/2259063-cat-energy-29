@@ -3,9 +3,23 @@
 .basic-characteristics {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 13px;
+
+  @media (min-width: variables.$screen-tablet) {
+    gap: 16px;
+  }
 
   @media (min-width: variables.$screen-desktop) {
     gap: 20px;
+  }
+}
+
+.basic-characteristics__label {
+  max-width: 280px;
+  max-height: 45.6px;
+
+  @media (min-width: variables.$screen-tablet) {
+    max-width: none;
+    max-height: none;
   }
 }

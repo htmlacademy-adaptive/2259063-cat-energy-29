@@ -24,7 +24,7 @@
   justify-content: space-between;
 
   @media (min-width: variables.$screen-tablet) {
-    padding: 60px 40px;
+    padding: 61px 70px;
   }
 
   @media (min-width: variables.$screen-desktop) {
@@ -67,5 +67,11 @@
   @media (min-width: variables.$screen-tablet) {
     height: 400px;
     object-fit: cover;
+  }
+}
+
+.contacts__location-nojs {
+  @media (min-width: variables.$screen-desktop) {
+    display: none;
   }
 }

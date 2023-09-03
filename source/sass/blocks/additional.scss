@@ -1,41 +1,63 @@
 @use "../global/variables.scss";
 
-.additional__label:not(:last-of-type) {
-  padding-bottom: 13px;
+.additional__label {
+  &:not(:last-of-type) {
+    padding-bottom: 12.5px;
 
-  @media (min-width: variables.$screen-tablet) {
-    padding-bottom: 0;
+    @media (min-width: variables.$screen-tablet) {
+      padding-bottom: 0;
+    }
   }
-}
 
-.additional__label:last-of-type {
-  margin-bottom: 34px;
+  &:first-of-type {
+    padding-top: 33px;
 
-  @media (min-width: variables.$screen-tablet) {
-    margin-bottom: 0;
+    @media (min-width: variables.$screen-tablet) {
+      padding-top: 0;
+    }
   }
-}
 
-.additional__label:first-of-type {
-  padding-top: 34px;
+  &:nth-of-type(2) {
+    @media (min-width: variables.$screen-desktop) {
+      padding-right: 32px;
+    }
+  }
 
-  @media (min-width: variables.$screen-tablet) {
-    padding-top: 0;
+  &:nth-of-type(3) {
+    @media (min-width: variables.$screen-desktop) {
+      padding-right: 94px;
+    }
+  }
+
+  &:last-of-type {
+    margin-bottom: 34px;
+
+    @media (min-width: variables.$screen-tablet) {
+      margin-bottom: 0;
+    }
   }
 }
 
 .additional__container {
+  padding-bottom: 28px;
+
   @media (min-width: variables.$screen-tablet) {
     display: inline-grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-    column-gap: 123px;
+    column-gap: 125px;
     row-gap: 32px;
-    padding-top: 57px;
+    padding-top: 56px;
+    padding-left: 40px;
+    padding-bottom: 0;
+    margin-bottom: 15px;
   }
 
   @media (min-width: variables.$screen-desktop) {
     grid-template-columns: auto auto auto auto;
+    padding-left: 0;
+    column-gap: 106px;
+    margin-bottom: -14px;
   }
 }
 

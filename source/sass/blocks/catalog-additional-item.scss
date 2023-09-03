@@ -4,7 +4,7 @@
   display: block;
 
   @media (min-width: variables.$screen-tablet) {
-    padding-bottom: 25px;
+    padding-bottom: 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,13 +17,14 @@
 }
 
 .catalog-additional-item__description-container {
-  padding-top: 13px;
+  padding-top: 11px;
   padding-bottom: 15px;
 
   @media (min-width: variables.$screen-tablet) {
     padding: 0;
     display: flex;
-    gap: 49px;
+    gap: 54px;
+    padding-top: 2px;
   }
 }
 
@@ -44,7 +45,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3px;
 
   @media (min-width: variables.$screen-desktop) {
     width: 244px;

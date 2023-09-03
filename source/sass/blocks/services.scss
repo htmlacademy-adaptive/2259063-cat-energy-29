@@ -2,7 +2,6 @@
 
 .services {
   min-width: 320px;
-  // width: 100vw;
 }
 
 .services__wrapper {
@@ -15,21 +14,28 @@
 
   @media (min-width: variables.$screen-tablet) {
     padding: 0 30px;
-    padding-top: 20px;
   }
 
   @media (min-width: variables.$screen-desktop) {
     padding: 0 110px;
-    padding-top: 20px;
   }
 }
 
 .services__list {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+
+  @media (min-width: variables.$screen-tablet) {
+    gap: 31px;
+  }
+
   @media (min-width: variables.$screen-desktop) {
     display: flex;
-    gap: 80px;
+    flex-direction: row;
     flex-wrap: wrap;
-    padding-bottom: 71px;
+    gap: 80px;
+    padding-bottom: 68px;
   }
 }
 
@@ -56,34 +62,42 @@
     line-height: 36px;
     gap: 62px;
     justify-content: flex-start;
-    padding-left: 25px;
   }
 
   // Набор массы (зеленый круг и декоративный кот)
   &--fat {
     gap: 4px;
 
+    @media (min-width: variables.$screen-desktop) {
+      //Выравнивает рассотяние от кота до заголовка по ПП
+      gap: 47px;
+    }
+
     &::before {
       content: "";
       background-image: url("../img/sprite.svg#cat_weight");
       background-repeat: no-repeat;
-      min-width: 67px;
-      min-height: 50px;
+      width: 67px;
+      height: 50px;
       display: block;
       background-size: contain;
       position: relative;
       left: -8px;
+      flex-shrink: 0;
 
       @media (min-width: variables.$screen-tablet) {
         position: absolute;
-        transform: scale(4);
-        right: 10%;
-        top: 80px;
+        width: 268px;
+        height: 200px;
+        left: 61%;
+        top: 13px;
       }
 
       @media (min-width: variables.$screen-desktop) {
         position: static;
-        transform: scale(2);
+        width: 134px;
+        height: 100px;
+        flex-shrink: 0;
       }
     }
   }
@@ -94,20 +108,26 @@
       content: "";
       background-image: url("../img/sprite.svg#cat_slim");
       background-repeat: no-repeat;
-      min-width: 50px;
-      min-height: 53px;
+      width: 50px;
+      height: 53px;
       display: block;
+      background-size: contain;
+      position: relative;
+      flex-shrink: 0;
 
       @media (min-width: variables.$screen-tablet) {
         position: absolute;
-        transform: scale(4);
-        right: 10%;
-        top: 80px;
+        width: 200px;
+        height: 211px;
+        left: 66%;
+        top: 2px;
       }
 
       @media (min-width: variables.$screen-desktop) {
         position: static;
-        transform: scale(2);
+        width: 100px;
+        height: 106px;
+        flex-shrink: 0;
       }
     }
   }
@@ -116,24 +136,28 @@
 .services__item {
   background-color: #f2f2f2;
   padding: 20px;
-  padding-right: 33px;
-  padding-top: 22px;
+  padding-top: 23px;
   position: relative;
 
-  &:not(:last-of-type) {
-    margin-bottom: 20px;
-  }
+  &:nth-child(2) {
+    @media (min-width: variables.$screen-tablet) {
+      padding: 79px 63px 59px 52px;
+    }
 
-  &--fat {
-    padding-top: 26px;
+    @media (min-width: variables.$screen-desktop) {
+      padding-top: 43px;
+      padding-left: 33px;
+    }
   }
 
   @media (min-width: variables.$screen-tablet) {
-    padding: 80px 63px 80px 52px;
+    padding: 76px 63px 59px 52px;
   }
 
   @media (min-width: variables.$screen-desktop) {
     max-width: 570px;
+    padding-top: 38px;
+    padding-bottom: 64px;
 
     &:not(:last-of-type) {
       margin: 0;
@@ -147,7 +171,7 @@
   line-height: 16px;
   text-transform: uppercase;
   color: #000000;
-  padding-top: 15px;
+  padding-top: 18px;
   display: flex;
   align-items: center;
   gap: 15px;
@@ -156,6 +180,16 @@
     font-size: 20px;
     line-height: 20px;
     gap: 25px;
+    width: 44.3vw;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    width: 100%;
+    padding-top: 10px;
+
+    &--fat {
+      padding-left: 20px;
+    }
   }
 
   &::after {
@@ -182,9 +216,17 @@
   font-size: 14px;
   line-height: 18px;
   text-align: left;
-  padding-top: 22px;
-  padding-bottom: 26px;
+  padding: 21px 0;
   border-bottom: 1px solid #d9d9d9;
+
+  &--fat {
+    padding-top: 23px;
+    padding-bottom: 22px;
+
+    @media (min-width: variables.$screen-desktop) {
+      padding-left: 19px;
+    }
+  }
 
   @media (min-width: variables.$screen-tablet) {
     font-size: 16px;
@@ -192,7 +234,7 @@
     border-bottom: none;
     width: 44.3vw;
     padding-top: 24px;
-    padding-bottom: 48px;
+    padding-bottom: 40px;
   }
 
   @media (min-width: variables.$screen-desktop) {
@@ -200,7 +242,7 @@
     line-height: 24px;
     border-bottom: none;
     width: auto;
-    padding-top: 73px;
+    padding-top: 39px;
     padding-bottom: 23px;
   }
 }

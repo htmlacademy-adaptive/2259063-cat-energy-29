@@ -4,12 +4,12 @@
 @use "global/link.scss";
 @use "global/visually-hidden.scss";
 @use "global/description.scss";
-@use "global/fieldset.scss";
 @use "global/title.scss";
 @use "global/list.scss";
 @use "global/input.scss";
 @use "global/variables.scss";
 // Блоки
+@use "blocks/fieldset.scss";
 @use "blocks/label.scss";
 @use "blocks/button.scss";
 @use "blocks/main-header";
@@ -49,3 +49,6 @@
 @use "blocks/catalog-container.scss";
 @use "blocks/logo-image.scss";
 @use "blocks/program-type-label.scss";
+@use "blocks/container-description.scss";
+@use "blocks/catalog-additional-title.scss";
+@use "blocks/basic-characteristics-label.scss";

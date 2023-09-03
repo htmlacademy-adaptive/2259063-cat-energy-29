@@ -57,6 +57,13 @@
 
 .button__description {
   display: block;
-  padding: 11px;
+  padding: 12px;
   white-space: normal;
+  font-size: 16px;
+
+  @media (min-width: variables.$screen-tablet) {
+    &--form {
+      font-size: 20px;
+    }
+  }
 }

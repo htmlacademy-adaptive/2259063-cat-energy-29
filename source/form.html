@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="img/favicons/favicon_152.svg">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
   <script defer src="js/script.js"></script>
   <script defer src="js/invalid_input.js"></script>
@@ -16,7 +16,7 @@
 
 <body class="page__body">
   <header class="main-header">
-    <nav class="main-nav">
+    <nav class="main-nav menu-nojs">
       <div class="main-nav__container">
         <a class="main-nav__logo link logo-image" href="index.html">
           <picture>
@@ -36,10 +36,10 @@
           <a class="main-nav__link link" href="index.html">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link link main-nav__link--active link" href="#">Подбор программы</a>
+          <a class="main-nav__link link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link link" href="catalog.html">Каталог продукции</a>
+          <a class="main-nav__link main-nav__link--active link" href="#">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -68,7 +68,8 @@
                 </label>
                 <label class="basic-characteristics__label basic-characteristics-label label" for="old">
                   <span class="label__name">Возраст (лет):</span>
-                  <input class="basic-characteristics-label__input input" type="text" name="old" id="old" value="7">
+                  <input class="basic-characteristics-label__input basic-characteristics-label__input--old  input"
+                    type="text" name="old" id="old" value="7">
                 </label>
               </fieldset>
               <fieldset class="form__program-type program-type fieldset">
@@ -103,12 +104,13 @@
                   class="legend__description">Контактные данные
                   (владельца кота)</span></legend>
               <div class="contacts-owner__container">
-                <label class="contacts-owner__label contacts-owner__label--email contacts-owner__label--invalid label" for="email">
+                <label class="contacts-owner__label contacts-owner__label--email label" for="email">
                   <span class="label__name">E-mail:*</span>
                   <input class="contacts-owner__input contacts-owner__input--email input" type="email" name="email"
                     id="email" value="kuklachev@gmail.com" required>
                 </label>
-                <label class="contacts-owner__label contacts-owner__label--phone contacts-owner__label--invalid label" for="phone">
+                <label class="contacts-owner__label contacts-owner__label--phone contacts-owner__label--invalid label"
+                  for="phone">
                   <span class="label__name">Телефон:*</span>
                   <input class="contacts-owner__input contacts-owner__input--phone input" type="tel" id="phone"
                     name="phone" value="8 (960) 900-60-90" required>
@@ -151,9 +153,9 @@
             </fieldset>
             <div class="form__container-bottom">
               <button class="form__button button button--primary" type="submit"><span
-                  class="button__description">отправить
+                  class="button__description button__description--form">отправить
                   заявку</span></button>
-              <small class="form__legend">* — Обязательные поля</small>
+              <small class="form__legend">* &#8213; Обязательные поля</small>
             </div>
           </form>
         </div>
@@ -163,12 +165,12 @@
       <div class="contacts__wrapper">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__business-card business-card">
-          <p class="business-card__title title">приглашаем к сотрудничеству дилеров!</p>
+          <p class="business-card__title title">приглашаем к&nbsp;сотрудничеству дилеров!</p>
           <p class="business-card__description description business-description">ул. Большая Конюшенная, д. 19/8 <span
               class="business-description__br">Санкт-Петербург</span></p>
         </div>
       </div>
-      <iframe class="contacts__location"
+      <iframe title="Карта." class="contacts__location contacts__location-nojs"
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.6037861610246!2d30.3230474!3d59.9387165!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1692534992252!5m2!1sru!2sru"
         width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -188,8 +190,8 @@
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <a class="main-footer__logo link" href=""><img class="main-footer__logo-name" src="img/logo_name_footer.svg"
-          width="128" height="24" alt="Питание для Котов - Кэт энерджи."></a>
+      <a class="main-footer__logo link" href="index.html" aria-label="Cat-energy."><img class="main-footer__logo-name"
+          src="img/logo_name_footer.svg" width="128" height="24" alt="Питание для Котов - Кэт энерджи."></a>
       <ul class="main-footer__social social list">
         <li class="social__item">
           <a class="social__link social__link--vk link" href="https://vk.com/htmlacademy"><span

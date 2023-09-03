@@ -13,6 +13,19 @@
   resize: none;
   width: 100%;
   text-transform: uppercase;
+  min-height: 150px;
+
+  @media (min-width: variables.$screen-tablet) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 11px;
+    padding-left: 19px;
+    height: 175px;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    padding-top: 9px;
+  }
 }
 
 .comment__input::placeholder {
@@ -20,11 +33,17 @@
 }
 
 .comment__label {
-  padding-top: 38px;
-  padding-bottom: 33px;
+  padding-top: 36px;
+  padding-bottom: 25px;
 
   @media (min-width: variables.$screen-tablet) {
-    padding-top: 87px;
+    padding: 0 40px;
+    padding-top: 85px;
     padding-bottom: 0;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    padding: 0;
+    padding-top: 76px;
   }
 }

@@ -8,14 +8,14 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="img/favicons/favicon_152.svg">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
   <script defer src="js/script.js"></script>
 </head>
 
 <body class="page__body page__body--index">
   <header class="main-header">
-    <nav class="main-nav">
+    <nav class="main-nav menu-nojs">
       <div class="main-nav__container">
         <a class="main-nav__logo link logo-image" href="#">
           <picture>
@@ -26,19 +26,20 @@
               alt="Питание для Котов - Кэт энерджи.">
           </picture>
         </a>
-        <button class="main-nav__toggle main-nav__toggle--closed main-nav__toggle--opened" type="button">
+        <button class="main-nav__toggle main-nav__toggle--closed main-nav__toggle--opened main-nav__toggle--noscript"
+          type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
-      <ul class="main-nav__list main-nav__list--index list main-nav__list--close">
+      <ul class="main-nav__list main-nav__list--index list main-nav__list--close main-nav__list--noscript">
         <li class="main-nav__item">
           <a class="main-nav__link main-nav__link--active link" href="#">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link link" href="form.html">Подбор программы</a>
+          <a class="main-nav__link link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link link" href="catalog.html">Каталог продукции</a>
+          <a class="main-nav__link link" href="form.html">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -61,7 +62,8 @@
               srcset="img/index_hero_can/index_can_mobile@2x.png 2x" width="280" height="270" alt="Корм с курицей.">
           </picture>
         </div>
-        <button class="hero__button button button--primary" type="button"><span class="button__description">Подобрать
+        <button class="hero__button button button--primary" type="button" aria-label="Подобрать
+        программу."><span class="button__description">Подобрать
             программу</span></button>
       </div>
     </section>
@@ -84,7 +86,7 @@
                 class="services-title__description">Набор массы</span></h3>
             <p class="services__description services__description--fat description">Заработать авторитет среди дворовых
               котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="services__link link link" href="#">
+            <a class="services__link link services__link--fat" href="#">
               Каталог pro
             </a>
           </li>
@@ -118,8 +120,7 @@
           <li class="advantages__item">
             <h3 class="visually-hidden">Результат уже через месяц</h3>
             <p class="advantages__desctription description advantages__desctription--result">Уже через месяц
-              наслаждайтесь изменениями к лучшему вашего
-              питомца!</p>
+              наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</p>
           </li>
         </ul>
       </div>
@@ -155,11 +156,6 @@
               srcset="img/slider_cat_before_mobile@2x.png 2x" width="280" height="256" alt="результат 'ДО'.">
           </picture>
           <button class="example-slider__button button">
-            <!-- <svg class="example-slider__vector" aria-hidden="true" focusable="false" width="24" height="18"
-              viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8 0L0 9L8 18V0Z" fill="#666666" />
-              <path d="M24 9L16 0V18L24 9Z" fill="#666666" />
-            </svg> -->
           </button>
           <picture>
             <source media="(min-width: 768px)"
@@ -175,12 +171,12 @@
       <div class="contacts__wrapper">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__business-card business-card">
-          <p class="business-card__title title">приглашаем к сотрудничеству дилеров!</p>
+          <p class="business-card__title title">приглашаем к&nbsp;сотрудничеству дилеров!</p>
           <p class="business-card__description description business-description">ул. Большая Конюшенная, д. 19/8 <span
               class="business-description__br">Санкт-Петербург</span></p>
         </div>
       </div>
-      <iframe class="contacts__location"
+      <iframe title="Карта." class="contacts__location contacts__location-nojs"
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.6037861610246!2d30.3230474!3d59.9387165!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1692534992252!5m2!1sru!2sru"
         width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -200,7 +196,7 @@
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <a class="main-footer__logo link" href="">
+      <a class="main-footer__logo link" href="#" aria-label="Cat-energy.">
         <svg class="main-footer__logo-name" width="128" height="24" aria-hidden="true" focusable="false"
           viewBox="0 0 128 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -262,12 +258,6 @@
       </ul>
       <a class="copyright link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="copyright__text">HTML Academy</span>
-        <!-- <svg class="copyright__link-icon" aria-hidden="true" focusable="false" aria-label="HTML Academy" width="27"
-          height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
-            fill="#666666" />
-        </svg> -->
       </a>
     </div>
   </footer>

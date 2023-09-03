@@ -4,6 +4,17 @@
   display: flex;
   justify-content: space-between;
 
+  &--water {
+    @media (min-width: variables.$screen-tablet) {
+      gap: 56px;
+      padding-right: 4px;
+    }
+
+    @media (min-width: variables.$screen-desktop) {
+      padding-right: 0;
+    }
+  }
+
   @media (min-width: variables.$screen-desktop) {
     width: 285px;
   }

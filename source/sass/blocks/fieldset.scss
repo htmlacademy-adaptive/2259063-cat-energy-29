@@ -9,6 +9,14 @@
 .fieldset__legend {
   &--catowner {
     padding-top: 26px;
+
+    & .legend__description {
+      padding-right: 25px;
+
+      @media (min-width: variables.$screen-tablet) {
+        padding-right: 39px;
+      }
+    }
   }
 
   @media (min-width: variables.$screen-tablet) {
