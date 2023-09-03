@@ -9,6 +9,16 @@
       "src": "source/img/favicons/favicon_152.svg",
       "type": "image/png",
       "sizes": "152x152"
+    },
+    {
+      "src": "source/img/favicons/favicon_192.svg",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "source/img/favicons/favicon_512.svg",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ]
 }

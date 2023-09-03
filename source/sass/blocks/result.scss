@@ -16,6 +16,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   position: relative;
   width: 124px;
   min-height: 56px;
@@ -24,7 +25,6 @@
 
   @media (min-width: variables.$screen-tablet) {
     width: 162px;
-    height: 73px;
   }
 }
 
@@ -33,7 +33,6 @@
   line-height: 24px;
   padding: 14.5px 0;
   text-transform: uppercase;
-  max-width: 95px;
   text-align: center;
 
   @media (min-width: variables.$screen-tablet) {
