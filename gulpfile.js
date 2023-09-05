@@ -146,6 +146,8 @@ export const build = gulp.series(
     svgSprite,
     createWebp
   ),
+  gulp.series(
+    server)
 );
 
 export default gulp.series(

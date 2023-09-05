@@ -2,7 +2,6 @@
 
 .catalog-additional {
   min-width: 320px;
-  // width: 100vw;
 }
 
 .catalog-additional__wrapper {
@@ -80,15 +79,6 @@
   white-space: pre-line;
   padding-top: 25px;
   padding-bottom: 36px;
-
-  // @media (min-width: variables.$screen-tablet) {
-  //   // padding-left: 40px;
-  // }
-
-  // @media (min-width: variables.$screen-desktop) {
-  //   padding-left: 0;
-  //   margin-bottom: 44px;
-  // }
 
   &::after {
     content: "";
