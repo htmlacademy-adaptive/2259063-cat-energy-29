@@ -10,8 +10,9 @@ import webp from "gulp-webp";
 import squoosh from "gulp-libsquoosh";
 import rename from "gulp-rename";
 import svgsprite from "gulp-svg-sprite";
-import {deleteAsync as del} from 'del';
+import { deleteAsync as del } from 'del';
 import svgo from "gulp-svgo";
+import csso from "postcss-csso";
 
 
 // Styles
@@ -21,8 +22,10 @@ export const styles = () => {
     .pipe(plumber())
     .pipe(sass().on("error", sass.logError))
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer(),
+      csso()
     ]))
+    .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css", { sourcemaps: "." }))
     .pipe(browser.stream());
 }
@@ -67,9 +70,9 @@ const createWebp = () => {
 // SVG
 
 const optimizeSvg = () =>
-gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
-.pipe(svgo())
-.pipe(gulp.dest('build/img'));
+  gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
+    .pipe(svgo())
+    .pipe(gulp.dest('build/img'));
 
 
 // Sprites
