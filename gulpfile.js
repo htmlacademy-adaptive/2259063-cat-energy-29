@@ -25,7 +25,7 @@ export const styles = () => {
       autoprefixer(),
       csso()
     ]))
-    .pipe(rename("style.min.css"))
+    // .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css", { sourcemaps: "." }))
     .pipe(browser.stream());
 }
@@ -148,9 +148,7 @@ export const build = gulp.series(
     optimizeSvg,
     svgSprite,
     createWebp
-  ),
-  gulp.series(
-    server)
+  )
 );
 
 export default gulp.series(

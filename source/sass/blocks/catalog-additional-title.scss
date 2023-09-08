@@ -2,21 +2,23 @@
 
 .catalog-additional-title__description {
   font-family: variables.$font-oswald;
+  position: relative;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   color: #000000;
   background-color: #ffffff;
-  padding-right: 20px;
+  padding: 0 20px;
+  left: -20px;
 
   @media (min-width: variables.$screen-tablet) {
     font-size: 36px;
     line-height: 36px;
     padding: 0 40px;
+    left: 0;
   }
 
   @media (min-width: variables.$screen-desktop) {
-    position: relative;
-    right: 40px;
+    left: -40px;
   }
 }

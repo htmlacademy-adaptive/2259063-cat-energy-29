@@ -16,7 +16,7 @@
 
   @media (min-width: variables.$screen-desktop) {
     padding: 0 110px;
-    padding-bottom: 14px;
+    padding-bottom: 88px;
   }
 }
 
@@ -102,5 +102,10 @@
 
   @media (min-width: variables.$screen-tablet) {
     padding-bottom: 75px;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    padding-bottom: 0;
+    align-self: center;
   }
 }
