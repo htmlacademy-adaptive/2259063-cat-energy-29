@@ -10,11 +10,12 @@
   &--catowner {
     padding-top: 26px;
 
-    & .legend__description {
-      padding-right: 25px;
+    .legend__description {
+      width: 227px;
 
       @media (min-width: variables.$screen-tablet) {
         padding-right: 39px;
+        width: auto;
       }
     }
   }
