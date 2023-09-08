@@ -20,14 +20,14 @@
 .gift__container {
   min-width: inherit;
   min-height: inherit;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog_gift.png");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog_gift.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 290px, cover;
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      url("../img/catalog_gift@2x.png");
+      url("../img/catalog_gift@2x.webp");
   }
 
   @media (min-width: variables.$screen-tablet) {

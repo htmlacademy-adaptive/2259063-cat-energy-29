@@ -2,7 +2,6 @@
 
 .catalog-additional {
   min-width: 320px;
-  // width: 100vw;
 }
 
 .catalog-additional__wrapper {
@@ -17,7 +16,7 @@
 
   @media (min-width: variables.$screen-desktop) {
     padding: 0 110px;
-    padding-bottom: 14px;
+    padding-bottom: 88px;
   }
 }
 
@@ -81,15 +80,6 @@
   padding-top: 25px;
   padding-bottom: 36px;
 
-  // @media (min-width: variables.$screen-tablet) {
-  //   // padding-left: 40px;
-  // }
-
-  // @media (min-width: variables.$screen-desktop) {
-  //   padding-left: 0;
-  //   margin-bottom: 44px;
-  // }
-
   &::after {
     content: "";
     width: 100vw;
@@ -112,5 +102,10 @@
 
   @media (min-width: variables.$screen-tablet) {
     padding-bottom: 75px;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    padding-bottom: 0;
+    align-self: center;
   }
 }
