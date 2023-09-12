@@ -6,9 +6,9 @@
 @use "global/description.scss";
 @use "global/title.scss";
 @use "global/list.scss";
-@use "global/input.scss";
 @use "global/variables.scss";
 // Блоки
+@use "blocks/input.scss";
 @use "blocks/fieldset.scss";
 @use "blocks/label.scss";
 @use "blocks/button.scss";

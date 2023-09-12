@@ -58,11 +58,20 @@
             <source media="(min-width:1440px)"
               srcset="img/index_hero_can/index_can_desktop.webp, img/index_hero_can/index_can_desktop@2x.webp 2x"
               type="image/webp" width="552" height="499">
+            <source media="(min-width:1440px)"
+              srcset="img/index_hero_can/index_can_desktop.png, img/index_hero_can/index_can_desktop@2x.png 2x"
+              type="image/png" width="552" height="499">
             <source media="(min-width:768px)"
               srcset="img/index_hero_can/index_can_tablet.webp, img/index_hero_can/index_can_tablet@2x.webp 2x"
               type="image/webp" width="709" height="609">
-            <img class="hero__image" loading="lazy" src="img/index_hero_can/index_can_mobile.webp"
-              srcset="img/index_hero_can/index_can_mobile@2x.webp 2x" width="280" height="270" alt="Корм с курицей.">
+            <source media="(min-width:768px)"
+              srcset="img/index_hero_can/index_can_tablet.png, img/index_hero_can/index_can_tablet@2x.png 2x"
+              type="image/png" width="709" height="609">
+            <source media="(min-width:320px)"
+              srcset="img/index_hero_can/index_can_mobile.webp, img/index_hero_can/index_can_mobile@2x.webp 2x"
+              type="image/webp" width="280" height="270">
+            <img class="hero__image" loading="lazy" src="img/index_hero_can/index_can_mobile.png"
+              srcset="img/index_hero_can/index_can_mobile@2x.png 2x" width="280" height="270" alt="Корм с курицей.">
           </picture>
         </div>
         <button class="hero__button button button--primary" type="button" aria-label="Подобрать
@@ -155,8 +164,14 @@
             <source media="(min-width: 768px)"
               srcset="img/slider_cat_before_tablet.webp 1x, img/slider_cat_before_tablet@2x.webp 2x" type="image/webp"
               width="560" height="512">
+            <source media="(min-width: 768px)"
+              srcset="img/slider_cat_before_tablet.png 1x, img/slider_cat_before_tablet@2x.png 2x" type="image/png"
+              width="560" height="512">
+            <source media="(min-width: 320px)"
+              srcset="img/slider_cat_before_mobile.webp 1x, img/slider_cat_before_mobile@2x.webp 2x" type="image/webp"
+              width="280" height="256">
             <img class="example-slider__image example-slider__image--before" loading="lazy"
-              src="img/slider_cat_before_mobile.webp" srcset="img/slider_cat_before_mobile@2x.webp 2x" width="280"
+              src="img/slider_cat_before_mobile.png" srcset="img/slider_cat_before_mobile@2x.png 2x" width="280"
               height="256" alt="результат 'ДО'.">
           </picture>
           <button class="example-slider__button button" aria-label="кнопка слайдера">
@@ -165,8 +180,14 @@
             <source media="(min-width: 768px)"
               srcset="img/slider_cat_after_tablet.webp 1x, img/slider_cat_after_tablet@2x.webp 2x" type="image/webp"
               width="560" height="512">
+            <source media="(min-width: 768px)"
+              srcset="img/slider_cat_after_tablet.png 1x, img/slider_cat_after_tablet@2x.png 2x" type="image/png"
+              width="560" height="512">
+            <source media="(min-width: 320px)"
+              srcset="img/slider_cat_after_mobile.webp 1x, img/slider_cat_after_mobile@2x.webp 2x" type="image/webp"
+              width="280" height="256">
             <img class="example-slider__image example-slider__image--after" loading="lazy"
-              src="img/slider_cat_after_mobile.webp" srcset="img/slider_cat_after_mobile@2x.webp 2x" width="280"
+              src="img/slider_cat_after_mobile.png" srcset="img/slider_cat_after_mobile@2x.png 2x" width="280"
               height="256" alt="результат 'ПОСЛЕ'.">
           </picture>
         </div>
@@ -190,11 +211,20 @@
           <source media="(min-width: 1440px)"
             srcset="img/location/location_desktop.webp, img/location/location_desktop@2x.webp 2x" width="1440"
             height="400" type="image/webp">
+            <source media="(min-width: 1440px)"
+            srcset="img/location/location_desktop.jpg, img/location/location_desktop@2x.jpg 2x" width="1440"
+            height="400" type="image/jpg">
           <source media="(min-width: 768px)"
             srcset="img/location/location_tablet.webp, img/location/location_tablet@2x.webp 2x" width="768" height="400"
             type="image/webp">
-          <img class="contacts__location" loading="lazy" src="img/location/location_mobile.webp"
-            srcset="img/location/location_mobile@2x.webp" width="320" height="362" alt="Расположение на карте города.">
+            <source media="(min-width: 768px)"
+            srcset="img/location/location_tablet.jpg, img/location/location_tablet@2x.jpg 2x" width="768" height="400"
+            type="image/jpg">
+            <source media="(min-width: 320px)"
+            srcset="img/location/location_mobile.webp, img/location/location_mobile@2x.webp 2x" width="320" height="362"
+            type="image/webp">
+          <img class="contacts__location" loading="lazy" src="img/location/location_mobile.jpg"
+            srcset="img/location/location_mobile@2x.jpg" width="320" height="362" alt="Расположение на карте города.">
         </picture>
       </noscript>
     </section>

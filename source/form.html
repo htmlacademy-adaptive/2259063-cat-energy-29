@@ -65,13 +65,13 @@
                 </label>
                 <label class="basic-characteristics__label basic-characteristics-label label" for="weight">
                   <span class="label__name">Вес (кг):*</span>
-                  <input class="basic-characteristics-label__input input" type="text" name="weight" id="weight"
+                  <input class="basic-characteristics-label__input input" type="number" name="weight" id="weight"
                     value="7" required>
                 </label>
                 <label class="basic-characteristics__label basic-characteristics-label label" for="old">
                   <span class="label__name">Возраст (лет):</span>
                   <input class="basic-characteristics-label__input basic-characteristics-label__input--old  input"
-                    type="text" name="old" id="old" value="7">
+                    type="number" name="old" id="old" value="7">
                 </label>
               </fieldset>
               <fieldset class="form__program-type program-type fieldset">
@@ -123,6 +123,7 @@
               <legend class="fieldset__legend title legend"><span class="legend__description">Комментарий</span>
               </legend>
               <label class="comment__label label" for="comment">
+                <span class="visually-hidden">Напишите комменатрий о своём коте</span>
                 <textarea class="comment__input" rows="6" id="comment" name="comment"
                   placeholder="Расскажите обо всех повадках кота"></textarea>
               </label>
