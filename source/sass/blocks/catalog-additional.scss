@@ -29,6 +29,7 @@
     display: flex;
     gap: 80px;
     align-items: flex-start;
+    padding-top: 46px;
   }
 }
 
@@ -90,10 +91,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
-
-    @media (min-width: variables.$screen-tablet) {
-      // width: 100vw;
-    }
   }
 }
 
