@@ -17,18 +17,6 @@
     }
   }
 
-  &:nth-of-type(2) {
-    @media (min-width: variables.$screen-desktop) {
-      padding-right: 32px;
-    }
-  }
-
-  &:nth-of-type(3) {
-    @media (min-width: variables.$screen-desktop) {
-      padding-right: 94px;
-    }
-  }
-
   &:last-of-type {
     margin-bottom: 34px;
 
@@ -54,10 +42,12 @@
   }
 
   @media (min-width: variables.$screen-desktop) {
-    grid-template-columns: auto auto auto auto;
+    // grid-template-columns: auto auto auto auto;
     padding-left: 0;
-    column-gap: 106px;
+    column-gap: 100px;
     margin-bottom: -14px;
+    grid-template-columns: repeat(auto-fill, 225px);
+    width: 1220px;
   }
 }
 
@@ -80,4 +70,9 @@
 
 .additional__input:disabled + .label__name {
   opacity: 0.15;
+}
+
+.additional__input:focus + .label__name::before {
+  outline: 2px solid #444444;
+  outline-offset: 2px;
 }

@@ -12,6 +12,7 @@
 
   @media (min-width: variables.$screen-tablet) {
     font-size: 20px;
+    line-height: 24px;
   }
 }
 
@@ -27,6 +28,13 @@
 
   // Радиокнопки
   &--radio {
+    word-break: break-all;
+    white-space: break-spaces;
+
+    @media (min-width: variables.$screen-tablet) {
+      max-width: 572px;
+    }
+
     &::before {
       content: "";
       display: block;
@@ -38,6 +46,7 @@
       @media (min-width: variables.$screen-tablet) {
         width: 40px;
         height: 40px;
+        flex-shrink: 0;
       }
     }
 
@@ -61,12 +70,19 @@
 
   // Чекбоксы
   &--checkbox {
+    @media (min-width: variables.$screen-tablet) {
+      white-space: break-spaces;
+      word-break: break-all;
+      max-height: 48px;
+    }
+
     &::before {
       content: "";
       display: block;
       width: 30px;
       height: 30px;
       border: 1px solid #cdcdcd;
+      flex-shrink: 0;
 
       @media (min-width: variables.$screen-tablet) {
         width: 40px;
