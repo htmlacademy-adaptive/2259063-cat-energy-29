@@ -38,6 +38,11 @@
   @media (min-width: variables.$screen-tablet) {
     font-size: 30px;
     line-height: 37px;
+    padding: 16.5px 0;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    padding-bottom: 18px;
   }
 }
 

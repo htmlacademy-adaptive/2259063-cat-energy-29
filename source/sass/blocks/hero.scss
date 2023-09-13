@@ -3,22 +3,41 @@
 .hero {
   min-width: 320px;
   position: relative;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-    url("../img/index_background_mobile.webp"),
-    linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index_background_mobile.webp"), linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: inherit;
   background-size: auto 302px;
 
   @media (min-resolution: 2dppx) {
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      url("../img/index_background_mobile@2x.webp"),
-      linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index_background_mobile@2x.webp"), linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
   }
 
   @media (min-width: variables.$screen-tablet) {
     background-image: none;
+  }
+  //Это всё под переделку из page--index кота зеленого на фон
+  @media (min-width: variables.$screen-desktop) {
+    &::before {
+      content: "";
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index_background_desktop.webp"), linear-gradient(#4c4a4f, #4c4a4f);
+      background-repeat: no-repeat;
+      background-position: right;
+      background-position-y: top;
+      background-size: 100% 694px, auto 694px, 100% 694px;
+      position: absolute;
+      right: 0;
+      width: 50%;
+      height: 694px;
+      display: block;
+      top: -129px;
+      z-index: -1;
+      background-color: rgba(104, 183, 56, 0.85);
+
+      @media (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index_background_desktop@2x.webp"), linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
+      }
+    }
   }
 }
 
@@ -49,10 +68,19 @@
   }
 }
 
+.hero__text-container {
+  @media (max-width: 767px) {
+    max-height: 300px;
+    text-overflow: ellipsis;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+}
+
 .hero__image-container {
   @media (min-width: variables.$screen-tablet) {
     position: absolute;
-    top: 243px;
+    top: 241px;
     z-index: -1;
   }
 
@@ -76,7 +104,7 @@
     min-width: 244px;
     font-size: 20px;
     line-height: 20px;
-    padding: 7px;
+    padding: 2px;
   }
 
   @media (min-width: variables.$screen-desktop) {
@@ -125,7 +153,11 @@
     color: #000000;
     width: 290px;
     padding-top: 40px;
-    padding-bottom: 48px;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    padding-bottom: 52px;
   }
 }
 

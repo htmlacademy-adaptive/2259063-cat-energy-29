@@ -18,13 +18,21 @@
   @media (min-width: variables.$screen-desktop) {
     display: flex;
     align-items: center;
-    padding: 54px 110px;
+    padding: 53px 110px;
   }
 }
 
 .main-footer__social {
   padding-top: 17px;
   padding-bottom: 15px;
+
+  @media (min-width: variables.$screen-tablet) {
+    max-width: 345px;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    max-width: 600px;
+  }
 }
 
 .main-footer__logo {

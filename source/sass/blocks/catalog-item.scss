@@ -49,7 +49,7 @@
 .catalog-item__container-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-bottom: 19px;
+  padding-bottom: 17px;
 
   @media (min-width: variables.$screen-tablet) {
     display: flex;

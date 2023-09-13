@@ -19,7 +19,7 @@
   @media (min-width: variables.$screen-tablet) {
     font-size: 20px;
     min-width: 282px;
-    padding: 7px;
+    padding: 5px;
   }
 
   @media (min-width: variables.$screen-desktop) {
@@ -88,11 +88,5 @@
   @media (min-width: variables.$screen-desktop) {
     padding-left: 0;
     gap: 78px;
-  }
-}
-
-.form__comment {
-  @media (min-width: variables.$screen-tablet) {
-    margin-bottom: 2px;
   }
 }
